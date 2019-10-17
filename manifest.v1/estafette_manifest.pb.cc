@@ -180,10 +180,10 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n$manifest.v1/estafette_manifest.proto\022\013"
       "manifest.v1\032#manifest.v1/estafette_build"
-      "er.proto\032#manifest.v1/estafette_version."
-      "proto\032#manifest.v1/estafette_trigger.pro"
-      "to\032!manifest.v1/estafette_stage.proto\032#m"
-      "anifest.v1/estafette_release.proto\"\357\003\n\021E"
+      "er.proto\032#manifest.v1/estafette_release."
+      "proto\032!manifest.v1/estafette_stage.proto"
+      "\032#manifest.v1/estafette_trigger.proto\032#m"
+      "anifest.v1/estafette_version.proto\"\357\003\n\021E"
       "stafetteManifest\022.\n\007builder\030\001 \001(\0132\035.mani"
       "fest.v1.EstafetteBuilder\022:\n\006labels\030\002 \003(\013"
       "2*.manifest.v1.EstafetteManifest.LabelsE"
@@ -205,10 +205,10 @@ void AddDescriptorsImpl() {
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_manifest.proto", &protobuf_RegisterTypes);
   ::protobuf_manifest_2ev1_2festafette_5fbuilder_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5fversion_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5fstage_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5frelease_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fstage_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5ftrigger_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fversion_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

@@ -31,8 +31,8 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
 #include "manifest.v1/estafette_release_action.pb.h"
-#include "manifest.v1/estafette_trigger.pb.h"
 #include "manifest.v1/estafette_stage.pb.h"
+#include "manifest.v1/estafette_trigger.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_manifest_2ev1_2festafette_5frelease_2eproto 
 

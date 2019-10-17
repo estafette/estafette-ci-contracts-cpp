@@ -105,9 +105,9 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n contracts.v1/tail_log_line.proto\022\014cont"
-      "racts.v1\032\036google/protobuf/duration.proto"
-      "\032!contracts.v1/build_log_line.proto\032.con"
-      "tracts.v1/build_log_step_docker_image.pr"
+      "racts.v1\032!contracts.v1/build_log_line.pr"
+      "oto\032.contracts.v1/build_log_step_docker_"
+      "image.proto\032\036google/protobuf/duration.pr"
       "oto\"\346\001\n\013TailLogLine\022\014\n\004step\030\001 \001(\t\022,\n\010log"
       "_line\030\002 \001(\0132\032.contracts.v1.BuildLogLine\022"
       "4\n\005image\030\003 \001(\0132%.contracts.v1.BuildLogSt"
@@ -122,9 +122,9 @@ void AddDescriptorsImpl() {
       descriptor, 499);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/tail_log_line.proto", &protobuf_RegisterTypes);
-  ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();
   ::protobuf_contracts_2ev1_2fbuild_5flog_5fline_2eproto::AddDescriptors();
   ::protobuf_contracts_2ev1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::AddDescriptors();
+  ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

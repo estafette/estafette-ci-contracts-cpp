@@ -30,8 +30,8 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "contracts.v1/build_log_step_docker_image.pb.h"
 #include "contracts.v1/build_log_line.pb.h"
+#include "contracts.v1/build_log_step_docker_image.pb.h"
 #include <google/protobuf/duration.pb.h>
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_contracts_2ev1_2fbuild_5flog_5fstep_2eproto 

@@ -34,10 +34,10 @@
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "manifest.v1/estafette_builder.pb.h"
-#include "manifest.v1/estafette_version.pb.h"
-#include "manifest.v1/estafette_trigger.pb.h"
-#include "manifest.v1/estafette_stage.pb.h"
 #include "manifest.v1/estafette_release.pb.h"
+#include "manifest.v1/estafette_stage.pb.h"
+#include "manifest.v1/estafette_trigger.pb.h"
+#include "manifest.v1/estafette_version.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_manifest_2ev1_2festafette_5fmanifest_2eproto 
 

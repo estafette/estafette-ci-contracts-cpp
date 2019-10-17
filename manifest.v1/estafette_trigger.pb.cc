@@ -126,13 +126,13 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n#manifest.v1/estafette_trigger.proto\022\013m"
-      "anifest.v1\032,manifest.v1/estafette_pipeli"
-      "ne_trigger.proto\032+manifest.v1/estafette_"
-      "release_trigger.proto\032\'manifest.v1/estaf"
-      "ette_git_trigger.proto\032*manifest.v1/esta"
-      "fette_docker_trigger.proto\032(manifest.v1/"
-      "estafette_cron_trigger.proto\032+manifest.v"
-      "1/estafette_pub_sub_trigger.proto\0320manif"
+      "anifest.v1\032(manifest.v1/estafette_cron_t"
+      "rigger.proto\032*manifest.v1/estafette_dock"
+      "er_trigger.proto\032\'manifest.v1/estafette_"
+      "git_trigger.proto\032,manifest.v1/estafette"
+      "_pipeline_trigger.proto\032+manifest.v1/est"
+      "afette_pub_sub_trigger.proto\032+manifest.v"
+      "1/estafette_release_trigger.proto\0320manif"
       "est.v1/estafette_trigger_build_action.pr"
       "oto\0322manifest.v1/estafette_trigger_relea"
       "se_action.proto\"\321\003\n\020EstafetteTrigger\0227\n\010"
@@ -155,12 +155,12 @@ void AddDescriptorsImpl() {
       descriptor, 984);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_trigger.proto", &protobuf_RegisterTypes);
-  ::protobuf_manifest_2ev1_2festafette_5fpipeline_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5frelease_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5fgit_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5fdocker_5ftrigger_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5fcron_5ftrigger_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fdocker_5ftrigger_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fgit_5ftrigger_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fpipeline_5ftrigger_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5fpub_5fsub_5ftrigger_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5frelease_5ftrigger_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5ftrigger_5fbuild_5faction_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5ftrigger_5frelease_5faction_2eproto::AddDescriptors();
 }

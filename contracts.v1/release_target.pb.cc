@@ -97,8 +97,8 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n!contracts.v1/release_target.proto\022\014con"
-      "tracts.v1\032*manifest.v1/estafette_release"
-      "_action.proto\032\032contracts.v1/release.prot"
+      "tracts.v1\032\032contracts.v1/release.proto\032*m"
+      "anifest.v1/estafette_release_action.prot"
       "o\"\203\001\n\rReleaseTarget\022\014\n\004name\030\001 \001(\t\0224\n\007act"
       "ions\030\002 \003(\0132#.manifest.v1.EstafetteReleas"
       "eAction\022.\n\017active_releases\030\003 \003(\0132\025.contr"
@@ -110,8 +110,8 @@ void AddDescriptorsImpl() {
       descriptor, 358);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/release_target.proto", &protobuf_RegisterTypes);
-  ::protobuf_manifest_2ev1_2festafette_5frelease_5faction_2eproto::AddDescriptors();
   ::protobuf_contracts_2ev1_2frelease_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5frelease_5faction_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

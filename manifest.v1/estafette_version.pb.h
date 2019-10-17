@@ -30,8 +30,8 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "manifest.v1/estafette_semver_version.pb.h"
 #include "manifest.v1/estafette_custom_version.pb.h"
+#include "manifest.v1/estafette_semver_version.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_manifest_2ev1_2festafette_5fversion_2eproto 
 

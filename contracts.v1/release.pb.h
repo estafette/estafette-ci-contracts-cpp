@@ -30,9 +30,9 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "manifest.v1/estafette_event.pb.h"
-#include <google/protobuf/timestamp.pb.h>
 #include <google/protobuf/duration.pb.h>
+#include <google/protobuf/timestamp.pb.h>
+#include "manifest.v1/estafette_event.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_contracts_2ev1_2frelease_2eproto 
 

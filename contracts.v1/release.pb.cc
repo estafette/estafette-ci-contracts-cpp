@@ -109,9 +109,9 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\032contracts.v1/release.proto\022\014contracts."
-      "v1\032!manifest.v1/estafette_event.proto\032\037g"
-      "oogle/protobuf/timestamp.proto\032\036google/p"
-      "rotobuf/duration.proto\"\310\002\n\007Release\022\014\n\004na"
+      "v1\032\036google/protobuf/duration.proto\032\037goog"
+      "le/protobuf/timestamp.proto\032!manifest.v1"
+      "/estafette_event.proto\"\310\002\n\007Release\022\014\n\004na"
       "me\030\001 \001(\t\022\016\n\006action\030\002 \001(\t\022\n\n\002id\030\003 \001(\t\022\023\n\013"
       "repo_source\030\004 \001(\t\022\022\n\nrepo_owner\030\005 \001(\t\022\027\n"
       "\017release_version\030\006 \001(\t\022\026\n\016release_status"
@@ -128,9 +128,9 @@ void AddDescriptorsImpl() {
       descriptor, 576);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/release.proto", &protobuf_RegisterTypes);
-  ::protobuf_manifest_2ev1_2festafette_5fevent_2eproto::AddDescriptors();
-  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::AddDescriptors();
   ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();
+  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fevent_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

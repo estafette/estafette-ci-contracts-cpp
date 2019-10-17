@@ -96,9 +96,9 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n#manifest.v1/estafette_version.proto\022\013m"
-      "anifest.v1\032*manifest.v1/estafette_semver"
-      "_version.proto\032*manifest.v1/estafette_cu"
-      "stom_version.proto\"|\n\020EstafetteVersion\0223"
+      "anifest.v1\032*manifest.v1/estafette_custom"
+      "_version.proto\032*manifest.v1/estafette_se"
+      "mver_version.proto\"|\n\020EstafetteVersion\0223"
       "\n\006semver\030\001 \001(\0132#.manifest.v1.EstafetteSe"
       "mverVersion\0223\n\006custom\030\002 \001(\0132#.manifest.v"
       "1.EstafetteCustomVersionB[Z>github.com/e"
@@ -110,8 +110,8 @@ void AddDescriptorsImpl() {
       descriptor, 365);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_version.proto", &protobuf_RegisterTypes);
-  ::protobuf_manifest_2ev1_2festafette_5fsemver_5fversion_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5fcustom_5fversion_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fsemver_5fversion_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

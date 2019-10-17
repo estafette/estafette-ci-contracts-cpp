@@ -30,12 +30,12 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "manifest.v1/estafette_pipeline_trigger.pb.h"
-#include "manifest.v1/estafette_release_trigger.pb.h"
-#include "manifest.v1/estafette_git_trigger.pb.h"
-#include "manifest.v1/estafette_docker_trigger.pb.h"
 #include "manifest.v1/estafette_cron_trigger.pb.h"
+#include "manifest.v1/estafette_docker_trigger.pb.h"
+#include "manifest.v1/estafette_git_trigger.pb.h"
+#include "manifest.v1/estafette_pipeline_trigger.pb.h"
 #include "manifest.v1/estafette_pub_sub_trigger.pb.h"
+#include "manifest.v1/estafette_release_trigger.pb.h"
 #include "manifest.v1/estafette_trigger_build_action.pb.h"
 #include "manifest.v1/estafette_trigger_release_action.pb.h"
 // @@protoc_insertion_point(includes)

@@ -133,12 +133,12 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\033contracts.v1/pipeline.proto\022\014contracts"
-      ".v1\032\030contracts.v1/label.proto\032!contracts"
-      ".v1/release_target.proto\032\035contracts.v1/g"
-      "it_commit.proto\032#manifest.v1/estafette_t"
-      "rigger.proto\032!manifest.v1/estafette_even"
-      "t.proto\032\037google/protobuf/timestamp.proto"
-      "\032\036google/protobuf/duration.proto\"\203\005\n\010Pip"
+      ".v1\032\035contracts.v1/git_commit.proto\032\030cont"
+      "racts.v1/label.proto\032!contracts.v1/relea"
+      "se_target.proto\032\036google/protobuf/duratio"
+      "n.proto\032\037google/protobuf/timestamp.proto"
+      "\032!manifest.v1/estafette_event.proto\032#man"
+      "ifest.v1/estafette_trigger.proto\"\203\005\n\010Pip"
       "eline\022\n\n\002id\030\001 \001(\t\022\023\n\013repo_source\030\002 \001(\t\022\022"
       "\n\nrepo_owner\030\003 \001(\t\022\021\n\trepo_name\030\004 \001(\t\022\023\n"
       "\013repo_branch\030\005 \001(\t\022\025\n\rrepo_revision\030\006 \001("
@@ -163,13 +163,13 @@ void AddDescriptorsImpl() {
       descriptor, 1021);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/pipeline.proto", &protobuf_RegisterTypes);
+  ::protobuf_contracts_2ev1_2fgit_5fcommit_2eproto::AddDescriptors();
   ::protobuf_contracts_2ev1_2flabel_2eproto::AddDescriptors();
   ::protobuf_contracts_2ev1_2frelease_5ftarget_2eproto::AddDescriptors();
-  ::protobuf_contracts_2ev1_2fgit_5fcommit_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5fevent_2eproto::AddDescriptors();
-  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::AddDescriptors();
   ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();
+  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fevent_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5ftrigger_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

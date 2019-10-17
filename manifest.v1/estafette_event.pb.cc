@@ -121,14 +121,14 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n!manifest.v1/estafette_event.proto\022\013man"
-      "ifest.v1\032*manifest.v1/estafette_pipeline"
-      "_event.proto\032)manifest.v1/estafette_rele"
-      "ase_event.proto\032%manifest.v1/estafette_g"
-      "it_event.proto\032(manifest.v1/estafette_do"
-      "cker_event.proto\032&manifest.v1/estafette_"
-      "cron_event.proto\032)manifest.v1/estafette_"
-      "pub_sub_event.proto\032(manifest.v1/estafet"
-      "te_manual_event.proto\"\362\002\n\016EstafetteEvent"
+      "ifest.v1\032&manifest.v1/estafette_cron_eve"
+      "nt.proto\032(manifest.v1/estafette_docker_e"
+      "vent.proto\032%manifest.v1/estafette_git_ev"
+      "ent.proto\032(manifest.v1/estafette_manual_"
+      "event.proto\032*manifest.v1/estafette_pipel"
+      "ine_event.proto\032)manifest.v1/estafette_p"
+      "ub_sub_event.proto\032)manifest.v1/estafett"
+      "e_release_event.proto\"\362\002\n\016EstafetteEvent"
       "\0225\n\010pipeline\030\001 \001(\0132#.manifest.v1.Estafet"
       "tePipelineEvent\0223\n\007release\030\002 \001(\0132\".manif"
       "est.v1.EstafetteReleaseEvent\022+\n\003git\030\003 \001("
@@ -146,13 +146,13 @@ void AddDescriptorsImpl() {
       descriptor, 815);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_event.proto", &protobuf_RegisterTypes);
-  ::protobuf_manifest_2ev1_2festafette_5fpipeline_5fevent_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5frelease_5fevent_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5fgit_5fevent_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5fdocker_5fevent_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5fcron_5fevent_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5fpub_5fsub_5fevent_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fdocker_5fevent_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fgit_5fevent_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5fmanual_5fevent_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fpipeline_5fevent_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5fpub_5fsub_5fevent_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5frelease_5fevent_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

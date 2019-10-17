@@ -30,15 +30,15 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/unknown_field_set.h>
-#include "manifest.v1/estafette_manifest.pb.h"
-#include "manifest.v1/estafette_event.pb.h"
-#include "contracts.v1/ci_server_config.pb.h"
 #include "contracts.v1/build_params_config.pb.h"
-#include "contracts.v1/release_params_config.pb.h"
-#include "contracts.v1/git_config.pb.h"
 #include "contracts.v1/build_version_config.pb.h"
+#include "contracts.v1/ci_server_config.pb.h"
 #include "contracts.v1/credential_config.pb.h"
+#include "contracts.v1/git_config.pb.h"
+#include "contracts.v1/release_params_config.pb.h"
 #include "contracts.v1/trusted_image_config.pb.h"
+#include "manifest.v1/estafette_event.pb.h"
+#include "manifest.v1/estafette_manifest.pb.h"
 // @@protoc_insertion_point(includes)
 #define PROTOBUF_INTERNAL_EXPORT_protobuf_contracts_2ev1_2fbuilder_5fconfig_2eproto 
 

@@ -106,9 +106,9 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n!contracts.v1/build_log_step.proto\022\014con"
-      "tracts.v1\032.contracts.v1/build_log_step_d"
-      "ocker_image.proto\032!contracts.v1/build_lo"
-      "g_line.proto\032\036google/protobuf/duration.p"
+      "tracts.v1\032!contracts.v1/build_log_line.p"
+      "roto\032.contracts.v1/build_log_step_docker"
+      "_image.proto\032\036google/protobuf/duration.p"
       "roto\"\373\001\n\014BuildLogStep\022\014\n\004step\030\001 \001(\t\0224\n\005i"
       "mage\030\002 \001(\0132%.contracts.v1.BuildLogStepDo"
       "ckerImage\022\021\n\trun_index\030\003 \001(\003\022+\n\010duration"
@@ -124,8 +124,8 @@ void AddDescriptorsImpl() {
       descriptor, 521);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/build_log_step.proto", &protobuf_RegisterTypes);
-  ::protobuf_contracts_2ev1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::AddDescriptors();
   ::protobuf_contracts_2ev1_2fbuild_5flog_5fline_2eproto::AddDescriptors();
+  ::protobuf_contracts_2ev1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::AddDescriptors();
   ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();
 }
 

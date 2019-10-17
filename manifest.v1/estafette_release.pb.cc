@@ -104,8 +104,8 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n#manifest.v1/estafette_release.proto\022\013m"
       "anifest.v1\032*manifest.v1/estafette_releas"
-      "e_action.proto\032#manifest.v1/estafette_tr"
-      "igger.proto\032!manifest.v1/estafette_stage"
+      "e_action.proto\032!manifest.v1/estafette_st"
+      "age.proto\032#manifest.v1/estafette_trigger"
       ".proto\"\316\001\n\020EstafetteRelease\022\014\n\004name\030\001 \001("
       "\t\022\030\n\020clone_repository\030\002 \001(\010\0224\n\007actions\030\003"
       " \003(\0132#.manifest.v1.EstafetteReleaseActio"
@@ -120,8 +120,8 @@ void AddDescriptorsImpl() {
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_release.proto", &protobuf_RegisterTypes);
   ::protobuf_manifest_2ev1_2festafette_5frelease_5faction_2eproto::AddDescriptors();
-  ::protobuf_manifest_2ev1_2festafette_5ftrigger_2eproto::AddDescriptors();
   ::protobuf_manifest_2ev1_2festafette_5fstage_2eproto::AddDescriptors();
+  ::protobuf_manifest_2ev1_2festafette_5ftrigger_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
