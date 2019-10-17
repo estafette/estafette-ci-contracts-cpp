@@ -88,12 +88,12 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n*manifest.v1/estafette_release_action.p"
       "roto\022\013manifest.v1\"&\n\026EstafetteReleaseAct"
-      "ion\022\014\n\004name\030\001 \001(\tB@Z>github.com/estafett"
+      "ion\022\014\n\004name\030\001 \001(\tB[Z>github.com/estafett"
       "e/estafette-ci-contracts-golang/manifest"
-      "_v1b\006proto3"
+      "_v1\252\002\030Estafette.CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 171);
+      descriptor, 198);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_release_action.proto", &protobuf_RegisterTypes);
 }

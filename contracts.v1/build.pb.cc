@@ -152,12 +152,13 @@ void AddDescriptorsImpl() {
       "\013inserted_at\030\020 \001(\0132\032.google.protobuf.Tim"
       "estamp\022.\n\nupdated_at\030\021 \001(\0132\032.google.prot"
       "obuf.Timestamp\022+\n\010duration\030\022 \001(\0132\031.googl"
-      "e.protobuf.DurationBAZ\?github.com/estafe"
+      "e.protobuf.DurationB]Z\?github.com/estafe"
       "tte/estafette-ci-contracts-golang/contra"
-      "cts_v1b\006proto3"
+      "cts_v1\252\002\031Estafette.CI.Contracts.V1b\006prot"
+      "o3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 934);
+      descriptor, 962);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/build.proto", &protobuf_RegisterTypes);
   ::protobuf_contracts_2ev1_2flabel_2eproto::AddDescriptors();

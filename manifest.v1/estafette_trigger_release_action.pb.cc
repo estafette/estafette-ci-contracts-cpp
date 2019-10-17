@@ -91,12 +91,13 @@ void AddDescriptorsImpl() {
       "\n2manifest.v1/estafette_trigger_release_"
       "action.proto\022\013manifest.v1\"P\n\035EstafetteTr"
       "iggerReleaseAction\022\016\n\006target\030\001 \001(\t\022\016\n\006ac"
-      "tion\030\002 \001(\t\022\017\n\007version\030\003 \001(\tB@Z>github.co"
+      "tion\030\002 \001(\t\022\017\n\007version\030\003 \001(\tB[Z>github.co"
       "m/estafette/estafette-ci-contracts-golan"
-      "g/manifest_v1b\006proto3"
+      "g/manifest_v1\252\002\030Estafette.CI.Manifest.V1"
+      "b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 221);
+      descriptor, 248);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_trigger_release_action.proto", &protobuf_RegisterTypes);
 }

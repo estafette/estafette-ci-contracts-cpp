@@ -88,12 +88,13 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n*manifest.v1/estafette_custom_version.p"
       "roto\022\013manifest.v1\"0\n\026EstafetteCustomVers"
-      "ion\022\026\n\016label_template\030\001 \001(\tB@Z>github.co"
+      "ion\022\026\n\016label_template\030\001 \001(\tB[Z>github.co"
       "m/estafette/estafette-ci-contracts-golan"
-      "g/manifest_v1b\006proto3"
+      "g/manifest_v1\252\002\030Estafette.CI.Manifest.V1"
+      "b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 181);
+      descriptor, 208);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_custom_version.proto", &protobuf_RegisterTypes);
 }

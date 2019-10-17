@@ -89,12 +89,12 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\032contracts.v1/warning.proto\022\014contracts."
       "v1\"*\n\007Warning\022\016\n\006status\030\001 \001(\t\022\017\n\007message"
-      "\030\002 \001(\tBAZ\?github.com/estafette/estafette"
-      "-ci-contracts-golang/contracts_v1b\006proto"
-      "3"
+      "\030\002 \001(\tB]Z\?github.com/estafette/estafette"
+      "-ci-contracts-golang/contracts_v1\252\002\031Esta"
+      "fette.CI.Contracts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 161);
+      descriptor, 189);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/warning.proto", &protobuf_RegisterTypes);
 }
