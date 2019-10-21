@@ -93,12 +93,13 @@ void AddDescriptorsImpl() {
       "to\022\014contracts.v1\"m\n\023ReleaseParamsConfig\022"
       "\024\n\014release_name\030\001 \001(\t\022\022\n\nrelease_id\030\002 \001("
       "\003\022\026\n\016release_action\030\003 \001(\t\022\024\n\014triggered_b"
-      "y\030\004 \001(\tB]Z\?github.com/estafette/estafett"
-      "e-ci-contracts-golang/contracts_v1\252\002\031Est"
-      "afette.CI.Contracts.V1b\006proto3"
+      "y\030\004 \001(\tB{\n\034io.estafette.ci.contracts.v1Z"
+      "\?github.com/estafette/estafette-ci-contr"
+      "acts-golang/contracts_v1\252\002\031Estafette.CI."
+      "Contracts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 270);
+      descriptor, 300);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/release_params_config.proto", &protobuf_RegisterTypes);
 }

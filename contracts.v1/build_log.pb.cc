@@ -110,13 +110,14 @@ void AddDescriptorsImpl() {
       "\013repo_branch\030\005 \001(\t\022\025\n\rrepo_revision\030\006 \001("
       "\t\022\020\n\010build_id\030\007 \001(\t\022)\n\005steps\030\010 \003(\0132\032.con"
       "tracts.v1.BuildLogStep\022/\n\013inserted_at\030\t "
-      "\001(\0132\032.google.protobuf.TimestampB]Z\?githu"
-      "b.com/estafette/estafette-ci-contracts-g"
-      "olang/contracts_v1\252\002\031Estafette.CI.Contra"
-      "cts.V1b\006proto3"
+      "\001(\0132\032.google.protobuf.TimestampB{\n\034io.es"
+      "tafette.ci.contracts.v1Z\?github.com/esta"
+      "fette/estafette-ci-contracts-golang/cont"
+      "racts_v1\252\002\031Estafette.CI.Contracts.V1b\006pr"
+      "oto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 454);
+      descriptor, 484);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/build_log.proto", &protobuf_RegisterTypes);
   ::protobuf_contracts_2ev1_2fbuild_5flog_5fstep_2eproto::AddDescriptors();

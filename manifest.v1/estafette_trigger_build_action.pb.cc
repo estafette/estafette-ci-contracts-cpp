@@ -88,13 +88,13 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n0manifest.v1/estafette_trigger_build_ac"
       "tion.proto\022\013manifest.v1\"-\n\033EstafetteTrig"
-      "gerBuildAction\022\016\n\006branch\030\001 \001(\tB[Z>github"
-      ".com/estafette/estafette-ci-contracts-go"
-      "lang/manifest_v1\252\002\030Estafette.CI.Manifest"
-      ".V1b\006proto3"
+      "gerBuildAction\022\016\n\006branch\030\001 \001(\tBx\n\033io.est"
+      "afette.ci.manifest.v1Z>github.com/estafe"
+      "tte/estafette-ci-contracts-golang/manife"
+      "st_v1\252\002\030Estafette.CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 211);
+      descriptor, 240);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_trigger_build_action.proto", &protobuf_RegisterTypes);
 }

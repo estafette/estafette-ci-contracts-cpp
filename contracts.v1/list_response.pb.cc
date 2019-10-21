@@ -100,12 +100,13 @@ void AddDescriptorsImpl() {
       "\031google/protobuf/any.proto\"a\n\014ListRespon"
       "se\022#\n\005items\030\001 \003(\0132\024.google.protobuf.Any\022"
       ",\n\npagination\030\002 \001(\0132\030.contracts.v1.Pagin"
-      "ationB]Z\?github.com/estafette/estafette-"
-      "ci-contracts-golang/contracts_v1\252\002\031Estaf"
-      "ette.CI.Contracts.V1b\006proto3"
+      "ationB{\n\034io.estafette.ci.contracts.v1Z\?g"
+      "ithub.com/estafette/estafette-ci-contrac"
+      "ts-golang/contracts_v1\252\002\031Estafette.CI.Co"
+      "ntracts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 308);
+      descriptor, 338);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/list_response.proto", &protobuf_RegisterTypes);
   ::protobuf_contracts_2ev1_2fpagination_2eproto::AddDescriptors();

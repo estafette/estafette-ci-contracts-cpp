@@ -107,13 +107,14 @@ void AddDescriptorsImpl() {
       "(\t\022\022\n\nrepo_owner\030\003 \001(\t\022\021\n\trepo_name\030\004 \001("
       "\t\022\022\n\nrelease_id\030\005 \001(\t\022)\n\005steps\030\006 \003(\0132\032.c"
       "ontracts.v1.BuildLogStep\022/\n\013inserted_at\030"
-      "\007 \001(\0132\032.google.protobuf.TimestampB]Z\?git"
-      "hub.com/estafette/estafette-ci-contracts"
-      "-golang/contracts_v1\252\002\031Estafette.CI.Cont"
-      "racts.V1b\006proto3"
+      "\007 \001(\0132\032.google.protobuf.TimestampB{\n\034io."
+      "estafette.ci.contracts.v1Z\?github.com/es"
+      "tafette/estafette-ci-contracts-golang/co"
+      "ntracts_v1\252\002\031Estafette.CI.Contracts.V1b\006"
+      "proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 416);
+      descriptor, 446);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/release_log.proto", &protobuf_RegisterTypes);
   ::protobuf_contracts_2ev1_2fbuild_5flog_5fstep_2eproto::AddDescriptors();

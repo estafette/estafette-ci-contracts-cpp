@@ -101,13 +101,13 @@ void AddDescriptorsImpl() {
       "mver_version.proto\"|\n\020EstafetteVersion\0223"
       "\n\006semver\030\001 \001(\0132#.manifest.v1.EstafetteSe"
       "mverVersion\0223\n\006custom\030\002 \001(\0132#.manifest.v"
-      "1.EstafetteCustomVersionB[Z>github.com/e"
-      "stafette/estafette-ci-contracts-golang/m"
-      "anifest_v1\252\002\030Estafette.CI.Manifest.V1b\006p"
-      "roto3"
+      "1.EstafetteCustomVersionBx\n\033io.estafette"
+      ".ci.manifest.v1Z>github.com/estafette/es"
+      "tafette-ci-contracts-golang/manifest_v1\252"
+      "\002\030Estafette.CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 365);
+      descriptor, 394);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_version.proto", &protobuf_RegisterTypes);
   ::protobuf_manifest_2ev1_2festafette_5fcustom_5fversion_2eproto::AddDescriptors();

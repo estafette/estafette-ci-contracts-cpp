@@ -94,13 +94,13 @@ void AddDescriptorsImpl() {
       "\n\035contracts.v1/git_commit.proto\022\014contrac"
       "ts.v1\032\035contracts.v1/git_author.proto\"E\n\t"
       "GitCommit\022\017\n\007message\030\001 \001(\t\022\'\n\006author\030\002 \001"
-      "(\0132\027.contracts.v1.GitAuthorB]Z\?github.co"
-      "m/estafette/estafette-ci-contracts-golan"
-      "g/contracts_v1\252\002\031Estafette.CI.Contracts."
-      "V1b\006proto3"
+      "(\0132\027.contracts.v1.GitAuthorB{\n\034io.estafe"
+      "tte.ci.contracts.v1Z\?github.com/estafett"
+      "e/estafette-ci-contracts-golang/contract"
+      "s_v1\252\002\031Estafette.CI.Contracts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 250);
+      descriptor, 280);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/git_commit.proto", &protobuf_RegisterTypes);
   ::protobuf_contracts_2ev1_2fgit_5fauthor_2eproto::AddDescriptors();

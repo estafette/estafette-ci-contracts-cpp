@@ -177,13 +177,14 @@ void AddDescriptorsImpl() {
       "age.CustomPropertiesEntry\032.\n\014EnvVarsEntr"
       "y\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032M\n\025Cus"
       "tomPropertiesEntry\022\013\n\003key\030\001 \001(\t\022#\n\005value"
-      "\030\002 \001(\0132\024.google.protobuf.Any:\0028\001B[Z>gith"
-      "ub.com/estafette/estafette-ci-contracts-"
-      "golang/manifest_v1\252\002\030Estafette.CI.Manife"
-      "st.V1b\006proto3"
+      "\030\002 \001(\0132\024.google.protobuf.Any:\0028\001Bx\n\033io.e"
+      "stafette.ci.manifest.v1Z>github.com/esta"
+      "fette/estafette-ci-contracts-golang/mani"
+      "fest_v1\252\002\030Estafette.CI.Manifest.V1b\006prot"
+      "o3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 613);
+      descriptor, 642);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_stage.proto", &protobuf_RegisterTypes);
   ::protobuf_google_2fprotobuf_2fany_2eproto::AddDescriptors();

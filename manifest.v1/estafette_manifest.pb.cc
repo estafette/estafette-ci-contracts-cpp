@@ -196,12 +196,13 @@ void AddDescriptorsImpl() {
       "2\035.manifest.v1.EstafetteRelease\032-\n\013Label"
       "sEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\0324"
       "\n\022GlobalEnvVarsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005val"
-      "ue\030\002 \001(\t:\0028\001B[Z>github.com/estafette/est"
-      "afette-ci-contracts-golang/manifest_v1\252\002"
-      "\030Estafette.CI.Manifest.V1b\006proto3"
+      "ue\030\002 \001(\t:\0028\001Bx\n\033io.estafette.ci.manifest"
+      ".v1Z>github.com/estafette/estafette-ci-c"
+      "ontracts-golang/manifest_v1\252\002\030Estafette."
+      "CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 833);
+      descriptor, 862);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_manifest.proto", &protobuf_RegisterTypes);
   ::protobuf_manifest_2ev1_2festafette_5fbuilder_2eproto::AddDescriptors();

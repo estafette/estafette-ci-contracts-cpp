@@ -90,13 +90,13 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\035contracts.v1/git_author.proto\022\014contrac"
       "ts.v1\":\n\tGitAuthor\022\r\n\005email\030\001 \001(\t\022\014\n\004nam"
-      "e\030\002 \001(\t\022\020\n\010username\030\003 \001(\tB]Z\?github.com/"
-      "estafette/estafette-ci-contracts-golang/"
-      "contracts_v1\252\002\031Estafette.CI.Contracts.V1"
-      "b\006proto3"
+      "e\030\002 \001(\t\022\020\n\010username\030\003 \001(\tB{\n\034io.estafett"
+      "e.ci.contracts.v1Z\?github.com/estafette/"
+      "estafette-ci-contracts-golang/contracts_"
+      "v1\252\002\031Estafette.CI.Contracts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 208);
+      descriptor, 238);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/git_author.proto", &protobuf_RegisterTypes);
 }

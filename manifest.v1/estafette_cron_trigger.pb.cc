@@ -88,12 +88,13 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n(manifest.v1/estafette_cron_trigger.pro"
       "to\022\013manifest.v1\"(\n\024EstafetteCronTrigger\022"
-      "\020\n\010schedule\030\001 \001(\tB[Z>github.com/estafett"
-      "e/estafette-ci-contracts-golang/manifest"
-      "_v1\252\002\030Estafette.CI.Manifest.V1b\006proto3"
+      "\020\n\010schedule\030\001 \001(\tBx\n\033io.estafette.ci.man"
+      "ifest.v1Z>github.com/estafette/estafette"
+      "-ci-contracts-golang/manifest_v1\252\002\030Estaf"
+      "ette.CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 198);
+      descriptor, 227);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_cron_trigger.proto", &protobuf_RegisterTypes);
 }

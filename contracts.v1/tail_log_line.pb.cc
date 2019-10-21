@@ -113,13 +113,14 @@ void AddDescriptorsImpl() {
       "4\n\005image\030\003 \001(\0132%.contracts.v1.BuildLogSt"
       "epDockerImage\022+\n\010duration\030\004 \001(\0132\031.google"
       ".protobuf.Duration\022\021\n\texit_code\030\005 \001(\003\022\016\n"
-      "\006status\030\006 \001(\t\022\025\n\rauto_injected\030\007 \001(\010B]Z\?"
-      "github.com/estafette/estafette-ci-contra"
-      "cts-golang/contracts_v1\252\002\031Estafette.CI.C"
-      "ontracts.V1b\006proto3"
+      "\006status\030\006 \001(\t\022\025\n\rauto_injected\030\007 \001(\010B{\n\034"
+      "io.estafette.ci.contracts.v1Z\?github.com"
+      "/estafette/estafette-ci-contracts-golang"
+      "/contracts_v1\252\002\031Estafette.CI.Contracts.V"
+      "1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 499);
+      descriptor, 529);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/tail_log_line.proto", &protobuf_RegisterTypes);
   ::protobuf_contracts_2ev1_2fbuild_5flog_5fline_2eproto::AddDescriptors();

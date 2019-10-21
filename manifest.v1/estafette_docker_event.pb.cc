@@ -91,12 +91,13 @@ void AddDescriptorsImpl() {
       "\n(manifest.v1/estafette_docker_event.pro"
       "to\022\013manifest.v1\"A\n\024EstafetteDockerEvent\022"
       "\r\n\005event\030\001 \001(\t\022\r\n\005image\030\002 \001(\t\022\013\n\003tag\030\003 \001"
-      "(\tB[Z>github.com/estafette/estafette-ci-"
-      "contracts-golang/manifest_v1\252\002\030Estafette"
-      ".CI.Manifest.V1b\006proto3"
+      "(\tBx\n\033io.estafette.ci.manifest.v1Z>githu"
+      "b.com/estafette/estafette-ci-contracts-g"
+      "olang/manifest_v1\252\002\030Estafette.CI.Manifes"
+      "t.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 223);
+      descriptor, 252);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_docker_event.proto", &protobuf_RegisterTypes);
 }
