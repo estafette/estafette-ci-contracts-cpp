@@ -137,14 +137,14 @@ void AddDescriptorsImpl() {
       "vent\022-\n\004cron\030\005 \001(\0132\037.manifest.v1.Estafet"
       "teCronEvent\0222\n\007pub_sub\030\006 \001(\0132!.manifest."
       "v1.EstafettePubSubEvent\0221\n\006manual\030\007 \001(\0132"
-      "!.manifest.v1.EstafetteManualEventBu\n\033io"
-      ".estafette.ci.manifest.v1Z;github.com/es"
-      "tafette/estafette-ci-protos-golang/manif"
-      "est_v1\252\002\030Estafette.CI.Manifest.V1b\006proto"
-      "3"
+      "!.manifest.v1.EstafetteManualEventB|\n\"io"
+      ".estafette.ci.protos.manifest.v1Z;github"
+      ".com/estafette/estafette-ci-protos-golan"
+      "g/manifest_v1\252\002\030Estafette.CI.Manifest.V1"
+      "b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 841);
+      descriptor, 848);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_event.proto", &protobuf_RegisterTypes);
   ::protobuf_manifest_2ev1_2festafette_5fcron_5fevent_2eproto::AddDescriptors();

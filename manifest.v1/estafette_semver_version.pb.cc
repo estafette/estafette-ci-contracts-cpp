@@ -100,13 +100,13 @@ void AddDescriptorsImpl() {
       "ersion\022\r\n\005major\030\001 \001(\003\022\r\n\005minor\030\002 \001(\003\022\r\n\005"
       "patch\030\003 \001(\t\022\026\n\016label_template\030\004 \001(\t\0228\n\016r"
       "elease_branch\030\005 \001(\0132 .manifest.v1.String"
-      "OrStringArrayBu\n\033io.estafette.ci.manifes"
-      "t.v1Z;github.com/estafette/estafette-ci-"
-      "protos-golang/manifest_v1\252\002\030Estafette.CI"
-      ".Manifest.V1b\006proto3"
+      "OrStringArrayB|\n\"io.estafette.ci.protos."
+      "manifest.v1Z;github.com/estafette/estafe"
+      "tte-ci-protos-golang/manifest_v1\252\002\030Estaf"
+      "ette.CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 380);
+      descriptor, 387);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_semver_version.proto", &protobuf_RegisterTypes);
   ::protobuf_manifest_2ev1_2fstring_5for_5fstring_5farray_2eproto::AddDescriptors();

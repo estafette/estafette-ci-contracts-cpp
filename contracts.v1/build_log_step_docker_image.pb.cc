@@ -102,14 +102,14 @@ void AddDescriptorsImpl() {
       "ge\022\014\n\004name\030\001 \001(\t\022\013\n\003tag\030\002 \001(\t\022\021\n\tis_pull"
       "ed\030\003 \001(\010\022\022\n\nimage_size\030\004 \001(\003\0220\n\rpull_dur"
       "ation\030\005 \001(\0132\031.google.protobuf.Duration\022\r"
-      "\n\005error\030\006 \001(\t\022\022\n\nis_trusted\030\007 \001(\010Bx\n\034io."
-      "estafette.ci.contracts.v1Z<github.com/es"
-      "tafette/estafette-ci-protos-golang/contr"
-      "acts_v1\252\002\031Estafette.CI.Contracts.V1b\006pro"
-      "to3"
+      "\n\005error\030\006 \001(\t\022\022\n\nis_trusted\030\007 \001(\010B\177\n#io."
+      "estafette.ci.protos.contracts.v1Z<github"
+      ".com/estafette/estafette-ci-protos-golan"
+      "g/contracts_v1\252\002\031Estafette.CI.Contracts."
+      "V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 403);
+      descriptor, 410);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/build_log_step_docker_image.proto", &protobuf_RegisterTypes);
   ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();

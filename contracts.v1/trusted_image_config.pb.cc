@@ -95,13 +95,13 @@ void AddDescriptorsImpl() {
       "\n\nimage_path\030\001 \001(\t\022\026\n\016run_privileged\030\002 \001"
       "(\010\022\022\n\nrun_docker\030\003 \001(\010\022\026\n\016allow_commands"
       "\030\004 \001(\010\022!\n\031injected_credential_types\030\005 \003("
-      "\tBx\n\034io.estafette.ci.contracts.v1Z<githu"
-      "b.com/estafette/estafette-ci-protos-gola"
-      "ng/contracts_v1\252\002\031Estafette.CI.Contracts"
-      ".V1b\006proto3"
+      "\tB\177\n#io.estafette.ci.protos.contracts.v1"
+      "Z<github.com/estafette/estafette-ci-prot"
+      "os-golang/contracts_v1\252\002\031Estafette.CI.Co"
+      "ntracts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 331);
+      descriptor, 338);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/trusted_image_config.proto", &protobuf_RegisterTypes);
 }

@@ -97,13 +97,13 @@ void AddDescriptorsImpl() {
       "nt\022\027\n\017release_version\030\001 \001(\t\022\023\n\013repo_sour"
       "ce\030\002 \001(\t\022\022\n\nrepo_owner\030\003 \001(\t\022\021\n\trepo_nam"
       "e\030\004 \001(\t\022\016\n\006target\030\005 \001(\t\022\016\n\006status\030\006 \001(\t\022"
-      "\r\n\005event\030\007 \001(\tBu\n\033io.estafette.ci.manife"
-      "st.v1Z;github.com/estafette/estafette-ci"
-      "-protos-golang/manifest_v1\252\002\030Estafette.C"
-      "I.Manifest.V1b\006proto3"
+      "\r\n\005event\030\007 \001(\tB|\n\"io.estafette.ci.protos"
+      ".manifest.v1Z;github.com/estafette/estaf"
+      "ette-ci-protos-golang/manifest_v1\252\002\030Esta"
+      "fette.CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 341);
+      descriptor, 348);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_release_event.proto", &protobuf_RegisterTypes);
 }

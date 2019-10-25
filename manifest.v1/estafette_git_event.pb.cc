@@ -91,13 +91,13 @@ void AddDescriptorsImpl() {
       "\n%manifest.v1/estafette_git_event.proto\022"
       "\013manifest.v1\"F\n\021EstafetteGitEvent\022\r\n\005eve"
       "nt\030\001 \001(\t\022\022\n\nrepository\030\002 \001(\t\022\016\n\006branch\030\003"
-      " \001(\tBu\n\033io.estafette.ci.manifest.v1Z;git"
-      "hub.com/estafette/estafette-ci-protos-go"
-      "lang/manifest_v1\252\002\030Estafette.CI.Manifest"
-      ".V1b\006proto3"
+      " \001(\tB|\n\"io.estafette.ci.protos.manifest."
+      "v1Z;github.com/estafette/estafette-ci-pr"
+      "otos-golang/manifest_v1\252\002\030Estafette.CI.M"
+      "anifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 251);
+      descriptor, 258);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_git_event.proto", &protobuf_RegisterTypes);
 }

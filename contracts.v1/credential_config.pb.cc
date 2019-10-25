@@ -133,13 +133,13 @@ void AddDescriptorsImpl() {
       "8.contracts.v1.CredentialConfig.Addition"
       "alPropertiesEntry\032Q\n\031AdditionalPropertie"
       "sEntry\022\013\n\003key\030\001 \001(\t\022#\n\005value\030\002 \001(\0132\024.goo"
-      "gle.protobuf.Any:\0028\001Bx\n\034io.estafette.ci."
-      "contracts.v1Z<github.com/estafette/estaf"
-      "ette-ci-protos-golang/contracts_v1\252\002\031Est"
-      "afette.CI.Contracts.V1b\006proto3"
+      "gle.protobuf.Any:\0028\001B\177\n#io.estafette.ci."
+      "protos.contracts.v1Z<github.com/estafett"
+      "e/estafette-ci-protos-golang/contracts_v"
+      "1\252\002\031Estafette.CI.Contracts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 430);
+      descriptor, 437);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/credential_config.proto", &protobuf_RegisterTypes);
   ::protobuf_google_2fprotobuf_2fany_2eproto::AddDescriptors();

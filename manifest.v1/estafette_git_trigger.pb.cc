@@ -91,13 +91,13 @@ void AddDescriptorsImpl() {
       "\n\'manifest.v1/estafette_git_trigger.prot"
       "o\022\013manifest.v1\"H\n\023EstafetteGitTrigger\022\r\n"
       "\005event\030\001 \001(\t\022\022\n\nrepository\030\002 \001(\t\022\016\n\006bran"
-      "ch\030\003 \001(\tBu\n\033io.estafette.ci.manifest.v1Z"
-      ";github.com/estafette/estafette-ci-proto"
-      "s-golang/manifest_v1\252\002\030Estafette.CI.Mani"
-      "fest.V1b\006proto3"
+      "ch\030\003 \001(\tB|\n\"io.estafette.ci.protos.manif"
+      "est.v1Z;github.com/estafette/estafette-c"
+      "i-protos-golang/manifest_v1\252\002\030Estafette."
+      "CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 255);
+      descriptor, 262);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_git_trigger.proto", &protobuf_RegisterTypes);
 }

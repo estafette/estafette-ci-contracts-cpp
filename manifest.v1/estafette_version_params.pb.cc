@@ -91,13 +91,13 @@ void AddDescriptorsImpl() {
       "\n*manifest.v1/estafette_version_params.p"
       "roto\022\013manifest.v1\"R\n\026EstafetteVersionPar"
       "ams\022\026\n\016auto_increment\030\001 \001(\003\022\016\n\006branch\030\002 "
-      "\001(\t\022\020\n\010revision\030\003 \001(\tBu\n\033io.estafette.ci"
-      ".manifest.v1Z;github.com/estafette/estaf"
-      "ette-ci-protos-golang/manifest_v1\252\002\030Esta"
-      "fette.CI.Manifest.V1b\006proto3"
+      "\001(\t\022\020\n\010revision\030\003 \001(\tB|\n\"io.estafette.ci"
+      ".protos.manifest.v1Z;github.com/estafett"
+      "e/estafette-ci-protos-golang/manifest_v1"
+      "\252\002\030Estafette.CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 268);
+      descriptor, 275);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_version_params.proto", &protobuf_RegisterTypes);
 }

@@ -88,14 +88,14 @@ void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\030contracts.v1/label.proto\022\014contracts.v1"
-      "\"#\n\005Label\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\tBx\n"
-      "\034io.estafette.ci.contracts.v1Z<github.co"
-      "m/estafette/estafette-ci-protos-golang/c"
-      "ontracts_v1\252\002\031Estafette.CI.Contracts.V1b"
-      "\006proto3"
+      "\"#\n\005Label\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\tB\177\n"
+      "#io.estafette.ci.protos.contracts.v1Z<gi"
+      "thub.com/estafette/estafette-ci-protos-g"
+      "olang/contracts_v1\252\002\031Estafette.CI.Contra"
+      "cts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 207);
+      descriptor, 214);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/label.proto", &protobuf_RegisterTypes);
 }
