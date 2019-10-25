@@ -98,13 +98,13 @@ void AddDescriptorsImpl() {
       "to\"u\n\014BuildLogLine\022\023\n\013line_number\030\001 \001(\003\022"
       "-\n\ttimestamp\030\002 \001(\0132\032.google.protobuf.Tim"
       "estamp\022\023\n\013stream_type\030\003 \001(\t\022\014\n\004text\030\004 \001("
-      "\tB{\n\034io.estafette.ci.contracts.v1Z\?githu"
-      "b.com/estafette/estafette-ci-contracts-g"
-      "olang/contracts_v1\252\002\031Estafette.CI.Contra"
-      "cts.V1b\006proto3"
+      "\tBx\n\034io.estafette.ci.contracts.v1Z<githu"
+      "b.com/estafette/estafette-ci-protos-gola"
+      "ng/contracts_v1\252\002\031Estafette.CI.Contracts"
+      ".V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 334);
+      descriptor, 331);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/build_log_line.proto", &protobuf_RegisterTypes);
   ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::AddDescriptors();

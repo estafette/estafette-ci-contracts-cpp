@@ -111,13 +111,13 @@ void AddDescriptorsImpl() {
       " \003(\0132#.manifest.v1.EstafetteReleaseActio"
       "n\022/\n\010triggers\030\004 \003(\0132\035.manifest.v1.Estafe"
       "tteTrigger\022+\n\006stages\030\005 \003(\0132\033.manifest.v1"
-      ".EstafetteStageBx\n\033io.estafette.ci.manif"
-      "est.v1Z>github.com/estafette/estafette-c"
-      "i-contracts-golang/manifest_v1\252\002\030Estafet"
-      "te.CI.Manifest.V1b\006proto3"
+      ".EstafetteStageBu\n\033io.estafette.ci.manif"
+      "est.v1Z;github.com/estafette/estafette-c"
+      "i-protos-golang/manifest_v1\252\002\030Estafette."
+      "CI.Manifest.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 505);
+      descriptor, 502);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "manifest.v1/estafette_release.proto", &protobuf_RegisterTypes);
   ::protobuf_manifest_2ev1_2festafette_5frelease_5faction_2eproto::AddDescriptors();

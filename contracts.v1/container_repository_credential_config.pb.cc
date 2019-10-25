@@ -92,13 +92,13 @@ void AddDescriptorsImpl() {
       "ential_config.proto\022\014contracts.v1\"]\n#Con"
       "tainerRepositoryCredentialConfig\022\022\n\nrepo"
       "sitory\030\001 \001(\t\022\020\n\010username\030\002 \001(\t\022\020\n\010passwo"
-      "rd\030\003 \001(\tB{\n\034io.estafette.ci.contracts.v1"
-      "Z\?github.com/estafette/estafette-ci-cont"
-      "racts-golang/contracts_v1\252\002\031Estafette.CI"
-      ".Contracts.V1b\006proto3"
+      "rd\030\003 \001(\tBx\n\034io.estafette.ci.contracts.v1"
+      "Z<github.com/estafette/estafette-ci-prot"
+      "os-golang/contracts_v1\252\002\031Estafette.CI.Co"
+      "ntracts.V1b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 301);
+      descriptor, 298);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/container_repository_credential_config.proto", &protobuf_RegisterTypes);
 }

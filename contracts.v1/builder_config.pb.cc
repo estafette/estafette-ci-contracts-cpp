@@ -160,14 +160,14 @@ void AddDescriptorsImpl() {
       "ersion\030\r \001(\0132 .contracts.v1.BuildVersion"
       "Config\0223\n\013credentials\030\016 \003(\0132\036.contracts."
       "v1.CredentialConfig\0228\n\016trusted_images\030\017 "
-      "\003(\0132 .contracts.v1.TrustedImageConfigB{\n"
-      "\034io.estafette.ci.contracts.v1Z\?github.co"
-      "m/estafette/estafette-ci-contracts-golan"
-      "g/contracts_v1\252\002\031Estafette.CI.Contracts."
-      "V1b\006proto3"
+      "\003(\0132 .contracts.v1.TrustedImageConfigBx\n"
+      "\034io.estafette.ci.contracts.v1Z<github.co"
+      "m/estafette/estafette-ci-protos-golang/c"
+      "ontracts_v1\252\002\031Estafette.CI.Contracts.V1b"
+      "\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1130);
+      descriptor, 1127);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "contracts.v1/builder_config.proto", &protobuf_RegisterTypes);
   ::protobuf_contracts_2ev1_2fbuild_5fparams_5fconfig_2eproto::AddDescriptors();
