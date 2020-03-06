@@ -6,131 +6,98 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
-
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteCustomVersion;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EstafetteSemverVersion;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto
+#include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteCustomVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_EstafetteSemverVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto;
 namespace estafette {
 namespace ci {
 namespace manifest {
 namespace v1 {
 class EstafetteVersionDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EstafetteVersion>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EstafetteVersion> _instance;
 } _EstafetteVersion_default_instance_;
 }  // namespace v1
 }  // namespace manifest
 }  // namespace ci
 }  // namespace estafette
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto {
-static void InitDefaultsEstafetteVersion() {
+static void InitDefaultsscc_info_EstafetteVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::estafette::ci::manifest::v1::_EstafetteVersion_default_instance_;
     new (ptr) ::estafette::ci::manifest::v1::EstafetteVersion();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
   ::estafette::ci::manifest::v1::EstafetteVersion::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_EstafetteVersion =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsEstafetteVersion}, {
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto::scc_info_EstafetteSemverVersion.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto::scc_info_EstafetteCustomVersion.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_EstafetteVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_EstafetteVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto}, {
+      &scc_info_EstafetteSemverVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto.base,
+      &scc_info_EstafetteCustomVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_EstafetteVersion.base);
-}
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto = nullptr;
 
-::google::protobuf::Metadata file_level_metadata[1];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteVersion, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteVersion, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteVersion, semver_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteVersion, custom_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteVersion, semver_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteVersion, custom_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::estafette::ci::manifest::v1::EstafetteVersion)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::estafette::ci::manifest::v1::_EstafetteVersion_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::estafette::ci::manifest::v1::_EstafetteVersion_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "estafette/ci/manifest/v1/estafette_version.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+const char descriptor_table_protodef_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto[] =
+  "\n0estafette/ci/manifest/v1/estafette_ver"
+  "sion.proto\022\030estafette.ci.manifest.v1\0327es"
+  "tafette/ci/manifest/v1/estafette_custom_"
+  "version.proto\0327estafette/ci/manifest/v1/"
+  "estafette_semver_version.proto\"\226\001\n\020Estaf"
+  "etteVersion\022@\n\006semver\030\001 \001(\01320.estafette."
+  "ci.manifest.v1.EstafetteSemverVersion\022@\n"
+  "\006custom\030\002 \001(\01320.estafette.ci.manifest.v1"
+  ".EstafetteCustomVersionBx\n\034com.estafette"
+  ".ci.manifest.v1P\001Z;github.com/estafette/"
+  "estafette-ci-protos-golang/manifest_v1\252\002"
+  "\030Estafette.Ci.Manifest.V1b\006proto3"
+  ;
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto_deps[2] = {
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto_sccs[1] = {
+  &scc_info_EstafetteVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto_once;
+static bool descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto = {
+  &descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto_initialized, descriptor_table_protodef_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto, "estafette/ci/manifest/v1/estafette_version.proto", 473,
+  &descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto_once, descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto_sccs, descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto_deps, 1, 2,
+  schemas, file_default_instances, TableStruct_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto::offsets,
+  file_level_metadata_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto, 1, file_level_enum_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto, file_level_service_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n0estafette/ci/manifest/v1/estafette_ver"
-      "sion.proto\022\030estafette.ci.manifest.v1\0327es"
-      "tafette/ci/manifest/v1/estafette_custom_"
-      "version.proto\0327estafette/ci/manifest/v1/"
-      "estafette_semver_version.proto\"\226\001\n\020Estaf"
-      "etteVersion\022@\n\006semver\030\001 \001(\01320.estafette."
-      "ci.manifest.v1.EstafetteSemverVersion\022@\n"
-      "\006custom\030\002 \001(\01320.estafette.ci.manifest.v1"
-      ".EstafetteCustomVersionBx\n\034com.estafette"
-      ".ci.manifest.v1P\001Z;github.com/estafette/"
-      "estafette-ci-protos-golang/manifest_v1\252\002"
-      "\030Estafette.Ci.Manifest.V1b\006proto3"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 473);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "estafette/ci/manifest/v1/estafette_version.proto", &protobuf_RegisterTypes);
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcustom_5fversion_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fsemver_5fversion_2eproto::AddDescriptors();
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto), true);
 namespace estafette {
 namespace ci {
 namespace manifest {
@@ -144,17 +111,31 @@ void EstafetteVersion::InitAsDefaultInstance() {
   ::estafette::ci::manifest::v1::_EstafetteVersion_default_instance_._instance.get_mutable()->custom_ = const_cast< ::estafette::ci::manifest::v1::EstafetteCustomVersion*>(
       ::estafette::ci::manifest::v1::EstafetteCustomVersion::internal_default_instance());
 }
+class EstafetteVersion::HasBitSetters {
+ public:
+  static const ::estafette::ci::manifest::v1::EstafetteSemverVersion& semver(const EstafetteVersion* msg);
+  static const ::estafette::ci::manifest::v1::EstafetteCustomVersion& custom(const EstafetteVersion* msg);
+};
+
+const ::estafette::ci::manifest::v1::EstafetteSemverVersion&
+EstafetteVersion::HasBitSetters::semver(const EstafetteVersion* msg) {
+  return *msg->semver_;
+}
+const ::estafette::ci::manifest::v1::EstafetteCustomVersion&
+EstafetteVersion::HasBitSetters::custom(const EstafetteVersion* msg) {
+  return *msg->custom_;
+}
 void EstafetteVersion::clear_semver() {
-  if (GetArenaNoVirtual() == NULL && semver_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && semver_ != nullptr) {
     delete semver_;
   }
-  semver_ = NULL;
+  semver_ = nullptr;
 }
 void EstafetteVersion::clear_custom() {
-  if (GetArenaNoVirtual() == NULL && custom_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && custom_ != nullptr) {
     delete custom_;
   }
-  custom_ = NULL;
+  custom_ = nullptr;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EstafetteVersion::kSemverFieldNumber;
@@ -162,30 +143,29 @@ const int EstafetteVersion::kCustomFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EstafetteVersion::EstafetteVersion()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto::scc_info_EstafetteVersion.base);
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:estafette.ci.manifest.v1.EstafetteVersion)
 }
 EstafetteVersion::EstafetteVersion(const EstafetteVersion& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_semver()) {
     semver_ = new ::estafette::ci::manifest::v1::EstafetteSemverVersion(*from.semver_);
   } else {
-    semver_ = NULL;
+    semver_ = nullptr;
   }
   if (from.has_custom()) {
     custom_ = new ::estafette::ci::manifest::v1::EstafetteCustomVersion(*from.custom_);
   } else {
-    custom_ = NULL;
+    custom_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:estafette.ci.manifest.v1.EstafetteVersion)
 }
 
 void EstafetteVersion::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_EstafetteVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto.base);
   ::memset(&semver_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&custom_) -
       reinterpret_cast<char*>(&semver_)) + sizeof(custom_));
@@ -204,49 +184,85 @@ void EstafetteVersion::SharedDtor() {
 void EstafetteVersion::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EstafetteVersion::descriptor() {
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EstafetteVersion& EstafetteVersion::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto::scc_info_EstafetteVersion.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_EstafetteVersion_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void EstafetteVersion::Clear() {
 // @@protoc_insertion_point(message_clear_start:estafette.ci.manifest.v1.EstafetteVersion)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == NULL && semver_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && semver_ != nullptr) {
     delete semver_;
   }
-  semver_ = NULL;
-  if (GetArenaNoVirtual() == NULL && custom_ != NULL) {
+  semver_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && custom_ != nullptr) {
     delete custom_;
   }
-  custom_ = NULL;
+  custom_ = nullptr;
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EstafetteVersion::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // .estafette.ci.manifest.v1.EstafetteSemverVersion semver = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(mutable_semver(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .estafette.ci.manifest.v1.EstafetteCustomVersion custom = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(mutable_custom(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EstafetteVersion::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
   // @@protoc_insertion_point(parse_start:estafette.ci.manifest.v1.EstafetteVersion)
   for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // .estafette.ci.manifest.v1.EstafetteSemverVersion semver = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_semver()));
         } else {
           goto handle_unusual;
@@ -256,9 +272,8 @@ bool EstafetteVersion::MergePartialFromCodedStream(
 
       // .estafette.ci.manifest.v1.EstafetteCustomVersion custom = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_custom()));
         } else {
           goto handle_unusual;
@@ -271,7 +286,7 @@ bool EstafetteVersion::MergePartialFromCodedStream(
         if (tag == 0) {
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
               input, tag, _internal_metadata_.mutable_unknown_fields()));
         break;
       }
@@ -285,56 +300,56 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EstafetteVersion::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:estafette.ci.manifest.v1.EstafetteVersion)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .estafette.ci.manifest.v1.EstafetteSemverVersion semver = 1;
   if (this->has_semver()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_semver(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, HasBitSetters::semver(this), output);
   }
 
   // .estafette.ci.manifest.v1.EstafetteCustomVersion custom = 2;
   if (this->has_custom()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_custom(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, HasBitSetters::custom(this), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:estafette.ci.manifest.v1.EstafetteVersion)
 }
 
-::google::protobuf::uint8* EstafetteVersion::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* EstafetteVersion::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:estafette.ci.manifest.v1.EstafetteVersion)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .estafette.ci.manifest.v1.EstafetteSemverVersion semver = 1;
   if (this->has_semver()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_semver(), deterministic, target);
+        1, HasBitSetters::semver(this), target);
   }
 
   // .estafette.ci.manifest.v1.EstafetteCustomVersion custom = 2;
   if (this->has_custom()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_custom(), deterministic, target);
+        2, HasBitSetters::custom(this), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:estafette.ci.manifest.v1.EstafetteVersion)
   return target;
@@ -344,39 +359,43 @@ size_t EstafetteVersion::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:estafette.ci.manifest.v1.EstafetteVersion)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
   }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // .estafette.ci.manifest.v1.EstafetteSemverVersion semver = 1;
   if (this->has_semver()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *semver_);
   }
 
   // .estafette.ci.manifest.v1.EstafetteCustomVersion custom = 2;
   if (this->has_custom()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *custom_);
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void EstafetteVersion::MergeFrom(const ::google::protobuf::Message& from) {
+void EstafetteVersion::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:estafette.ci.manifest.v1.EstafetteVersion)
   GOOGLE_DCHECK_NE(&from, this);
   const EstafetteVersion* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EstafetteVersion>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<EstafetteVersion>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:estafette.ci.manifest.v1.EstafetteVersion)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:estafette.ci.manifest.v1.EstafetteVersion)
     MergeFrom(*source);
@@ -387,7 +406,7 @@ void EstafetteVersion::MergeFrom(const EstafetteVersion& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:estafette.ci.manifest.v1.EstafetteVersion)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_semver()) {
@@ -398,7 +417,7 @@ void EstafetteVersion::MergeFrom(const EstafetteVersion& from) {
   }
 }
 
-void EstafetteVersion::CopyFrom(const ::google::protobuf::Message& from) {
+void EstafetteVersion::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:estafette.ci.manifest.v1.EstafetteVersion)
   if (&from == this) return;
   Clear();
@@ -422,14 +441,13 @@ void EstafetteVersion::Swap(EstafetteVersion* other) {
 }
 void EstafetteVersion::InternalSwap(EstafetteVersion* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(semver_, other->semver_);
   swap(custom_, other->custom_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata EstafetteVersion::GetMetadata() const {
-  protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fversion_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata EstafetteVersion::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -438,12 +456,11 @@ void EstafetteVersion::InternalSwap(EstafetteVersion* other) {
 }  // namespace manifest
 }  // namespace ci
 }  // namespace estafette
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::estafette::ci::manifest::v1::EstafetteVersion* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteVersion >(Arena* arena) {
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::estafette::ci::manifest::v1::EstafetteVersion* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteVersion >(Arena* arena) {
   return Arena::CreateInternal< ::estafette::ci::manifest::v1::EstafetteVersion >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

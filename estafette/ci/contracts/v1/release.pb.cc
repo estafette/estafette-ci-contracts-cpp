@@ -6,150 +6,115 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
-
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto ::google::protobuf::internal::SCCInfo<7> scc_info_EstafetteEvent;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto
-namespace protobuf_google_2fprotobuf_2fduration_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
-}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
-namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2ftimestamp_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Timestamp;
-}  // namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto
+#include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<7> scc_info_EstafetteEvent_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_google_2fprotobuf_2fduration_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Duration_google_2fprotobuf_2fduration_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_google_2fprotobuf_2ftimestamp_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Timestamp_google_2fprotobuf_2ftimestamp_2eproto;
 namespace estafette {
 namespace ci {
 namespace contracts {
 namespace v1 {
 class ReleaseDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Release>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Release> _instance;
 } _Release_default_instance_;
 }  // namespace v1
 }  // namespace contracts
 }  // namespace ci
 }  // namespace estafette
-namespace protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto {
-static void InitDefaultsRelease() {
+static void InitDefaultsscc_info_Release_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::estafette::ci::contracts::v1::_Release_default_instance_;
     new (ptr) ::estafette::ci::contracts::v1::Release();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
   ::estafette::ci::contracts::v1::Release::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<3> scc_info_Release =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsRelease}, {
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto::scc_info_EstafetteEvent.base,
-      &protobuf_google_2fprotobuf_2ftimestamp_2eproto::scc_info_Timestamp.base,
-      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_Release_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsscc_info_Release_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto}, {
+      &scc_info_EstafetteEvent_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto.base,
+      &scc_info_Timestamp_google_2fprotobuf_2ftimestamp_2eproto.base,
+      &scc_info_Duration_google_2fprotobuf_2fduration_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_Release.base);
-}
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto = nullptr;
 
-::google::protobuf::Metadata file_level_metadata[1];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, action_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, repo_source_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, repo_owner_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, release_version_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, release_status_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, events_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, inserted_at_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, updated_at_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, duration_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, name_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, action_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, id_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, repo_source_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, repo_owner_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, release_version_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, release_status_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, events_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, inserted_at_time_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, updated_at_time_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Release, duration_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::estafette::ci::contracts::v1::Release)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::estafette::ci::contracts::v1::_Release_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::estafette::ci::contracts::v1::_Release_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "estafette/ci/contracts/v1/release.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+const char descriptor_table_protodef_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto[] =
+  "\n\'estafette/ci/contracts/v1/release.prot"
+  "o\022\031estafette.ci.contracts.v1\032\036google/pro"
+  "tobuf/duration.proto\032\037google/protobuf/ti"
+  "mestamp.proto\032.estafette/ci/manifest/v1/"
+  "estafette_event.proto\"\337\002\n\007Release\022\014\n\004nam"
+  "e\030\001 \001(\t\022\016\n\006action\030\002 \001(\t\022\n\n\002id\030\003 \001(\t\022\023\n\013r"
+  "epo_source\030\004 \001(\t\022\022\n\nrepo_owner\030\005 \001(\t\022\027\n\017"
+  "release_version\030\006 \001(\t\022\026\n\016release_status\030"
+  "\007 \001(\t\0228\n\006events\030\010 \003(\0132(.estafette.ci.man"
+  "ifest.v1.EstafetteEvent\0224\n\020inserted_at_t"
+  "ime\030\t \001(\0132\032.google.protobuf.Timestamp\0223\n"
+  "\017updated_at_time\030\n \001(\0132\032.google.protobuf"
+  ".Timestamp\022+\n\010duration\030\013 \001(\0132\031.google.pr"
+  "otobuf.DurationB{\n\035com.estafette.ci.cont"
+  "racts.v1P\001Z<github.com/estafette/estafet"
+  "te-ci-protos-golang/contracts/v1\252\002\031Estaf"
+  "ette.Ci.Contracts.V1b\006proto3"
+  ;
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto_deps[3] = {
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto,
+  &::descriptor_table_google_2fprotobuf_2fduration_2eproto,
+  &::descriptor_table_google_2fprotobuf_2ftimestamp_2eproto,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto_sccs[1] = {
+  &scc_info_Release_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto_once;
+static bool descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto = {
+  &descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto_initialized, descriptor_table_protodef_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto, "estafette/ci/contracts/v1/release.proto", 668,
+  &descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto_once, descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto_sccs, descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto_deps, 1, 3,
+  schemas, file_default_instances, TableStruct_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto::offsets,
+  file_level_metadata_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto, 1, file_level_enum_descriptors_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto, file_level_service_descriptors_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\'estafette/ci/contracts/v1/release.prot"
-      "o\022\031estafette.ci.contracts.v1\032\036google/pro"
-      "tobuf/duration.proto\032\037google/protobuf/ti"
-      "mestamp.proto\032.estafette/ci/manifest/v1/"
-      "estafette_event.proto\"\337\002\n\007Release\022\014\n\004nam"
-      "e\030\001 \001(\t\022\016\n\006action\030\002 \001(\t\022\n\n\002id\030\003 \001(\t\022\023\n\013r"
-      "epo_source\030\004 \001(\t\022\022\n\nrepo_owner\030\005 \001(\t\022\027\n\017"
-      "release_version\030\006 \001(\t\022\026\n\016release_status\030"
-      "\007 \001(\t\0228\n\006events\030\010 \003(\0132(.estafette.ci.man"
-      "ifest.v1.EstafetteEvent\0224\n\020inserted_at_t"
-      "ime\030\t \001(\0132\032.google.protobuf.Timestamp\0223\n"
-      "\017updated_at_time\030\n \001(\0132\032.google.protobuf"
-      ".Timestamp\022+\n\010duration\030\013 \001(\0132\031.google.pr"
-      "otobuf.DurationB{\n\035com.estafette.ci.cont"
-      "racts.v1P\001Z<github.com/estafette/estafet"
-      "te-ci-protos-golang/contracts/v1\252\002\031Estaf"
-      "ette.Ci.Contracts.V1b\006proto3"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 668);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "estafette/ci/contracts/v1/release.proto", &protobuf_RegisterTypes);
-  ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();
-  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto::AddDescriptors();
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto), true);
 namespace estafette {
 namespace ci {
 namespace contracts {
@@ -158,33 +123,52 @@ namespace v1 {
 // ===================================================================
 
 void Release::InitAsDefaultInstance() {
-  ::estafette::ci::contracts::v1::_Release_default_instance_._instance.get_mutable()->inserted_at_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  ::estafette::ci::contracts::v1::_Release_default_instance_._instance.get_mutable()->updated_at_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  ::estafette::ci::contracts::v1::_Release_default_instance_._instance.get_mutable()->duration_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
+  ::estafette::ci::contracts::v1::_Release_default_instance_._instance.get_mutable()->inserted_at_time_ = const_cast< PROTOBUF_NAMESPACE_ID::Timestamp*>(
+      PROTOBUF_NAMESPACE_ID::Timestamp::internal_default_instance());
+  ::estafette::ci::contracts::v1::_Release_default_instance_._instance.get_mutable()->updated_at_time_ = const_cast< PROTOBUF_NAMESPACE_ID::Timestamp*>(
+      PROTOBUF_NAMESPACE_ID::Timestamp::internal_default_instance());
+  ::estafette::ci::contracts::v1::_Release_default_instance_._instance.get_mutable()->duration_ = const_cast< PROTOBUF_NAMESPACE_ID::Duration*>(
+      PROTOBUF_NAMESPACE_ID::Duration::internal_default_instance());
+}
+class Release::HasBitSetters {
+ public:
+  static const PROTOBUF_NAMESPACE_ID::Timestamp& inserted_at_time(const Release* msg);
+  static const PROTOBUF_NAMESPACE_ID::Timestamp& updated_at_time(const Release* msg);
+  static const PROTOBUF_NAMESPACE_ID::Duration& duration(const Release* msg);
+};
+
+const PROTOBUF_NAMESPACE_ID::Timestamp&
+Release::HasBitSetters::inserted_at_time(const Release* msg) {
+  return *msg->inserted_at_time_;
+}
+const PROTOBUF_NAMESPACE_ID::Timestamp&
+Release::HasBitSetters::updated_at_time(const Release* msg) {
+  return *msg->updated_at_time_;
+}
+const PROTOBUF_NAMESPACE_ID::Duration&
+Release::HasBitSetters::duration(const Release* msg) {
+  return *msg->duration_;
 }
 void Release::clear_events() {
   events_.Clear();
 }
 void Release::clear_inserted_at_time() {
-  if (GetArenaNoVirtual() == NULL && inserted_at_time_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && inserted_at_time_ != nullptr) {
     delete inserted_at_time_;
   }
-  inserted_at_time_ = NULL;
+  inserted_at_time_ = nullptr;
 }
 void Release::clear_updated_at_time() {
-  if (GetArenaNoVirtual() == NULL && updated_at_time_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && updated_at_time_ != nullptr) {
     delete updated_at_time_;
   }
-  updated_at_time_ = NULL;
+  updated_at_time_ = nullptr;
 }
 void Release::clear_duration() {
-  if (GetArenaNoVirtual() == NULL && duration_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && duration_ != nullptr) {
     delete duration_;
   }
-  duration_ = NULL;
+  duration_ = nullptr;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Release::kNameFieldNumber;
@@ -201,71 +185,70 @@ const int Release::kDurationFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Release::Release()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto::scc_info_Release.base);
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:estafette.ci.contracts.v1.Release)
 }
 Release::Release(const Release& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       events_(from.events_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
-  action_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.action().size() > 0) {
-    action_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.action_);
+    action_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.action_);
   }
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
-    id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
+    id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
   }
-  repo_source_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  repo_source_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.repo_source().size() > 0) {
-    repo_source_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_source_);
+    repo_source_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_source_);
   }
-  repo_owner_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  repo_owner_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.repo_owner().size() > 0) {
-    repo_owner_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_owner_);
+    repo_owner_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_owner_);
   }
-  release_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  release_version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.release_version().size() > 0) {
-    release_version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.release_version_);
+    release_version_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.release_version_);
   }
-  release_status_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  release_status_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.release_status().size() > 0) {
-    release_status_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.release_status_);
+    release_status_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.release_status_);
   }
   if (from.has_inserted_at_time()) {
-    inserted_at_time_ = new ::google::protobuf::Timestamp(*from.inserted_at_time_);
+    inserted_at_time_ = new PROTOBUF_NAMESPACE_ID::Timestamp(*from.inserted_at_time_);
   } else {
-    inserted_at_time_ = NULL;
+    inserted_at_time_ = nullptr;
   }
   if (from.has_updated_at_time()) {
-    updated_at_time_ = new ::google::protobuf::Timestamp(*from.updated_at_time_);
+    updated_at_time_ = new PROTOBUF_NAMESPACE_ID::Timestamp(*from.updated_at_time_);
   } else {
-    updated_at_time_ = NULL;
+    updated_at_time_ = nullptr;
   }
   if (from.has_duration()) {
-    duration_ = new ::google::protobuf::Duration(*from.duration_);
+    duration_ = new PROTOBUF_NAMESPACE_ID::Duration(*from.duration_);
   } else {
-    duration_ = NULL;
+    duration_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:estafette.ci.contracts.v1.Release)
 }
 
 void Release::SharedCtor() {
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  action_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_source_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_owner_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  release_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  release_status_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Release_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto.base);
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  action_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_source_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_owner_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  release_version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  release_status_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&inserted_at_time_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&duration_) -
       reinterpret_cast<char*>(&inserted_at_time_)) + sizeof(duration_));
@@ -277,13 +260,13 @@ Release::~Release() {
 }
 
 void Release::SharedDtor() {
-  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  action_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_source_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_owner_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  release_version_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  release_status_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  action_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_source_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_owner_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  release_version_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  release_status_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete inserted_at_time_;
   if (this != internal_default_instance()) delete updated_at_time_;
   if (this != internal_default_instance()) delete duration_;
@@ -292,65 +275,169 @@ void Release::SharedDtor() {
 void Release::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Release::descriptor() {
-  ::protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const Release& Release::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto::scc_info_Release.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Release_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void Release::Clear() {
 // @@protoc_insertion_point(message_clear_start:estafette.ci.contracts.v1.Release)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   events_.Clear();
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  action_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_owner_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  release_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  release_status_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && inserted_at_time_ != NULL) {
+  name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  action_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_source_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_owner_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  release_version_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  release_status_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == nullptr && inserted_at_time_ != nullptr) {
     delete inserted_at_time_;
   }
-  inserted_at_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && updated_at_time_ != NULL) {
+  inserted_at_time_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && updated_at_time_ != nullptr) {
     delete updated_at_time_;
   }
-  updated_at_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && duration_ != NULL) {
+  updated_at_time_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && duration_ != nullptr) {
     delete duration_;
   }
-  duration_ = NULL;
+  duration_ = nullptr;
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* Release::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string name = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_name(), ptr, ctx, "estafette.ci.contracts.v1.Release.name");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string action = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_action(), ptr, ctx, "estafette.ci.contracts.v1.Release.action");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string id = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_id(), ptr, ctx, "estafette.ci.contracts.v1.Release.id");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string repo_source = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_repo_source(), ptr, ctx, "estafette.ci.contracts.v1.Release.repo_source");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string repo_owner = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_repo_owner(), ptr, ctx, "estafette.ci.contracts.v1.Release.repo_owner");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string release_version = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_release_version(), ptr, ctx, "estafette.ci.contracts.v1.Release.release_version");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string release_status = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_release_status(), ptr, ctx, "estafette.ci.contracts.v1.Release.release_status");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_events(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 66);
+        } else goto handle_unusual;
+        continue;
+      // .google.protobuf.Timestamp inserted_at_time = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+          ptr = ctx->ParseMessage(mutable_inserted_at_time(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .google.protobuf.Timestamp updated_at_time = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          ptr = ctx->ParseMessage(mutable_updated_at_time(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .google.protobuf.Duration duration = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+          ptr = ctx->ParseMessage(mutable_duration(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool Release::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
   // @@protoc_insertion_point(parse_start:estafette.ci.contracts.v1.Release)
   for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->name().data(), static_cast<int>(this->name().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Release.name"));
         } else {
           goto handle_unusual;
@@ -360,13 +447,12 @@ bool Release::MergePartialFromCodedStream(
 
       // string action = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_action()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->action().data(), static_cast<int>(this->action().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Release.action"));
         } else {
           goto handle_unusual;
@@ -376,13 +462,12 @@ bool Release::MergePartialFromCodedStream(
 
       // string id = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->id().data(), static_cast<int>(this->id().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Release.id"));
         } else {
           goto handle_unusual;
@@ -392,13 +477,12 @@ bool Release::MergePartialFromCodedStream(
 
       // string repo_source = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_repo_source()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->repo_source().data(), static_cast<int>(this->repo_source().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Release.repo_source"));
         } else {
           goto handle_unusual;
@@ -408,13 +492,12 @@ bool Release::MergePartialFromCodedStream(
 
       // string repo_owner = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_repo_owner()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->repo_owner().data(), static_cast<int>(this->repo_owner().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Release.repo_owner"));
         } else {
           goto handle_unusual;
@@ -424,13 +507,12 @@ bool Release::MergePartialFromCodedStream(
 
       // string release_version = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_release_version()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->release_version().data(), static_cast<int>(this->release_version().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Release.release_version"));
         } else {
           goto handle_unusual;
@@ -440,13 +522,12 @@ bool Release::MergePartialFromCodedStream(
 
       // string release_status = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_release_status()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->release_status().data(), static_cast<int>(this->release_status().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Release.release_status"));
         } else {
           goto handle_unusual;
@@ -456,9 +537,8 @@ bool Release::MergePartialFromCodedStream(
 
       // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                 input, add_events()));
         } else {
           goto handle_unusual;
@@ -468,9 +548,8 @@ bool Release::MergePartialFromCodedStream(
 
       // .google.protobuf.Timestamp inserted_at_time = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (74 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_inserted_at_time()));
         } else {
           goto handle_unusual;
@@ -480,9 +559,8 @@ bool Release::MergePartialFromCodedStream(
 
       // .google.protobuf.Timestamp updated_at_time = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (82 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_updated_at_time()));
         } else {
           goto handle_unusual;
@@ -492,9 +570,8 @@ bool Release::MergePartialFromCodedStream(
 
       // .google.protobuf.Duration duration = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (90 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_duration()));
         } else {
           goto handle_unusual;
@@ -507,7 +584,7 @@ bool Release::MergePartialFromCodedStream(
         if (tag == 0) {
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
               input, tag, _internal_metadata_.mutable_unknown_fields()));
         break;
       }
@@ -521,87 +598,88 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void Release::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:estafette.ci.contracts.v1.Release)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string name = 1;
   if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), static_cast<int>(this->name().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.name");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->name(), output);
   }
 
   // string action = 2;
   if (this->action().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->action().data(), static_cast<int>(this->action().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.action");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->action(), output);
   }
 
   // string id = 3;
   if (this->id().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->id().data(), static_cast<int>(this->id().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.id");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->id(), output);
   }
 
   // string repo_source = 4;
   if (this->repo_source().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_source().data(), static_cast<int>(this->repo_source().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.repo_source");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       4, this->repo_source(), output);
   }
 
   // string repo_owner = 5;
   if (this->repo_owner().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_owner().data(), static_cast<int>(this->repo_owner().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.repo_owner");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       5, this->repo_owner(), output);
   }
 
   // string release_version = 6;
   if (this->release_version().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->release_version().data(), static_cast<int>(this->release_version().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.release_version");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       6, this->release_version(), output);
   }
 
   // string release_status = 7;
   if (this->release_status().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->release_status().data(), static_cast<int>(this->release_status().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.release_status");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       7, this->release_status(), output);
   }
 
   // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 8;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->events_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       8,
       this->events(static_cast<int>(i)),
       output);
@@ -609,145 +687,144 @@ void Release::SerializeWithCachedSizes(
 
   // .google.protobuf.Timestamp inserted_at_time = 9;
   if (this->has_inserted_at_time()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, this->_internal_inserted_at_time(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      9, HasBitSetters::inserted_at_time(this), output);
   }
 
   // .google.protobuf.Timestamp updated_at_time = 10;
   if (this->has_updated_at_time()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      10, this->_internal_updated_at_time(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      10, HasBitSetters::updated_at_time(this), output);
   }
 
   // .google.protobuf.Duration duration = 11;
   if (this->has_duration()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      11, this->_internal_duration(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      11, HasBitSetters::duration(this), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:estafette.ci.contracts.v1.Release)
 }
 
-::google::protobuf::uint8* Release::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Release::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:estafette.ci.contracts.v1.Release)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string name = 1;
   if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), static_cast<int>(this->name().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.name");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         1, this->name(), target);
   }
 
   // string action = 2;
   if (this->action().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->action().data(), static_cast<int>(this->action().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.action");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         2, this->action(), target);
   }
 
   // string id = 3;
   if (this->id().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->id().data(), static_cast<int>(this->id().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.id");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         3, this->id(), target);
   }
 
   // string repo_source = 4;
   if (this->repo_source().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_source().data(), static_cast<int>(this->repo_source().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.repo_source");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         4, this->repo_source(), target);
   }
 
   // string repo_owner = 5;
   if (this->repo_owner().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_owner().data(), static_cast<int>(this->repo_owner().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.repo_owner");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         5, this->repo_owner(), target);
   }
 
   // string release_version = 6;
   if (this->release_version().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->release_version().data(), static_cast<int>(this->release_version().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.release_version");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         6, this->release_version(), target);
   }
 
   // string release_status = 7;
   if (this->release_status().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->release_status().data(), static_cast<int>(this->release_status().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Release.release_status");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         7, this->release_status(), target);
   }
 
   // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 8;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->events_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, this->events(static_cast<int>(i)), deterministic, target);
+        8, this->events(static_cast<int>(i)), target);
   }
 
   // .google.protobuf.Timestamp inserted_at_time = 9;
   if (this->has_inserted_at_time()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        9, this->_internal_inserted_at_time(), deterministic, target);
+        9, HasBitSetters::inserted_at_time(this), target);
   }
 
   // .google.protobuf.Timestamp updated_at_time = 10;
   if (this->has_updated_at_time()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        10, this->_internal_updated_at_time(), deterministic, target);
+        10, HasBitSetters::updated_at_time(this), target);
   }
 
   // .google.protobuf.Duration duration = 11;
   if (this->has_duration()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        11, this->_internal_duration(), deterministic, target);
+        11, HasBitSetters::duration(this), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:estafette.ci.contracts.v1.Release)
   return target;
@@ -757,18 +834,22 @@ size_t Release::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:estafette.ci.contracts.v1.Release)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
   }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 8;
   {
     unsigned int count = static_cast<unsigned int>(this->events_size());
     total_size += 1UL * count;
     for (unsigned int i = 0; i < count; i++) {
       total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           this->events(static_cast<int>(i)));
     }
   }
@@ -776,87 +857,87 @@ size_t Release::ByteSizeLong() const {
   // string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->name());
   }
 
   // string action = 2;
   if (this->action().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->action());
   }
 
   // string id = 3;
   if (this->id().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->id());
   }
 
   // string repo_source = 4;
   if (this->repo_source().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->repo_source());
   }
 
   // string repo_owner = 5;
   if (this->repo_owner().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->repo_owner());
   }
 
   // string release_version = 6;
   if (this->release_version().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->release_version());
   }
 
   // string release_status = 7;
   if (this->release_status().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->release_status());
   }
 
   // .google.protobuf.Timestamp inserted_at_time = 9;
   if (this->has_inserted_at_time()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *inserted_at_time_);
   }
 
   // .google.protobuf.Timestamp updated_at_time = 10;
   if (this->has_updated_at_time()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *updated_at_time_);
   }
 
   // .google.protobuf.Duration duration = 11;
   if (this->has_duration()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *duration_);
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Release::MergeFrom(const ::google::protobuf::Message& from) {
+void Release::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:estafette.ci.contracts.v1.Release)
   GOOGLE_DCHECK_NE(&from, this);
   const Release* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Release>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Release>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:estafette.ci.contracts.v1.Release)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:estafette.ci.contracts.v1.Release)
     MergeFrom(*source);
@@ -867,50 +948,50 @@ void Release::MergeFrom(const Release& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:estafette.ci.contracts.v1.Release)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   events_.MergeFrom(from.events_);
   if (from.name().size() > 0) {
 
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
   if (from.action().size() > 0) {
 
-    action_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.action_);
+    action_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.action_);
   }
   if (from.id().size() > 0) {
 
-    id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
+    id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
   }
   if (from.repo_source().size() > 0) {
 
-    repo_source_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_source_);
+    repo_source_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_source_);
   }
   if (from.repo_owner().size() > 0) {
 
-    repo_owner_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_owner_);
+    repo_owner_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_owner_);
   }
   if (from.release_version().size() > 0) {
 
-    release_version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.release_version_);
+    release_version_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.release_version_);
   }
   if (from.release_status().size() > 0) {
 
-    release_status_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.release_status_);
+    release_status_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.release_status_);
   }
   if (from.has_inserted_at_time()) {
-    mutable_inserted_at_time()->::google::protobuf::Timestamp::MergeFrom(from.inserted_at_time());
+    mutable_inserted_at_time()->PROTOBUF_NAMESPACE_ID::Timestamp::MergeFrom(from.inserted_at_time());
   }
   if (from.has_updated_at_time()) {
-    mutable_updated_at_time()->::google::protobuf::Timestamp::MergeFrom(from.updated_at_time());
+    mutable_updated_at_time()->PROTOBUF_NAMESPACE_ID::Timestamp::MergeFrom(from.updated_at_time());
   }
   if (from.has_duration()) {
-    mutable_duration()->::google::protobuf::Duration::MergeFrom(from.duration());
+    mutable_duration()->PROTOBUF_NAMESPACE_ID::Duration::MergeFrom(from.duration());
   }
 }
 
-void Release::CopyFrom(const ::google::protobuf::Message& from) {
+void Release::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:estafette.ci.contracts.v1.Release)
   if (&from == this) return;
   Clear();
@@ -934,30 +1015,29 @@ void Release::Swap(Release* other) {
 }
 void Release::InternalSwap(Release* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   CastToBase(&events_)->InternalSwap(CastToBase(&other->events_));
-  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  action_.Swap(&other->action_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  action_.Swap(&other->action_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  id_.Swap(&other->id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  repo_source_.Swap(&other->repo_source_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  repo_source_.Swap(&other->repo_source_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  repo_owner_.Swap(&other->repo_owner_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  repo_owner_.Swap(&other->repo_owner_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  release_version_.Swap(&other->release_version_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  release_version_.Swap(&other->release_version_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  release_status_.Swap(&other->release_status_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  release_status_.Swap(&other->release_status_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(inserted_at_time_, other->inserted_at_time_);
   swap(updated_at_time_, other->updated_at_time_);
   swap(duration_, other->duration_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata Release::GetMetadata() const {
-  protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Release::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -966,12 +1046,11 @@ void Release::InternalSwap(Release* other) {
 }  // namespace contracts
 }  // namespace ci
 }  // namespace estafette
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::estafette::ci::contracts::v1::Release* Arena::CreateMaybeMessage< ::estafette::ci::contracts::v1::Release >(Arena* arena) {
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::estafette::ci::contracts::v1::Release* Arena::CreateMaybeMessage< ::estafette::ci::contracts::v1::Release >(Arena* arena) {
   return Arena::CreateInternal< ::estafette::ci::contracts::v1::Release >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

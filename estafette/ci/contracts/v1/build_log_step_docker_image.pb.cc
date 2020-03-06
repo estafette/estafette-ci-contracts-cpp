@@ -6,130 +6,99 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
-
-namespace protobuf_google_2fprotobuf_2fduration_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
-}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
+#include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_google_2fprotobuf_2fduration_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Duration_google_2fprotobuf_2fduration_2eproto;
 namespace estafette {
 namespace ci {
 namespace contracts {
 namespace v1 {
 class BuildLogStepDockerImageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<BuildLogStepDockerImage>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<BuildLogStepDockerImage> _instance;
 } _BuildLogStepDockerImage_default_instance_;
 }  // namespace v1
 }  // namespace contracts
 }  // namespace ci
 }  // namespace estafette
-namespace protobuf_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto {
-static void InitDefaultsBuildLogStepDockerImage() {
+static void InitDefaultsscc_info_BuildLogStepDockerImage_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::estafette::ci::contracts::v1::_BuildLogStepDockerImage_default_instance_;
     new (ptr) ::estafette::ci::contracts::v1::BuildLogStepDockerImage();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
   ::estafette::ci::contracts::v1::BuildLogStepDockerImage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_BuildLogStepDockerImage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsBuildLogStepDockerImage}, {
-      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_BuildLogStepDockerImage_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_BuildLogStepDockerImage_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto}, {
+      &scc_info_Duration_google_2fprotobuf_2fduration_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_BuildLogStepDockerImage.base);
-}
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto = nullptr;
 
-::google::protobuf::Metadata file_level_metadata[1];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, tag_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, is_pulled_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, image_size_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, pull_duration_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, error_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, is_trusted_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, name_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, tag_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, is_pulled_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, image_size_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, pull_duration_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, error_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::BuildLogStepDockerImage, is_trusted_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::estafette::ci::contracts::v1::BuildLogStepDockerImage)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::estafette::ci::contracts::v1::_BuildLogStepDockerImage_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::estafette::ci::contracts::v1::_BuildLogStepDockerImage_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "estafette/ci/contracts/v1/build_log_step_docker_image.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+const char descriptor_table_protodef_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto[] =
+  "\n;estafette/ci/contracts/v1/build_log_st"
+  "ep_docker_image.proto\022\031estafette.ci.cont"
+  "racts.v1\032\036google/protobuf/duration.proto"
+  "\"\260\001\n\027BuildLogStepDockerImage\022\014\n\004name\030\001 \001"
+  "(\t\022\013\n\003tag\030\002 \001(\t\022\021\n\tis_pulled\030\003 \001(\010\022\022\n\nim"
+  "age_size\030\004 \001(\003\0220\n\rpull_duration\030\005 \001(\0132\031."
+  "google.protobuf.Duration\022\r\n\005error\030\006 \001(\t\022"
+  "\022\n\nis_trusted\030\007 \001(\010B{\n\035com.estafette.ci."
+  "contracts.v1P\001Z<github.com/estafette/est"
+  "afette-ci-protos-golang/contracts/v1\252\002\031E"
+  "stafette.Ci.Contracts.V1b\006proto3"
+  ;
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto_deps[1] = {
+  &::descriptor_table_google_2fprotobuf_2fduration_2eproto,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto_sccs[1] = {
+  &scc_info_BuildLogStepDockerImage_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto_once;
+static bool descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto = {
+  &descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto_initialized, descriptor_table_protodef_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto, "estafette/ci/contracts/v1/build_log_step_docker_image.proto", 432,
+  &descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto_once, descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto_sccs, descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto_deps, 1, 1,
+  schemas, file_default_instances, TableStruct_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::offsets,
+  file_level_metadata_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto, 1, file_level_enum_descriptors_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto, file_level_service_descriptors_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n;estafette/ci/contracts/v1/build_log_st"
-      "ep_docker_image.proto\022\031estafette.ci.cont"
-      "racts.v1\032\036google/protobuf/duration.proto"
-      "\"\260\001\n\027BuildLogStepDockerImage\022\014\n\004name\030\001 \001"
-      "(\t\022\013\n\003tag\030\002 \001(\t\022\021\n\tis_pulled\030\003 \001(\010\022\022\n\nim"
-      "age_size\030\004 \001(\003\0220\n\rpull_duration\030\005 \001(\0132\031."
-      "google.protobuf.Duration\022\r\n\005error\030\006 \001(\t\022"
-      "\022\n\nis_trusted\030\007 \001(\010B{\n\035com.estafette.ci."
-      "contracts.v1P\001Z<github.com/estafette/est"
-      "afette-ci-protos-golang/contracts/v1\252\002\031E"
-      "stafette.Ci.Contracts.V1b\006proto3"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 432);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "estafette/ci/contracts/v1/build_log_step_docker_image.proto", &protobuf_RegisterTypes);
-  ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto), true);
 namespace estafette {
 namespace ci {
 namespace contracts {
@@ -138,14 +107,23 @@ namespace v1 {
 // ===================================================================
 
 void BuildLogStepDockerImage::InitAsDefaultInstance() {
-  ::estafette::ci::contracts::v1::_BuildLogStepDockerImage_default_instance_._instance.get_mutable()->pull_duration_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
+  ::estafette::ci::contracts::v1::_BuildLogStepDockerImage_default_instance_._instance.get_mutable()->pull_duration_ = const_cast< PROTOBUF_NAMESPACE_ID::Duration*>(
+      PROTOBUF_NAMESPACE_ID::Duration::internal_default_instance());
+}
+class BuildLogStepDockerImage::HasBitSetters {
+ public:
+  static const PROTOBUF_NAMESPACE_ID::Duration& pull_duration(const BuildLogStepDockerImage* msg);
+};
+
+const PROTOBUF_NAMESPACE_ID::Duration&
+BuildLogStepDockerImage::HasBitSetters::pull_duration(const BuildLogStepDockerImage* msg) {
+  return *msg->pull_duration_;
 }
 void BuildLogStepDockerImage::clear_pull_duration() {
-  if (GetArenaNoVirtual() == NULL && pull_duration_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && pull_duration_ != nullptr) {
     delete pull_duration_;
   }
-  pull_duration_ = NULL;
+  pull_duration_ = nullptr;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int BuildLogStepDockerImage::kNameFieldNumber;
@@ -158,32 +136,30 @@ const int BuildLogStepDockerImage::kIsTrustedFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 BuildLogStepDockerImage::BuildLogStepDockerImage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::scc_info_BuildLogStepDockerImage.base);
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:estafette.ci.contracts.v1.BuildLogStepDockerImage)
 }
 BuildLogStepDockerImage::BuildLogStepDockerImage(const BuildLogStepDockerImage& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
-  tag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  tag_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.tag().size() > 0) {
-    tag_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tag_);
+    tag_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.tag_);
   }
-  error_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  error_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.error().size() > 0) {
-    error_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_);
+    error_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.error_);
   }
   if (from.has_pull_duration()) {
-    pull_duration_ = new ::google::protobuf::Duration(*from.pull_duration_);
+    pull_duration_ = new PROTOBUF_NAMESPACE_ID::Duration(*from.pull_duration_);
   } else {
-    pull_duration_ = NULL;
+    pull_duration_ = nullptr;
   }
   ::memcpy(&image_size_, &from.image_size_,
     static_cast<size_t>(reinterpret_cast<char*>(&is_trusted_) -
@@ -192,9 +168,10 @@ BuildLogStepDockerImage::BuildLogStepDockerImage(const BuildLogStepDockerImage& 
 }
 
 void BuildLogStepDockerImage::SharedCtor() {
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  tag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  error_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_BuildLogStepDockerImage_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto.base);
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  tag_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  error_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&pull_duration_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&is_trusted_) -
       reinterpret_cast<char*>(&pull_duration_)) + sizeof(is_trusted_));
@@ -206,64 +183,135 @@ BuildLogStepDockerImage::~BuildLogStepDockerImage() {
 }
 
 void BuildLogStepDockerImage::SharedDtor() {
-  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  tag_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  error_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  tag_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  error_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete pull_duration_;
 }
 
 void BuildLogStepDockerImage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* BuildLogStepDockerImage::descriptor() {
-  ::protobuf_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const BuildLogStepDockerImage& BuildLogStepDockerImage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::scc_info_BuildLogStepDockerImage.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_BuildLogStepDockerImage_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void BuildLogStepDockerImage::Clear() {
 // @@protoc_insertion_point(message_clear_start:estafette.ci.contracts.v1.BuildLogStepDockerImage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  tag_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  error_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && pull_duration_ != NULL) {
+  name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  tag_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  error_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == nullptr && pull_duration_ != nullptr) {
     delete pull_duration_;
   }
-  pull_duration_ = NULL;
+  pull_duration_ = nullptr;
   ::memset(&image_size_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&is_trusted_) -
       reinterpret_cast<char*>(&image_size_)) + sizeof(is_trusted_));
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* BuildLogStepDockerImage::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string name = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_name(), ptr, ctx, "estafette.ci.contracts.v1.BuildLogStepDockerImage.name");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string tag = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_tag(), ptr, ctx, "estafette.ci.contracts.v1.BuildLogStepDockerImage.tag");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_pulled = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          is_pulled_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 image_size = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          image_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .google.protobuf.Duration pull_duration = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr = ctx->ParseMessage(mutable_pull_duration(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string error = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_error(), ptr, ctx, "estafette.ci.contracts.v1.BuildLogStepDockerImage.error");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_trusted = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          is_trusted_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool BuildLogStepDockerImage::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
   // @@protoc_insertion_point(parse_start:estafette.ci.contracts.v1.BuildLogStepDockerImage)
   for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->name().data(), static_cast<int>(this->name().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.BuildLogStepDockerImage.name"));
         } else {
           goto handle_unusual;
@@ -273,13 +321,12 @@ bool BuildLogStepDockerImage::MergePartialFromCodedStream(
 
       // string tag = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_tag()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->tag().data(), static_cast<int>(this->tag().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.BuildLogStepDockerImage.tag"));
         } else {
           goto handle_unusual;
@@ -289,11 +336,10 @@ bool BuildLogStepDockerImage::MergePartialFromCodedStream(
 
       // bool is_pulled = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
 
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_pulled_)));
         } else {
           goto handle_unusual;
@@ -303,11 +349,10 @@ bool BuildLogStepDockerImage::MergePartialFromCodedStream(
 
       // int64 image_size = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
 
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
                  input, &image_size_)));
         } else {
           goto handle_unusual;
@@ -317,9 +362,8 @@ bool BuildLogStepDockerImage::MergePartialFromCodedStream(
 
       // .google.protobuf.Duration pull_duration = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_pull_duration()));
         } else {
           goto handle_unusual;
@@ -329,13 +373,12 @@ bool BuildLogStepDockerImage::MergePartialFromCodedStream(
 
       // string error = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_error()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->error().data(), static_cast<int>(this->error().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.BuildLogStepDockerImage.error"));
         } else {
           goto handle_unusual;
@@ -345,11 +388,10 @@ bool BuildLogStepDockerImage::MergePartialFromCodedStream(
 
       // bool is_trusted = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
 
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_trusted_)));
         } else {
           goto handle_unusual;
@@ -362,7 +404,7 @@ bool BuildLogStepDockerImage::MergePartialFromCodedStream(
         if (tag == 0) {
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
               input, tag, _internal_metadata_.mutable_unknown_fields()));
         break;
       }
@@ -376,136 +418,136 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void BuildLogStepDockerImage::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:estafette.ci.contracts.v1.BuildLogStepDockerImage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string name = 1;
   if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), static_cast<int>(this->name().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.BuildLogStepDockerImage.name");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->name(), output);
   }
 
   // string tag = 2;
   if (this->tag().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->tag().data(), static_cast<int>(this->tag().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.BuildLogStepDockerImage.tag");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->tag(), output);
   }
 
   // bool is_pulled = 3;
   if (this->is_pulled() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->is_pulled(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->is_pulled(), output);
   }
 
   // int64 image_size = 4;
   if (this->image_size() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->image_size(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->image_size(), output);
   }
 
   // .google.protobuf.Duration pull_duration = 5;
   if (this->has_pull_duration()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_pull_duration(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, HasBitSetters::pull_duration(this), output);
   }
 
   // string error = 6;
   if (this->error().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->error().data(), static_cast<int>(this->error().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.BuildLogStepDockerImage.error");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       6, this->error(), output);
   }
 
   // bool is_trusted = 7;
   if (this->is_trusted() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->is_trusted(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(7, this->is_trusted(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:estafette.ci.contracts.v1.BuildLogStepDockerImage)
 }
 
-::google::protobuf::uint8* BuildLogStepDockerImage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* BuildLogStepDockerImage::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:estafette.ci.contracts.v1.BuildLogStepDockerImage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string name = 1;
   if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), static_cast<int>(this->name().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.BuildLogStepDockerImage.name");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         1, this->name(), target);
   }
 
   // string tag = 2;
   if (this->tag().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->tag().data(), static_cast<int>(this->tag().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.BuildLogStepDockerImage.tag");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         2, this->tag(), target);
   }
 
   // bool is_pulled = 3;
   if (this->is_pulled() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->is_pulled(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->is_pulled(), target);
   }
 
   // int64 image_size = 4;
   if (this->image_size() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->image_size(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->image_size(), target);
   }
 
   // .google.protobuf.Duration pull_duration = 5;
   if (this->has_pull_duration()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_pull_duration(), deterministic, target);
+        5, HasBitSetters::pull_duration(this), target);
   }
 
   // string error = 6;
   if (this->error().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->error().data(), static_cast<int>(this->error().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.BuildLogStepDockerImage.error");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         6, this->error(), target);
   }
 
   // bool is_trusted = 7;
   if (this->is_trusted() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->is_trusted(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->is_trusted(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:estafette.ci.contracts.v1.BuildLogStepDockerImage)
   return target;
@@ -515,43 +557,47 @@ size_t BuildLogStepDockerImage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:estafette.ci.contracts.v1.BuildLogStepDockerImage)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
   }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->name());
   }
 
   // string tag = 2;
   if (this->tag().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->tag());
   }
 
   // string error = 6;
   if (this->error().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->error());
   }
 
   // .google.protobuf.Duration pull_duration = 5;
   if (this->has_pull_duration()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *pull_duration_);
   }
 
   // int64 image_size = 4;
   if (this->image_size() != 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->image_size());
   }
 
@@ -565,20 +611,20 @@ size_t BuildLogStepDockerImage::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void BuildLogStepDockerImage::MergeFrom(const ::google::protobuf::Message& from) {
+void BuildLogStepDockerImage::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:estafette.ci.contracts.v1.BuildLogStepDockerImage)
   GOOGLE_DCHECK_NE(&from, this);
   const BuildLogStepDockerImage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const BuildLogStepDockerImage>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<BuildLogStepDockerImage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:estafette.ci.contracts.v1.BuildLogStepDockerImage)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:estafette.ci.contracts.v1.BuildLogStepDockerImage)
     MergeFrom(*source);
@@ -589,23 +635,23 @@ void BuildLogStepDockerImage::MergeFrom(const BuildLogStepDockerImage& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:estafette.ci.contracts.v1.BuildLogStepDockerImage)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.name().size() > 0) {
 
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
   if (from.tag().size() > 0) {
 
-    tag_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tag_);
+    tag_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.tag_);
   }
   if (from.error().size() > 0) {
 
-    error_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_);
+    error_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.error_);
   }
   if (from.has_pull_duration()) {
-    mutable_pull_duration()->::google::protobuf::Duration::MergeFrom(from.pull_duration());
+    mutable_pull_duration()->PROTOBUF_NAMESPACE_ID::Duration::MergeFrom(from.pull_duration());
   }
   if (from.image_size() != 0) {
     set_image_size(from.image_size());
@@ -618,7 +664,7 @@ void BuildLogStepDockerImage::MergeFrom(const BuildLogStepDockerImage& from) {
   }
 }
 
-void BuildLogStepDockerImage::CopyFrom(const ::google::protobuf::Message& from) {
+void BuildLogStepDockerImage::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:estafette.ci.contracts.v1.BuildLogStepDockerImage)
   if (&from == this) return;
   Clear();
@@ -642,22 +688,21 @@ void BuildLogStepDockerImage::Swap(BuildLogStepDockerImage* other) {
 }
 void BuildLogStepDockerImage::InternalSwap(BuildLogStepDockerImage* other) {
   using std::swap;
-  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  tag_.Swap(&other->tag_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  tag_.Swap(&other->tag_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  error_.Swap(&other->error_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  error_.Swap(&other->error_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(pull_duration_, other->pull_duration_);
   swap(image_size_, other->image_size_);
   swap(is_pulled_, other->is_pulled_);
   swap(is_trusted_, other->is_trusted_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata BuildLogStepDockerImage::GetMetadata() const {
-  protobuf_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fcontracts_2fv1_2fbuild_5flog_5fstep_5fdocker_5fimage_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata BuildLogStepDockerImage::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -666,12 +711,11 @@ void BuildLogStepDockerImage::InternalSwap(BuildLogStepDockerImage* other) {
 }  // namespace contracts
 }  // namespace ci
 }  // namespace estafette
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::estafette::ci::contracts::v1::BuildLogStepDockerImage* Arena::CreateMaybeMessage< ::estafette::ci::contracts::v1::BuildLogStepDockerImage >(Arena* arena) {
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::estafette::ci::contracts::v1::BuildLogStepDockerImage* Arena::CreateMaybeMessage< ::estafette::ci::contracts::v1::BuildLogStepDockerImage >(Arena* arena) {
   return Arena::CreateInternal< ::estafette::ci::contracts::v1::BuildLogStepDockerImage >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

@@ -6,187 +6,142 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
-
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteCronTrigger;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteDockerTrigger;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteGitTrigger;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafettePipelineTrigger;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafettePubSubTrigger;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteReleaseTrigger;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteTriggerBuildAction;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteTriggerReleaseAction;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto
+#include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteCronTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteDockerTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteGitTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafettePipelineTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafettePubSubTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteReleaseTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteTriggerBuildAction_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteTriggerReleaseAction_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto;
 namespace estafette {
 namespace ci {
 namespace manifest {
 namespace v1 {
 class EstafetteTriggerDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EstafetteTrigger>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EstafetteTrigger> _instance;
 } _EstafetteTrigger_default_instance_;
 }  // namespace v1
 }  // namespace manifest
 }  // namespace ci
 }  // namespace estafette
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto {
-static void InitDefaultsEstafetteTrigger() {
+static void InitDefaultsscc_info_EstafetteTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::estafette::ci::manifest::v1::_EstafetteTrigger_default_instance_;
     new (ptr) ::estafette::ci::manifest::v1::EstafetteTrigger();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
   ::estafette::ci::manifest::v1::EstafetteTrigger::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<8> scc_info_EstafetteTrigger =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 8, InitDefaultsEstafetteTrigger}, {
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto::scc_info_EstafettePipelineTrigger.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto::scc_info_EstafetteReleaseTrigger.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto::scc_info_EstafetteGitTrigger.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto::scc_info_EstafetteDockerTrigger.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto::scc_info_EstafetteCronTrigger.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto::scc_info_EstafettePubSubTrigger.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto::scc_info_EstafetteTriggerBuildAction.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto::scc_info_EstafetteTriggerReleaseAction.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<8> scc_info_EstafetteTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 8, InitDefaultsscc_info_EstafetteTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto}, {
+      &scc_info_EstafettePipelineTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto.base,
+      &scc_info_EstafetteReleaseTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto.base,
+      &scc_info_EstafetteGitTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto.base,
+      &scc_info_EstafetteDockerTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto.base,
+      &scc_info_EstafetteCronTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto.base,
+      &scc_info_EstafettePubSubTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto.base,
+      &scc_info_EstafetteTriggerBuildAction_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto.base,
+      &scc_info_EstafetteTriggerReleaseAction_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_EstafetteTrigger.base);
-}
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto = nullptr;
 
-::google::protobuf::Metadata file_level_metadata[1];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, pipeline_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, release_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, git_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, docker_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, cron_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, pub_sub_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, build_action_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, release_action_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, pipeline_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, release_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, git_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, docker_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, cron_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, pub_sub_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, build_action_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteTrigger, release_action_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::estafette::ci::manifest::v1::EstafetteTrigger)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::estafette::ci::manifest::v1::_EstafetteTrigger_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::estafette::ci::manifest::v1::_EstafetteTrigger_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "estafette/ci/manifest/v1/estafette_trigger.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+const char descriptor_table_protodef_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto[] =
+  "\n0estafette/ci/manifest/v1/estafette_tri"
+  "gger.proto\022\030estafette.ci.manifest.v1\0325es"
+  "tafette/ci/manifest/v1/estafette_cron_tr"
+  "igger.proto\0327estafette/ci/manifest/v1/es"
+  "tafette_docker_trigger.proto\0324estafette/"
+  "ci/manifest/v1/estafette_git_trigger.pro"
+  "to\0329estafette/ci/manifest/v1/estafette_p"
+  "ipeline_trigger.proto\0328estafette/ci/mani"
+  "fest/v1/estafette_pub_sub_trigger.proto\032"
+  "8estafette/ci/manifest/v1/estafette_rele"
+  "ase_trigger.proto\032=estafette/ci/manifest"
+  "/v1/estafette_trigger_build_action.proto"
+  "\032\?estafette/ci/manifest/v1/estafette_tri"
+  "gger_release_action.proto\"\271\004\n\020EstafetteT"
+  "rigger\022D\n\010pipeline\030\001 \001(\01322.estafette.ci."
+  "manifest.v1.EstafettePipelineTrigger\022B\n\007"
+  "release\030\002 \001(\01321.estafette.ci.manifest.v1"
+  ".EstafetteReleaseTrigger\022:\n\003git\030\003 \001(\0132-."
+  "estafette.ci.manifest.v1.EstafetteGitTri"
+  "gger\022@\n\006docker\030\004 \001(\01320.estafette.ci.mani"
+  "fest.v1.EstafetteDockerTrigger\022<\n\004cron\030\005"
+  " \001(\0132..estafette.ci.manifest.v1.Estafett"
+  "eCronTrigger\022A\n\007pub_sub\030\006 \001(\01320.estafett"
+  "e.ci.manifest.v1.EstafettePubSubTrigger\022"
+  "K\n\014build_action\030\007 \001(\01325.estafette.ci.man"
+  "ifest.v1.EstafetteTriggerBuildAction\022O\n\016"
+  "release_action\030\010 \001(\01327.estafette.ci.mani"
+  "fest.v1.EstafetteTriggerReleaseActionBx\n"
+  "\034com.estafette.ci.manifest.v1P\001Z;github."
+  "com/estafette/estafette-ci-protos-golang"
+  "/manifest_v1\252\002\030Estafette.Ci.Manifest.V1b"
+  "\006proto3"
+  ;
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto_deps[8] = {
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto_sccs[1] = {
+  &scc_info_EstafetteTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto_once;
+static bool descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto = {
+  &descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto_initialized, descriptor_table_protodef_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto, "estafette/ci/manifest/v1/estafette_trigger.proto", 1247,
+  &descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto_once, descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto_sccs, descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto_deps, 1, 8,
+  schemas, file_default_instances, TableStruct_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::offsets,
+  file_level_metadata_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto, 1, file_level_enum_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto, file_level_service_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n0estafette/ci/manifest/v1/estafette_tri"
-      "gger.proto\022\030estafette.ci.manifest.v1\0325es"
-      "tafette/ci/manifest/v1/estafette_cron_tr"
-      "igger.proto\0327estafette/ci/manifest/v1/es"
-      "tafette_docker_trigger.proto\0324estafette/"
-      "ci/manifest/v1/estafette_git_trigger.pro"
-      "to\0329estafette/ci/manifest/v1/estafette_p"
-      "ipeline_trigger.proto\0328estafette/ci/mani"
-      "fest/v1/estafette_pub_sub_trigger.proto\032"
-      "8estafette/ci/manifest/v1/estafette_rele"
-      "ase_trigger.proto\032=estafette/ci/manifest"
-      "/v1/estafette_trigger_build_action.proto"
-      "\032\?estafette/ci/manifest/v1/estafette_tri"
-      "gger_release_action.proto\"\271\004\n\020EstafetteT"
-      "rigger\022D\n\010pipeline\030\001 \001(\01322.estafette.ci."
-      "manifest.v1.EstafettePipelineTrigger\022B\n\007"
-      "release\030\002 \001(\01321.estafette.ci.manifest.v1"
-      ".EstafetteReleaseTrigger\022:\n\003git\030\003 \001(\0132-."
-      "estafette.ci.manifest.v1.EstafetteGitTri"
-      "gger\022@\n\006docker\030\004 \001(\01320.estafette.ci.mani"
-      "fest.v1.EstafetteDockerTrigger\022<\n\004cron\030\005"
-      " \001(\0132..estafette.ci.manifest.v1.Estafett"
-      "eCronTrigger\022A\n\007pub_sub\030\006 \001(\01320.estafett"
-      "e.ci.manifest.v1.EstafettePubSubTrigger\022"
-      "K\n\014build_action\030\007 \001(\01325.estafette.ci.man"
-      "ifest.v1.EstafetteTriggerBuildAction\022O\n\016"
-      "release_action\030\010 \001(\01327.estafette.ci.mani"
-      "fest.v1.EstafetteTriggerReleaseActionBx\n"
-      "\034com.estafette.ci.manifest.v1P\001Z;github."
-      "com/estafette/estafette-ci-protos-golang"
-      "/manifest_v1\252\002\030Estafette.Ci.Manifest.V1b"
-      "\006proto3"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1247);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "estafette/ci/manifest/v1/estafette_trigger.proto", &protobuf_RegisterTypes);
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fcron_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fdocker_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fgit_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpipeline_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fpub_5fsub_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5frelease_5ftrigger_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5fbuild_5faction_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_5frelease_5faction_2eproto::AddDescriptors();
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto), true);
 namespace estafette {
 namespace ci {
 namespace manifest {
@@ -212,53 +167,97 @@ void EstafetteTrigger::InitAsDefaultInstance() {
   ::estafette::ci::manifest::v1::_EstafetteTrigger_default_instance_._instance.get_mutable()->release_action_ = const_cast< ::estafette::ci::manifest::v1::EstafetteTriggerReleaseAction*>(
       ::estafette::ci::manifest::v1::EstafetteTriggerReleaseAction::internal_default_instance());
 }
+class EstafetteTrigger::HasBitSetters {
+ public:
+  static const ::estafette::ci::manifest::v1::EstafettePipelineTrigger& pipeline(const EstafetteTrigger* msg);
+  static const ::estafette::ci::manifest::v1::EstafetteReleaseTrigger& release(const EstafetteTrigger* msg);
+  static const ::estafette::ci::manifest::v1::EstafetteGitTrigger& git(const EstafetteTrigger* msg);
+  static const ::estafette::ci::manifest::v1::EstafetteDockerTrigger& docker(const EstafetteTrigger* msg);
+  static const ::estafette::ci::manifest::v1::EstafetteCronTrigger& cron(const EstafetteTrigger* msg);
+  static const ::estafette::ci::manifest::v1::EstafettePubSubTrigger& pub_sub(const EstafetteTrigger* msg);
+  static const ::estafette::ci::manifest::v1::EstafetteTriggerBuildAction& build_action(const EstafetteTrigger* msg);
+  static const ::estafette::ci::manifest::v1::EstafetteTriggerReleaseAction& release_action(const EstafetteTrigger* msg);
+};
+
+const ::estafette::ci::manifest::v1::EstafettePipelineTrigger&
+EstafetteTrigger::HasBitSetters::pipeline(const EstafetteTrigger* msg) {
+  return *msg->pipeline_;
+}
+const ::estafette::ci::manifest::v1::EstafetteReleaseTrigger&
+EstafetteTrigger::HasBitSetters::release(const EstafetteTrigger* msg) {
+  return *msg->release_;
+}
+const ::estafette::ci::manifest::v1::EstafetteGitTrigger&
+EstafetteTrigger::HasBitSetters::git(const EstafetteTrigger* msg) {
+  return *msg->git_;
+}
+const ::estafette::ci::manifest::v1::EstafetteDockerTrigger&
+EstafetteTrigger::HasBitSetters::docker(const EstafetteTrigger* msg) {
+  return *msg->docker_;
+}
+const ::estafette::ci::manifest::v1::EstafetteCronTrigger&
+EstafetteTrigger::HasBitSetters::cron(const EstafetteTrigger* msg) {
+  return *msg->cron_;
+}
+const ::estafette::ci::manifest::v1::EstafettePubSubTrigger&
+EstafetteTrigger::HasBitSetters::pub_sub(const EstafetteTrigger* msg) {
+  return *msg->pub_sub_;
+}
+const ::estafette::ci::manifest::v1::EstafetteTriggerBuildAction&
+EstafetteTrigger::HasBitSetters::build_action(const EstafetteTrigger* msg) {
+  return *msg->build_action_;
+}
+const ::estafette::ci::manifest::v1::EstafetteTriggerReleaseAction&
+EstafetteTrigger::HasBitSetters::release_action(const EstafetteTrigger* msg) {
+  return *msg->release_action_;
+}
 void EstafetteTrigger::clear_pipeline() {
-  if (GetArenaNoVirtual() == NULL && pipeline_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && pipeline_ != nullptr) {
     delete pipeline_;
   }
-  pipeline_ = NULL;
+  pipeline_ = nullptr;
 }
 void EstafetteTrigger::clear_release() {
-  if (GetArenaNoVirtual() == NULL && release_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && release_ != nullptr) {
     delete release_;
   }
-  release_ = NULL;
+  release_ = nullptr;
 }
 void EstafetteTrigger::clear_git() {
-  if (GetArenaNoVirtual() == NULL && git_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && git_ != nullptr) {
     delete git_;
   }
-  git_ = NULL;
+  git_ = nullptr;
 }
 void EstafetteTrigger::clear_docker() {
-  if (GetArenaNoVirtual() == NULL && docker_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && docker_ != nullptr) {
     delete docker_;
   }
-  docker_ = NULL;
+  docker_ = nullptr;
 }
 void EstafetteTrigger::clear_cron() {
-  if (GetArenaNoVirtual() == NULL && cron_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && cron_ != nullptr) {
     delete cron_;
   }
-  cron_ = NULL;
+  cron_ = nullptr;
 }
 void EstafetteTrigger::clear_pub_sub() {
-  if (GetArenaNoVirtual() == NULL && pub_sub_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && pub_sub_ != nullptr) {
     delete pub_sub_;
   }
-  pub_sub_ = NULL;
+  pub_sub_ = nullptr;
 }
 void EstafetteTrigger::clear_build_action() {
-  if (GetArenaNoVirtual() == NULL && build_action_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && build_action_ != nullptr) {
     delete build_action_;
   }
-  build_action_ = NULL;
+  build_action_ = nullptr;
 }
 void EstafetteTrigger::clear_release_action() {
-  if (GetArenaNoVirtual() == NULL && release_action_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && release_action_ != nullptr) {
     delete release_action_;
   }
-  release_action_ = NULL;
+  release_action_ = nullptr;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EstafetteTrigger::kPipelineFieldNumber;
@@ -272,60 +271,59 @@ const int EstafetteTrigger::kReleaseActionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EstafetteTrigger::EstafetteTrigger()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::scc_info_EstafetteTrigger.base);
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:estafette.ci.manifest.v1.EstafetteTrigger)
 }
 EstafetteTrigger::EstafetteTrigger(const EstafetteTrigger& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_pipeline()) {
     pipeline_ = new ::estafette::ci::manifest::v1::EstafettePipelineTrigger(*from.pipeline_);
   } else {
-    pipeline_ = NULL;
+    pipeline_ = nullptr;
   }
   if (from.has_release()) {
     release_ = new ::estafette::ci::manifest::v1::EstafetteReleaseTrigger(*from.release_);
   } else {
-    release_ = NULL;
+    release_ = nullptr;
   }
   if (from.has_git()) {
     git_ = new ::estafette::ci::manifest::v1::EstafetteGitTrigger(*from.git_);
   } else {
-    git_ = NULL;
+    git_ = nullptr;
   }
   if (from.has_docker()) {
     docker_ = new ::estafette::ci::manifest::v1::EstafetteDockerTrigger(*from.docker_);
   } else {
-    docker_ = NULL;
+    docker_ = nullptr;
   }
   if (from.has_cron()) {
     cron_ = new ::estafette::ci::manifest::v1::EstafetteCronTrigger(*from.cron_);
   } else {
-    cron_ = NULL;
+    cron_ = nullptr;
   }
   if (from.has_pub_sub()) {
     pub_sub_ = new ::estafette::ci::manifest::v1::EstafettePubSubTrigger(*from.pub_sub_);
   } else {
-    pub_sub_ = NULL;
+    pub_sub_ = nullptr;
   }
   if (from.has_build_action()) {
     build_action_ = new ::estafette::ci::manifest::v1::EstafetteTriggerBuildAction(*from.build_action_);
   } else {
-    build_action_ = NULL;
+    build_action_ = nullptr;
   }
   if (from.has_release_action()) {
     release_action_ = new ::estafette::ci::manifest::v1::EstafetteTriggerReleaseAction(*from.release_action_);
   } else {
-    release_action_ = NULL;
+    release_action_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:estafette.ci.manifest.v1.EstafetteTrigger)
 }
 
 void EstafetteTrigger::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_EstafetteTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto.base);
   ::memset(&pipeline_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&release_action_) -
       reinterpret_cast<char*>(&pipeline_)) + sizeof(release_action_));
@@ -350,73 +348,151 @@ void EstafetteTrigger::SharedDtor() {
 void EstafetteTrigger::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EstafetteTrigger::descriptor() {
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EstafetteTrigger& EstafetteTrigger::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::scc_info_EstafetteTrigger.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_EstafetteTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void EstafetteTrigger::Clear() {
 // @@protoc_insertion_point(message_clear_start:estafette.ci.manifest.v1.EstafetteTrigger)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == NULL && pipeline_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && pipeline_ != nullptr) {
     delete pipeline_;
   }
-  pipeline_ = NULL;
-  if (GetArenaNoVirtual() == NULL && release_ != NULL) {
+  pipeline_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && release_ != nullptr) {
     delete release_;
   }
-  release_ = NULL;
-  if (GetArenaNoVirtual() == NULL && git_ != NULL) {
+  release_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && git_ != nullptr) {
     delete git_;
   }
-  git_ = NULL;
-  if (GetArenaNoVirtual() == NULL && docker_ != NULL) {
+  git_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && docker_ != nullptr) {
     delete docker_;
   }
-  docker_ = NULL;
-  if (GetArenaNoVirtual() == NULL && cron_ != NULL) {
+  docker_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && cron_ != nullptr) {
     delete cron_;
   }
-  cron_ = NULL;
-  if (GetArenaNoVirtual() == NULL && pub_sub_ != NULL) {
+  cron_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && pub_sub_ != nullptr) {
     delete pub_sub_;
   }
-  pub_sub_ = NULL;
-  if (GetArenaNoVirtual() == NULL && build_action_ != NULL) {
+  pub_sub_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && build_action_ != nullptr) {
     delete build_action_;
   }
-  build_action_ = NULL;
-  if (GetArenaNoVirtual() == NULL && release_action_ != NULL) {
+  build_action_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && release_action_ != nullptr) {
     delete release_action_;
   }
-  release_action_ = NULL;
+  release_action_ = nullptr;
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EstafetteTrigger::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // .estafette.ci.manifest.v1.EstafettePipelineTrigger pipeline = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(mutable_pipeline(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .estafette.ci.manifest.v1.EstafetteReleaseTrigger release = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(mutable_release(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .estafette.ci.manifest.v1.EstafetteGitTrigger git = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ctx->ParseMessage(mutable_git(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .estafette.ci.manifest.v1.EstafetteDockerTrigger docker = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ctx->ParseMessage(mutable_docker(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .estafette.ci.manifest.v1.EstafetteCronTrigger cron = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr = ctx->ParseMessage(mutable_cron(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .estafette.ci.manifest.v1.EstafettePubSubTrigger pub_sub = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ctx->ParseMessage(mutable_pub_sub(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .estafette.ci.manifest.v1.EstafetteTriggerBuildAction build_action = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          ptr = ctx->ParseMessage(mutable_build_action(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .estafette.ci.manifest.v1.EstafetteTriggerReleaseAction release_action = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          ptr = ctx->ParseMessage(mutable_release_action(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EstafetteTrigger::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
   // @@protoc_insertion_point(parse_start:estafette.ci.manifest.v1.EstafetteTrigger)
   for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // .estafette.ci.manifest.v1.EstafettePipelineTrigger pipeline = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_pipeline()));
         } else {
           goto handle_unusual;
@@ -426,9 +502,8 @@ bool EstafetteTrigger::MergePartialFromCodedStream(
 
       // .estafette.ci.manifest.v1.EstafetteReleaseTrigger release = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_release()));
         } else {
           goto handle_unusual;
@@ -438,9 +513,8 @@ bool EstafetteTrigger::MergePartialFromCodedStream(
 
       // .estafette.ci.manifest.v1.EstafetteGitTrigger git = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_git()));
         } else {
           goto handle_unusual;
@@ -450,9 +524,8 @@ bool EstafetteTrigger::MergePartialFromCodedStream(
 
       // .estafette.ci.manifest.v1.EstafetteDockerTrigger docker = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_docker()));
         } else {
           goto handle_unusual;
@@ -462,9 +535,8 @@ bool EstafetteTrigger::MergePartialFromCodedStream(
 
       // .estafette.ci.manifest.v1.EstafetteCronTrigger cron = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_cron()));
         } else {
           goto handle_unusual;
@@ -474,9 +546,8 @@ bool EstafetteTrigger::MergePartialFromCodedStream(
 
       // .estafette.ci.manifest.v1.EstafettePubSubTrigger pub_sub = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_pub_sub()));
         } else {
           goto handle_unusual;
@@ -486,9 +557,8 @@ bool EstafetteTrigger::MergePartialFromCodedStream(
 
       // .estafette.ci.manifest.v1.EstafetteTriggerBuildAction build_action = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_build_action()));
         } else {
           goto handle_unusual;
@@ -498,9 +568,8 @@ bool EstafetteTrigger::MergePartialFromCodedStream(
 
       // .estafette.ci.manifest.v1.EstafetteTriggerReleaseAction release_action = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_release_action()));
         } else {
           goto handle_unusual;
@@ -513,7 +582,7 @@ bool EstafetteTrigger::MergePartialFromCodedStream(
         if (tag == 0) {
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
               input, tag, _internal_metadata_.mutable_unknown_fields()));
         break;
       }
@@ -527,134 +596,134 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EstafetteTrigger::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:estafette.ci.manifest.v1.EstafetteTrigger)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .estafette.ci.manifest.v1.EstafettePipelineTrigger pipeline = 1;
   if (this->has_pipeline()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_pipeline(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, HasBitSetters::pipeline(this), output);
   }
 
   // .estafette.ci.manifest.v1.EstafetteReleaseTrigger release = 2;
   if (this->has_release()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_release(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, HasBitSetters::release(this), output);
   }
 
   // .estafette.ci.manifest.v1.EstafetteGitTrigger git = 3;
   if (this->has_git()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_git(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, HasBitSetters::git(this), output);
   }
 
   // .estafette.ci.manifest.v1.EstafetteDockerTrigger docker = 4;
   if (this->has_docker()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_docker(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, HasBitSetters::docker(this), output);
   }
 
   // .estafette.ci.manifest.v1.EstafetteCronTrigger cron = 5;
   if (this->has_cron()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_cron(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, HasBitSetters::cron(this), output);
   }
 
   // .estafette.ci.manifest.v1.EstafettePubSubTrigger pub_sub = 6;
   if (this->has_pub_sub()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_pub_sub(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, HasBitSetters::pub_sub(this), output);
   }
 
   // .estafette.ci.manifest.v1.EstafetteTriggerBuildAction build_action = 7;
   if (this->has_build_action()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_build_action(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      7, HasBitSetters::build_action(this), output);
   }
 
   // .estafette.ci.manifest.v1.EstafetteTriggerReleaseAction release_action = 8;
   if (this->has_release_action()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, this->_internal_release_action(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8, HasBitSetters::release_action(this), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:estafette.ci.manifest.v1.EstafetteTrigger)
 }
 
-::google::protobuf::uint8* EstafetteTrigger::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* EstafetteTrigger::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:estafette.ci.manifest.v1.EstafetteTrigger)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .estafette.ci.manifest.v1.EstafettePipelineTrigger pipeline = 1;
   if (this->has_pipeline()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_pipeline(), deterministic, target);
+        1, HasBitSetters::pipeline(this), target);
   }
 
   // .estafette.ci.manifest.v1.EstafetteReleaseTrigger release = 2;
   if (this->has_release()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_release(), deterministic, target);
+        2, HasBitSetters::release(this), target);
   }
 
   // .estafette.ci.manifest.v1.EstafetteGitTrigger git = 3;
   if (this->has_git()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_git(), deterministic, target);
+        3, HasBitSetters::git(this), target);
   }
 
   // .estafette.ci.manifest.v1.EstafetteDockerTrigger docker = 4;
   if (this->has_docker()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_docker(), deterministic, target);
+        4, HasBitSetters::docker(this), target);
   }
 
   // .estafette.ci.manifest.v1.EstafetteCronTrigger cron = 5;
   if (this->has_cron()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_cron(), deterministic, target);
+        5, HasBitSetters::cron(this), target);
   }
 
   // .estafette.ci.manifest.v1.EstafettePubSubTrigger pub_sub = 6;
   if (this->has_pub_sub()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_pub_sub(), deterministic, target);
+        6, HasBitSetters::pub_sub(this), target);
   }
 
   // .estafette.ci.manifest.v1.EstafetteTriggerBuildAction build_action = 7;
   if (this->has_build_action()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->_internal_build_action(), deterministic, target);
+        7, HasBitSetters::build_action(this), target);
   }
 
   // .estafette.ci.manifest.v1.EstafetteTriggerReleaseAction release_action = 8;
   if (this->has_release_action()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, this->_internal_release_action(), deterministic, target);
+        8, HasBitSetters::release_action(this), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:estafette.ci.manifest.v1.EstafetteTrigger)
   return target;
@@ -664,81 +733,85 @@ size_t EstafetteTrigger::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:estafette.ci.manifest.v1.EstafetteTrigger)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
   }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // .estafette.ci.manifest.v1.EstafettePipelineTrigger pipeline = 1;
   if (this->has_pipeline()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *pipeline_);
   }
 
   // .estafette.ci.manifest.v1.EstafetteReleaseTrigger release = 2;
   if (this->has_release()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *release_);
   }
 
   // .estafette.ci.manifest.v1.EstafetteGitTrigger git = 3;
   if (this->has_git()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *git_);
   }
 
   // .estafette.ci.manifest.v1.EstafetteDockerTrigger docker = 4;
   if (this->has_docker()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *docker_);
   }
 
   // .estafette.ci.manifest.v1.EstafetteCronTrigger cron = 5;
   if (this->has_cron()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *cron_);
   }
 
   // .estafette.ci.manifest.v1.EstafettePubSubTrigger pub_sub = 6;
   if (this->has_pub_sub()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *pub_sub_);
   }
 
   // .estafette.ci.manifest.v1.EstafetteTriggerBuildAction build_action = 7;
   if (this->has_build_action()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *build_action_);
   }
 
   // .estafette.ci.manifest.v1.EstafetteTriggerReleaseAction release_action = 8;
   if (this->has_release_action()) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *release_action_);
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void EstafetteTrigger::MergeFrom(const ::google::protobuf::Message& from) {
+void EstafetteTrigger::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:estafette.ci.manifest.v1.EstafetteTrigger)
   GOOGLE_DCHECK_NE(&from, this);
   const EstafetteTrigger* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EstafetteTrigger>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<EstafetteTrigger>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:estafette.ci.manifest.v1.EstafetteTrigger)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:estafette.ci.manifest.v1.EstafetteTrigger)
     MergeFrom(*source);
@@ -749,7 +822,7 @@ void EstafetteTrigger::MergeFrom(const EstafetteTrigger& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:estafette.ci.manifest.v1.EstafetteTrigger)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_pipeline()) {
@@ -778,7 +851,7 @@ void EstafetteTrigger::MergeFrom(const EstafetteTrigger& from) {
   }
 }
 
-void EstafetteTrigger::CopyFrom(const ::google::protobuf::Message& from) {
+void EstafetteTrigger::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:estafette.ci.manifest.v1.EstafetteTrigger)
   if (&from == this) return;
   Clear();
@@ -802,6 +875,7 @@ void EstafetteTrigger::Swap(EstafetteTrigger* other) {
 }
 void EstafetteTrigger::InternalSwap(EstafetteTrigger* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(pipeline_, other->pipeline_);
   swap(release_, other->release_);
   swap(git_, other->git_);
@@ -810,12 +884,10 @@ void EstafetteTrigger::InternalSwap(EstafetteTrigger* other) {
   swap(pub_sub_, other->pub_sub_);
   swap(build_action_, other->build_action_);
   swap(release_action_, other->release_action_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata EstafetteTrigger::GetMetadata() const {
-  protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata EstafetteTrigger::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -824,12 +896,11 @@ void EstafetteTrigger::InternalSwap(EstafetteTrigger* other) {
 }  // namespace manifest
 }  // namespace ci
 }  // namespace estafette
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::estafette::ci::manifest::v1::EstafetteTrigger* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteTrigger >(Arena* arena) {
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::estafette::ci::manifest::v1::EstafetteTrigger* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteTrigger >(Arena* arena) {
   return Arena::CreateInternal< ::estafette::ci::manifest::v1::EstafetteTrigger >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

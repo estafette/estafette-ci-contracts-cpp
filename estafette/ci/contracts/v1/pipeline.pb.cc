@@ -6,192 +6,149 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
-
-namespace protobuf_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_GitCommit;
-}  // namespace protobuf_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto
-namespace protobuf_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Label;
-}  // namespace protobuf_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto
-namespace protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_ReleaseTarget;
-}  // namespace protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto ::google::protobuf::internal::SCCInfo<7> scc_info_EstafetteEvent;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto ::google::protobuf::internal::SCCInfo<8> scc_info_EstafetteTrigger;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto
-namespace protobuf_google_2fprotobuf_2fduration_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
-}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
-namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2ftimestamp_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Timestamp;
-}  // namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto
+#include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GitCommit_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Label_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ReleaseTarget_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<7> scc_info_EstafetteEvent_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<8> scc_info_EstafetteTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_google_2fprotobuf_2fduration_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Duration_google_2fprotobuf_2fduration_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_google_2fprotobuf_2ftimestamp_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Timestamp_google_2fprotobuf_2ftimestamp_2eproto;
 namespace estafette {
 namespace ci {
 namespace contracts {
 namespace v1 {
 class PipelineDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Pipeline>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Pipeline> _instance;
 } _Pipeline_default_instance_;
 }  // namespace v1
 }  // namespace contracts
 }  // namespace ci
 }  // namespace estafette
-namespace protobuf_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto {
-static void InitDefaultsPipeline() {
+static void InitDefaultsscc_info_Pipeline_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::estafette::ci::contracts::v1::_Pipeline_default_instance_;
     new (ptr) ::estafette::ci::contracts::v1::Pipeline();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
   ::estafette::ci::contracts::v1::Pipeline::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<7> scc_info_Pipeline =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 7, InitDefaultsPipeline}, {
-      &protobuf_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto::scc_info_Label.base,
-      &protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto::scc_info_ReleaseTarget.base,
-      &protobuf_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto::scc_info_GitCommit.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::scc_info_EstafetteTrigger.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto::scc_info_EstafetteEvent.base,
-      &protobuf_google_2fprotobuf_2ftimestamp_2eproto::scc_info_Timestamp.base,
-      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<7> scc_info_Pipeline_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 7, InitDefaultsscc_info_Pipeline_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto}, {
+      &scc_info_Label_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto.base,
+      &scc_info_ReleaseTarget_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto.base,
+      &scc_info_GitCommit_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto.base,
+      &scc_info_EstafetteTrigger_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto.base,
+      &scc_info_EstafetteEvent_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto.base,
+      &scc_info_Timestamp_google_2fprotobuf_2ftimestamp_2eproto.base,
+      &scc_info_Duration_google_2fprotobuf_2fduration_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_Pipeline.base);
-}
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto[1];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto = nullptr;
 
-::google::protobuf::Metadata file_level_metadata[1];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_source_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_owner_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_branch_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_revision_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, build_version_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, build_status_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, labels_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, release_targets_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, manifest_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, manifest_with_defaults_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, commits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, triggers_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, events_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, inserted_at_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, updated_at_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, duration_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, last_updated_at_time_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, id_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_source_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_owner_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_name_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_branch_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, repo_revision_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, build_version_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, build_status_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, labels_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, release_targets_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, manifest_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, manifest_with_defaults_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, commits_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, triggers_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, events_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, inserted_at_time_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, updated_at_time_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, duration_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::contracts::v1::Pipeline, last_updated_at_time_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::estafette::ci::contracts::v1::Pipeline)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::estafette::ci::contracts::v1::_Pipeline_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::estafette::ci::contracts::v1::_Pipeline_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "estafette/ci/contracts/v1/pipeline.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+const char descriptor_table_protodef_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto[] =
+  "\n(estafette/ci/contracts/v1/pipeline.pro"
+  "to\022\031estafette.ci.contracts.v1\032*estafette"
+  "/ci/contracts/v1/git_commit.proto\032%estaf"
+  "ette/ci/contracts/v1/label.proto\032.estafe"
+  "tte/ci/contracts/v1/release_target.proto"
+  "\032\036google/protobuf/duration.proto\032\037google"
+  "/protobuf/timestamp.proto\032.estafette/ci/"
+  "manifest/v1/estafette_event.proto\0320estaf"
+  "ette/ci/manifest/v1/estafette_trigger.pr"
+  "oto\"\323\005\n\010Pipeline\022\n\n\002id\030\001 \001(\t\022\023\n\013repo_sou"
+  "rce\030\002 \001(\t\022\022\n\nrepo_owner\030\003 \001(\t\022\021\n\trepo_na"
+  "me\030\004 \001(\t\022\023\n\013repo_branch\030\005 \001(\t\022\025\n\rrepo_re"
+  "vision\030\006 \001(\t\022\025\n\rbuild_version\030\007 \001(\t\022\024\n\014b"
+  "uild_status\030\010 \001(\t\0220\n\006labels\030\t \003(\0132 .esta"
+  "fette.ci.contracts.v1.Label\022A\n\017release_t"
+  "argets\030\n \003(\0132(.estafette.ci.contracts.v1"
+  ".ReleaseTarget\022\020\n\010manifest\030\013 \001(\t\022\036\n\026mani"
+  "fest_with_defaults\030\014 \001(\t\0225\n\007commits\030\r \003("
+  "\0132$.estafette.ci.contracts.v1.GitCommit\022"
+  "<\n\010triggers\030\016 \003(\0132*.estafette.ci.manifes"
+  "t.v1.EstafetteTrigger\0228\n\006events\030\017 \003(\0132(."
+  "estafette.ci.manifest.v1.EstafetteEvent\022"
+  "4\n\020inserted_at_time\030\020 \001(\0132\032.google.proto"
+  "buf.Timestamp\0223\n\017updated_at_time\030\021 \001(\0132\032"
+  ".google.protobuf.Timestamp\022+\n\010duration\030\022"
+  " \001(\0132\031.google.protobuf.Duration\0228\n\024last_"
+  "updated_at_time\030\023 \001(\0132\032.google.protobuf."
+  "TimestampB{\n\035com.estafette.ci.contracts."
+  "v1P\001Z<github.com/estafette/estafette-ci-"
+  "protos-golang/contracts/v1\252\002\031Estafette.C"
+  "i.Contracts.V1b\006proto3"
+  ;
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto_deps[7] = {
+  &::descriptor_table_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto,
+  &::descriptor_table_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto,
+  &::descriptor_table_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto,
+  &::descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto,
+  &::descriptor_table_google_2fprotobuf_2fduration_2eproto,
+  &::descriptor_table_google_2fprotobuf_2ftimestamp_2eproto,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto_sccs[1] = {
+  &scc_info_Pipeline_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto_once;
+static bool descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto = {
+  &descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto_initialized, descriptor_table_protodef_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto, "estafette/ci/contracts/v1/pipeline.proto", 1222,
+  &descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto_once, descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto_sccs, descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto_deps, 1, 7,
+  schemas, file_default_instances, TableStruct_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto::offsets,
+  file_level_metadata_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto, 1, file_level_enum_descriptors_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto, file_level_service_descriptors_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n(estafette/ci/contracts/v1/pipeline.pro"
-      "to\022\031estafette.ci.contracts.v1\032*estafette"
-      "/ci/contracts/v1/git_commit.proto\032%estaf"
-      "ette/ci/contracts/v1/label.proto\032.estafe"
-      "tte/ci/contracts/v1/release_target.proto"
-      "\032\036google/protobuf/duration.proto\032\037google"
-      "/protobuf/timestamp.proto\032.estafette/ci/"
-      "manifest/v1/estafette_event.proto\0320estaf"
-      "ette/ci/manifest/v1/estafette_trigger.pr"
-      "oto\"\323\005\n\010Pipeline\022\n\n\002id\030\001 \001(\t\022\023\n\013repo_sou"
-      "rce\030\002 \001(\t\022\022\n\nrepo_owner\030\003 \001(\t\022\021\n\trepo_na"
-      "me\030\004 \001(\t\022\023\n\013repo_branch\030\005 \001(\t\022\025\n\rrepo_re"
-      "vision\030\006 \001(\t\022\025\n\rbuild_version\030\007 \001(\t\022\024\n\014b"
-      "uild_status\030\010 \001(\t\0220\n\006labels\030\t \003(\0132 .esta"
-      "fette.ci.contracts.v1.Label\022A\n\017release_t"
-      "argets\030\n \003(\0132(.estafette.ci.contracts.v1"
-      ".ReleaseTarget\022\020\n\010manifest\030\013 \001(\t\022\036\n\026mani"
-      "fest_with_defaults\030\014 \001(\t\0225\n\007commits\030\r \003("
-      "\0132$.estafette.ci.contracts.v1.GitCommit\022"
-      "<\n\010triggers\030\016 \003(\0132*.estafette.ci.manifes"
-      "t.v1.EstafetteTrigger\0228\n\006events\030\017 \003(\0132(."
-      "estafette.ci.manifest.v1.EstafetteEvent\022"
-      "4\n\020inserted_at_time\030\020 \001(\0132\032.google.proto"
-      "buf.Timestamp\0223\n\017updated_at_time\030\021 \001(\0132\032"
-      ".google.protobuf.Timestamp\022+\n\010duration\030\022"
-      " \001(\0132\031.google.protobuf.Duration\0228\n\024last_"
-      "updated_at_time\030\023 \001(\0132\032.google.protobuf."
-      "TimestampB{\n\035com.estafette.ci.contracts."
-      "v1P\001Z<github.com/estafette/estafette-ci-"
-      "protos-golang/contracts/v1\252\002\031Estafette.C"
-      "i.Contracts.V1b\006proto3"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1222);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "estafette/ci/contracts/v1/pipeline.proto", &protobuf_RegisterTypes);
-  ::protobuf_estafette_2fci_2fcontracts_2fv1_2fgit_5fcommit_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fcontracts_2fv1_2flabel_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fcontracts_2fv1_2frelease_5ftarget_2eproto::AddDescriptors();
-  ::protobuf_google_2fprotobuf_2fduration_2eproto::AddDescriptors();
-  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fevent_2eproto::AddDescriptors();
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5ftrigger_2eproto::AddDescriptors();
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto), true);
 namespace estafette {
 namespace ci {
 namespace contracts {
@@ -200,14 +157,38 @@ namespace v1 {
 // ===================================================================
 
 void Pipeline::InitAsDefaultInstance() {
-  ::estafette::ci::contracts::v1::_Pipeline_default_instance_._instance.get_mutable()->inserted_at_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  ::estafette::ci::contracts::v1::_Pipeline_default_instance_._instance.get_mutable()->updated_at_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  ::estafette::ci::contracts::v1::_Pipeline_default_instance_._instance.get_mutable()->duration_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
-  ::estafette::ci::contracts::v1::_Pipeline_default_instance_._instance.get_mutable()->last_updated_at_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
+  ::estafette::ci::contracts::v1::_Pipeline_default_instance_._instance.get_mutable()->inserted_at_time_ = const_cast< PROTOBUF_NAMESPACE_ID::Timestamp*>(
+      PROTOBUF_NAMESPACE_ID::Timestamp::internal_default_instance());
+  ::estafette::ci::contracts::v1::_Pipeline_default_instance_._instance.get_mutable()->updated_at_time_ = const_cast< PROTOBUF_NAMESPACE_ID::Timestamp*>(
+      PROTOBUF_NAMESPACE_ID::Timestamp::internal_default_instance());
+  ::estafette::ci::contracts::v1::_Pipeline_default_instance_._instance.get_mutable()->duration_ = const_cast< PROTOBUF_NAMESPACE_ID::Duration*>(
+      PROTOBUF_NAMESPACE_ID::Duration::internal_default_instance());
+  ::estafette::ci::contracts::v1::_Pipeline_default_instance_._instance.get_mutable()->last_updated_at_time_ = const_cast< PROTOBUF_NAMESPACE_ID::Timestamp*>(
+      PROTOBUF_NAMESPACE_ID::Timestamp::internal_default_instance());
+}
+class Pipeline::HasBitSetters {
+ public:
+  static const PROTOBUF_NAMESPACE_ID::Timestamp& inserted_at_time(const Pipeline* msg);
+  static const PROTOBUF_NAMESPACE_ID::Timestamp& updated_at_time(const Pipeline* msg);
+  static const PROTOBUF_NAMESPACE_ID::Duration& duration(const Pipeline* msg);
+  static const PROTOBUF_NAMESPACE_ID::Timestamp& last_updated_at_time(const Pipeline* msg);
+};
+
+const PROTOBUF_NAMESPACE_ID::Timestamp&
+Pipeline::HasBitSetters::inserted_at_time(const Pipeline* msg) {
+  return *msg->inserted_at_time_;
+}
+const PROTOBUF_NAMESPACE_ID::Timestamp&
+Pipeline::HasBitSetters::updated_at_time(const Pipeline* msg) {
+  return *msg->updated_at_time_;
+}
+const PROTOBUF_NAMESPACE_ID::Duration&
+Pipeline::HasBitSetters::duration(const Pipeline* msg) {
+  return *msg->duration_;
+}
+const PROTOBUF_NAMESPACE_ID::Timestamp&
+Pipeline::HasBitSetters::last_updated_at_time(const Pipeline* msg) {
+  return *msg->last_updated_at_time_;
 }
 void Pipeline::clear_labels() {
   labels_.Clear();
@@ -225,28 +206,28 @@ void Pipeline::clear_events() {
   events_.Clear();
 }
 void Pipeline::clear_inserted_at_time() {
-  if (GetArenaNoVirtual() == NULL && inserted_at_time_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && inserted_at_time_ != nullptr) {
     delete inserted_at_time_;
   }
-  inserted_at_time_ = NULL;
+  inserted_at_time_ = nullptr;
 }
 void Pipeline::clear_updated_at_time() {
-  if (GetArenaNoVirtual() == NULL && updated_at_time_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && updated_at_time_ != nullptr) {
     delete updated_at_time_;
   }
-  updated_at_time_ = NULL;
+  updated_at_time_ = nullptr;
 }
 void Pipeline::clear_duration() {
-  if (GetArenaNoVirtual() == NULL && duration_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && duration_ != nullptr) {
     delete duration_;
   }
-  duration_ = NULL;
+  duration_ = nullptr;
 }
 void Pipeline::clear_last_updated_at_time() {
-  if (GetArenaNoVirtual() == NULL && last_updated_at_time_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && last_updated_at_time_ != nullptr) {
     delete last_updated_at_time_;
   }
-  last_updated_at_time_ = NULL;
+  last_updated_at_time_ = nullptr;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Pipeline::kIdFieldNumber;
@@ -271,95 +252,94 @@ const int Pipeline::kLastUpdatedAtTimeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Pipeline::Pipeline()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto::scc_info_Pipeline.base);
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:estafette.ci.contracts.v1.Pipeline)
 }
 Pipeline::Pipeline(const Pipeline& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       labels_(from.labels_),
       release_targets_(from.release_targets_),
       commits_(from.commits_),
       triggers_(from.triggers_),
       events_(from.events_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.id().size() > 0) {
-    id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
+    id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
   }
-  repo_source_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  repo_source_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.repo_source().size() > 0) {
-    repo_source_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_source_);
+    repo_source_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_source_);
   }
-  repo_owner_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  repo_owner_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.repo_owner().size() > 0) {
-    repo_owner_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_owner_);
+    repo_owner_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_owner_);
   }
-  repo_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  repo_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.repo_name().size() > 0) {
-    repo_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_name_);
+    repo_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_name_);
   }
-  repo_branch_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  repo_branch_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.repo_branch().size() > 0) {
-    repo_branch_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_branch_);
+    repo_branch_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_branch_);
   }
-  repo_revision_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  repo_revision_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.repo_revision().size() > 0) {
-    repo_revision_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_revision_);
+    repo_revision_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_revision_);
   }
-  build_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  build_version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.build_version().size() > 0) {
-    build_version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.build_version_);
+    build_version_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.build_version_);
   }
-  build_status_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  build_status_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.build_status().size() > 0) {
-    build_status_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.build_status_);
+    build_status_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.build_status_);
   }
-  manifest_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  manifest_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.manifest().size() > 0) {
-    manifest_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.manifest_);
+    manifest_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.manifest_);
   }
-  manifest_with_defaults_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  manifest_with_defaults_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.manifest_with_defaults().size() > 0) {
-    manifest_with_defaults_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.manifest_with_defaults_);
+    manifest_with_defaults_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.manifest_with_defaults_);
   }
   if (from.has_inserted_at_time()) {
-    inserted_at_time_ = new ::google::protobuf::Timestamp(*from.inserted_at_time_);
+    inserted_at_time_ = new PROTOBUF_NAMESPACE_ID::Timestamp(*from.inserted_at_time_);
   } else {
-    inserted_at_time_ = NULL;
+    inserted_at_time_ = nullptr;
   }
   if (from.has_updated_at_time()) {
-    updated_at_time_ = new ::google::protobuf::Timestamp(*from.updated_at_time_);
+    updated_at_time_ = new PROTOBUF_NAMESPACE_ID::Timestamp(*from.updated_at_time_);
   } else {
-    updated_at_time_ = NULL;
+    updated_at_time_ = nullptr;
   }
   if (from.has_duration()) {
-    duration_ = new ::google::protobuf::Duration(*from.duration_);
+    duration_ = new PROTOBUF_NAMESPACE_ID::Duration(*from.duration_);
   } else {
-    duration_ = NULL;
+    duration_ = nullptr;
   }
   if (from.has_last_updated_at_time()) {
-    last_updated_at_time_ = new ::google::protobuf::Timestamp(*from.last_updated_at_time_);
+    last_updated_at_time_ = new PROTOBUF_NAMESPACE_ID::Timestamp(*from.last_updated_at_time_);
   } else {
-    last_updated_at_time_ = NULL;
+    last_updated_at_time_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:estafette.ci.contracts.v1.Pipeline)
 }
 
 void Pipeline::SharedCtor() {
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_source_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_owner_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_branch_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_revision_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  build_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  build_status_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  manifest_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  manifest_with_defaults_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Pipeline_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto.base);
+  id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_source_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_owner_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_branch_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_revision_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  build_version_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  build_status_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  manifest_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  manifest_with_defaults_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&inserted_at_time_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&last_updated_at_time_) -
       reinterpret_cast<char*>(&inserted_at_time_)) + sizeof(last_updated_at_time_));
@@ -371,16 +351,16 @@ Pipeline::~Pipeline() {
 }
 
 void Pipeline::SharedDtor() {
-  id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_source_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_owner_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_branch_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_revision_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  build_version_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  build_status_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  manifest_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  manifest_with_defaults_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_source_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_owner_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_branch_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_revision_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  build_version_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  build_status_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  manifest_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  manifest_with_defaults_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete inserted_at_time_;
   if (this != internal_default_instance()) delete updated_at_time_;
   if (this != internal_default_instance()) delete duration_;
@@ -390,20 +370,15 @@ void Pipeline::SharedDtor() {
 void Pipeline::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Pipeline::descriptor() {
-  ::protobuf_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const Pipeline& Pipeline::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto::scc_info_Pipeline.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Pipeline_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void Pipeline::Clear() {
 // @@protoc_insertion_point(message_clear_start:estafette.ci.contracts.v1.Pipeline)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -412,54 +387,239 @@ void Pipeline::Clear() {
   commits_.Clear();
   triggers_.Clear();
   events_.Clear();
-  id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_owner_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_branch_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  repo_revision_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  build_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  build_status_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  manifest_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  manifest_with_defaults_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && inserted_at_time_ != NULL) {
+  id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_source_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_owner_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_branch_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  repo_revision_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  build_version_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  build_status_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  manifest_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  manifest_with_defaults_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == nullptr && inserted_at_time_ != nullptr) {
     delete inserted_at_time_;
   }
-  inserted_at_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && updated_at_time_ != NULL) {
+  inserted_at_time_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && updated_at_time_ != nullptr) {
     delete updated_at_time_;
   }
-  updated_at_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && duration_ != NULL) {
+  updated_at_time_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && duration_ != nullptr) {
     delete duration_;
   }
-  duration_ = NULL;
-  if (GetArenaNoVirtual() == NULL && last_updated_at_time_ != NULL) {
+  duration_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && last_updated_at_time_ != nullptr) {
     delete last_updated_at_time_;
   }
-  last_updated_at_time_ = NULL;
+  last_updated_at_time_ = nullptr;
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* Pipeline::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_id(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.id");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string repo_source = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_repo_source(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.repo_source");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string repo_owner = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_repo_owner(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.repo_owner");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string repo_name = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_repo_name(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.repo_name");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string repo_branch = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_repo_branch(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.repo_branch");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string repo_revision = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_repo_revision(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.repo_revision");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string build_version = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_build_version(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.build_version");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string build_status = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_build_status(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.build_status");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .estafette.ci.contracts.v1.Label labels = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_labels(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 74);
+        } else goto handle_unusual;
+        continue;
+      // repeated .estafette.ci.contracts.v1.ReleaseTarget release_targets = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_release_targets(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 82);
+        } else goto handle_unusual;
+        continue;
+      // string manifest = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_manifest(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.manifest");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string manifest_with_defaults = 12;
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_manifest_with_defaults(), ptr, ctx, "estafette.ci.contracts.v1.Pipeline.manifest_with_defaults");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .estafette.ci.contracts.v1.GitCommit commits = 13;
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_commits(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 106);
+        } else goto handle_unusual;
+        continue;
+      // repeated .estafette.ci.manifest.v1.EstafetteTrigger triggers = 14;
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_triggers(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 114);
+        } else goto handle_unusual;
+        continue;
+      // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 15;
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(add_events(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 122);
+        } else goto handle_unusual;
+        continue;
+      // .google.protobuf.Timestamp inserted_at_time = 16;
+      case 16:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
+          ptr = ctx->ParseMessage(mutable_inserted_at_time(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .google.protobuf.Timestamp updated_at_time = 17;
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 138)) {
+          ptr = ctx->ParseMessage(mutable_updated_at_time(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .google.protobuf.Duration duration = 18;
+      case 18:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 146)) {
+          ptr = ctx->ParseMessage(mutable_duration(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .google.protobuf.Timestamp last_updated_at_time = 19;
+      case 19:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 154)) {
+          ptr = ctx->ParseMessage(mutable_last_updated_at_time(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool Pipeline::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
   // @@protoc_insertion_point(parse_start:estafette.ci.contracts.v1.Pipeline)
   for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->id().data(), static_cast<int>(this->id().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.id"));
         } else {
           goto handle_unusual;
@@ -469,13 +629,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string repo_source = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_repo_source()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->repo_source().data(), static_cast<int>(this->repo_source().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.repo_source"));
         } else {
           goto handle_unusual;
@@ -485,13 +644,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string repo_owner = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_repo_owner()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->repo_owner().data(), static_cast<int>(this->repo_owner().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.repo_owner"));
         } else {
           goto handle_unusual;
@@ -501,13 +659,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string repo_name = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_repo_name()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->repo_name().data(), static_cast<int>(this->repo_name().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.repo_name"));
         } else {
           goto handle_unusual;
@@ -517,13 +674,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string repo_branch = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_repo_branch()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->repo_branch().data(), static_cast<int>(this->repo_branch().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.repo_branch"));
         } else {
           goto handle_unusual;
@@ -533,13 +689,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string repo_revision = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_repo_revision()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->repo_revision().data(), static_cast<int>(this->repo_revision().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.repo_revision"));
         } else {
           goto handle_unusual;
@@ -549,13 +704,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string build_version = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_build_version()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->build_version().data(), static_cast<int>(this->build_version().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.build_version"));
         } else {
           goto handle_unusual;
@@ -565,13 +719,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string build_status = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_build_status()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->build_status().data(), static_cast<int>(this->build_status().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.build_status"));
         } else {
           goto handle_unusual;
@@ -581,9 +734,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // repeated .estafette.ci.contracts.v1.Label labels = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (74 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                 input, add_labels()));
         } else {
           goto handle_unusual;
@@ -593,9 +745,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // repeated .estafette.ci.contracts.v1.ReleaseTarget release_targets = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (82 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                 input, add_release_targets()));
         } else {
           goto handle_unusual;
@@ -605,13 +756,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string manifest = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (90 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_manifest()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->manifest().data(), static_cast<int>(this->manifest().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.manifest"));
         } else {
           goto handle_unusual;
@@ -621,13 +771,12 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // string manifest_with_defaults = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (98 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_manifest_with_defaults()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->manifest_with_defaults().data(), static_cast<int>(this->manifest_with_defaults().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.contracts.v1.Pipeline.manifest_with_defaults"));
         } else {
           goto handle_unusual;
@@ -637,9 +786,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // repeated .estafette.ci.contracts.v1.GitCommit commits = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(106u /* 106 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (106 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                 input, add_commits()));
         } else {
           goto handle_unusual;
@@ -649,9 +797,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // repeated .estafette.ci.manifest.v1.EstafetteTrigger triggers = 14;
       case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(114u /* 114 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (114 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                 input, add_triggers()));
         } else {
           goto handle_unusual;
@@ -661,9 +808,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 15;
       case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(122u /* 122 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (122 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                 input, add_events()));
         } else {
           goto handle_unusual;
@@ -673,9 +819,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // .google.protobuf.Timestamp inserted_at_time = 16;
       case 16: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(130u /* 130 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (130 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_inserted_at_time()));
         } else {
           goto handle_unusual;
@@ -685,9 +830,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // .google.protobuf.Timestamp updated_at_time = 17;
       case 17: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(138u /* 138 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (138 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_updated_at_time()));
         } else {
           goto handle_unusual;
@@ -697,9 +841,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // .google.protobuf.Duration duration = 18;
       case 18: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(146u /* 146 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (146 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_duration()));
         } else {
           goto handle_unusual;
@@ -709,9 +852,8 @@ bool Pipeline::MergePartialFromCodedStream(
 
       // .google.protobuf.Timestamp last_updated_at_time = 19;
       case 19: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(154u /* 154 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (154 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
                input, mutable_last_updated_at_time()));
         } else {
           goto handle_unusual;
@@ -724,7 +866,7 @@ bool Pipeline::MergePartialFromCodedStream(
         if (tag == 0) {
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
               input, tag, _internal_metadata_.mutable_unknown_fields()));
         break;
       }
@@ -738,97 +880,98 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void Pipeline::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:estafette.ci.contracts.v1.Pipeline)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string id = 1;
   if (this->id().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->id().data(), static_cast<int>(this->id().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.id");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->id(), output);
   }
 
   // string repo_source = 2;
   if (this->repo_source().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_source().data(), static_cast<int>(this->repo_source().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_source");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->repo_source(), output);
   }
 
   // string repo_owner = 3;
   if (this->repo_owner().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_owner().data(), static_cast<int>(this->repo_owner().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_owner");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->repo_owner(), output);
   }
 
   // string repo_name = 4;
   if (this->repo_name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_name().data(), static_cast<int>(this->repo_name().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_name");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       4, this->repo_name(), output);
   }
 
   // string repo_branch = 5;
   if (this->repo_branch().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_branch().data(), static_cast<int>(this->repo_branch().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_branch");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       5, this->repo_branch(), output);
   }
 
   // string repo_revision = 6;
   if (this->repo_revision().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_revision().data(), static_cast<int>(this->repo_revision().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_revision");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       6, this->repo_revision(), output);
   }
 
   // string build_version = 7;
   if (this->build_version().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->build_version().data(), static_cast<int>(this->build_version().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.build_version");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       7, this->build_version(), output);
   }
 
   // string build_status = 8;
   if (this->build_status().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->build_status().data(), static_cast<int>(this->build_status().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.build_status");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       8, this->build_status(), output);
   }
 
   // repeated .estafette.ci.contracts.v1.Label labels = 9;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->labels_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       9,
       this->labels(static_cast<int>(i)),
       output);
@@ -837,7 +980,7 @@ void Pipeline::SerializeWithCachedSizes(
   // repeated .estafette.ci.contracts.v1.ReleaseTarget release_targets = 10;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->release_targets_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       10,
       this->release_targets(static_cast<int>(i)),
       output);
@@ -845,28 +988,28 @@ void Pipeline::SerializeWithCachedSizes(
 
   // string manifest = 11;
   if (this->manifest().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->manifest().data(), static_cast<int>(this->manifest().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.manifest");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       11, this->manifest(), output);
   }
 
   // string manifest_with_defaults = 12;
   if (this->manifest_with_defaults().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->manifest_with_defaults().data(), static_cast<int>(this->manifest_with_defaults().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.manifest_with_defaults");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       12, this->manifest_with_defaults(), output);
   }
 
   // repeated .estafette.ci.contracts.v1.GitCommit commits = 13;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->commits_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       13,
       this->commits(static_cast<int>(i)),
       output);
@@ -875,7 +1018,7 @@ void Pipeline::SerializeWithCachedSizes(
   // repeated .estafette.ci.manifest.v1.EstafetteTrigger triggers = 14;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->triggers_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       14,
       this->triggers(static_cast<int>(i)),
       output);
@@ -884,7 +1027,7 @@ void Pipeline::SerializeWithCachedSizes(
   // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 15;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->events_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
       15,
       this->events(static_cast<int>(i)),
       output);
@@ -892,223 +1035,222 @@ void Pipeline::SerializeWithCachedSizes(
 
   // .google.protobuf.Timestamp inserted_at_time = 16;
   if (this->has_inserted_at_time()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      16, this->_internal_inserted_at_time(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      16, HasBitSetters::inserted_at_time(this), output);
   }
 
   // .google.protobuf.Timestamp updated_at_time = 17;
   if (this->has_updated_at_time()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      17, this->_internal_updated_at_time(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      17, HasBitSetters::updated_at_time(this), output);
   }
 
   // .google.protobuf.Duration duration = 18;
   if (this->has_duration()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      18, this->_internal_duration(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      18, HasBitSetters::duration(this), output);
   }
 
   // .google.protobuf.Timestamp last_updated_at_time = 19;
   if (this->has_last_updated_at_time()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      19, this->_internal_last_updated_at_time(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      19, HasBitSetters::last_updated_at_time(this), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:estafette.ci.contracts.v1.Pipeline)
 }
 
-::google::protobuf::uint8* Pipeline::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Pipeline::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:estafette.ci.contracts.v1.Pipeline)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string id = 1;
   if (this->id().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->id().data(), static_cast<int>(this->id().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.id");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         1, this->id(), target);
   }
 
   // string repo_source = 2;
   if (this->repo_source().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_source().data(), static_cast<int>(this->repo_source().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_source");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         2, this->repo_source(), target);
   }
 
   // string repo_owner = 3;
   if (this->repo_owner().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_owner().data(), static_cast<int>(this->repo_owner().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_owner");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         3, this->repo_owner(), target);
   }
 
   // string repo_name = 4;
   if (this->repo_name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_name().data(), static_cast<int>(this->repo_name().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_name");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         4, this->repo_name(), target);
   }
 
   // string repo_branch = 5;
   if (this->repo_branch().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_branch().data(), static_cast<int>(this->repo_branch().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_branch");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         5, this->repo_branch(), target);
   }
 
   // string repo_revision = 6;
   if (this->repo_revision().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->repo_revision().data(), static_cast<int>(this->repo_revision().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.repo_revision");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         6, this->repo_revision(), target);
   }
 
   // string build_version = 7;
   if (this->build_version().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->build_version().data(), static_cast<int>(this->build_version().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.build_version");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         7, this->build_version(), target);
   }
 
   // string build_status = 8;
   if (this->build_status().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->build_status().data(), static_cast<int>(this->build_status().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.build_status");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         8, this->build_status(), target);
   }
 
   // repeated .estafette.ci.contracts.v1.Label labels = 9;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->labels_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        9, this->labels(static_cast<int>(i)), deterministic, target);
+        9, this->labels(static_cast<int>(i)), target);
   }
 
   // repeated .estafette.ci.contracts.v1.ReleaseTarget release_targets = 10;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->release_targets_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        10, this->release_targets(static_cast<int>(i)), deterministic, target);
+        10, this->release_targets(static_cast<int>(i)), target);
   }
 
   // string manifest = 11;
   if (this->manifest().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->manifest().data(), static_cast<int>(this->manifest().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.manifest");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         11, this->manifest(), target);
   }
 
   // string manifest_with_defaults = 12;
   if (this->manifest_with_defaults().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->manifest_with_defaults().data(), static_cast<int>(this->manifest_with_defaults().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.contracts.v1.Pipeline.manifest_with_defaults");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         12, this->manifest_with_defaults(), target);
   }
 
   // repeated .estafette.ci.contracts.v1.GitCommit commits = 13;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->commits_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        13, this->commits(static_cast<int>(i)), deterministic, target);
+        13, this->commits(static_cast<int>(i)), target);
   }
 
   // repeated .estafette.ci.manifest.v1.EstafetteTrigger triggers = 14;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->triggers_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        14, this->triggers(static_cast<int>(i)), deterministic, target);
+        14, this->triggers(static_cast<int>(i)), target);
   }
 
   // repeated .estafette.ci.manifest.v1.EstafetteEvent events = 15;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->events_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        15, this->events(static_cast<int>(i)), deterministic, target);
+        15, this->events(static_cast<int>(i)), target);
   }
 
   // .google.protobuf.Timestamp inserted_at_time = 16;
   if (this->has_inserted_at_time()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        16, this->_internal_inserted_at_time(), deterministic, target);
+        16, HasBitSetters::inserted_at_time(this), target);
   }
 
   // .google.protobuf.Timestamp updated_at_time = 17;
   if (this->has_updated_at_time()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        17, this->_internal_updated_at_time(), deterministic, target);
+        17, HasBitSetters::updated_at_time(this), target);
   }
 
   // .google.protobuf.Duration duration = 18;
   if (this->has_duration()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        18, this->_internal_duration(), deterministic, target);
+        18, HasBitSetters::duration(this), target);
   }
 
   // .google.protobuf.Timestamp last_updated_at_time = 19;
   if (this->has_last_updated_at_time()) {
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        19, this->_internal_last_updated_at_time(), deterministic, target);
+        19, HasBitSetters::last_updated_at_time(this), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:estafette.ci.contracts.v1.Pipeline)
   return target;
@@ -1118,18 +1260,22 @@ size_t Pipeline::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:estafette.ci.contracts.v1.Pipeline)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
   }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .estafette.ci.contracts.v1.Label labels = 9;
   {
     unsigned int count = static_cast<unsigned int>(this->labels_size());
     total_size += 1UL * count;
     for (unsigned int i = 0; i < count; i++) {
       total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           this->labels(static_cast<int>(i)));
     }
   }
@@ -1140,7 +1286,7 @@ size_t Pipeline::ByteSizeLong() const {
     total_size += 1UL * count;
     for (unsigned int i = 0; i < count; i++) {
       total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           this->release_targets(static_cast<int>(i)));
     }
   }
@@ -1151,7 +1297,7 @@ size_t Pipeline::ByteSizeLong() const {
     total_size += 1UL * count;
     for (unsigned int i = 0; i < count; i++) {
       total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           this->commits(static_cast<int>(i)));
     }
   }
@@ -1162,7 +1308,7 @@ size_t Pipeline::ByteSizeLong() const {
     total_size += 1UL * count;
     for (unsigned int i = 0; i < count; i++) {
       total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           this->triggers(static_cast<int>(i)));
     }
   }
@@ -1173,7 +1319,7 @@ size_t Pipeline::ByteSizeLong() const {
     total_size += 1UL * count;
     for (unsigned int i = 0; i < count; i++) {
       total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           this->events(static_cast<int>(i)));
     }
   }
@@ -1181,115 +1327,115 @@ size_t Pipeline::ByteSizeLong() const {
   // string id = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->id());
   }
 
   // string repo_source = 2;
   if (this->repo_source().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->repo_source());
   }
 
   // string repo_owner = 3;
   if (this->repo_owner().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->repo_owner());
   }
 
   // string repo_name = 4;
   if (this->repo_name().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->repo_name());
   }
 
   // string repo_branch = 5;
   if (this->repo_branch().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->repo_branch());
   }
 
   // string repo_revision = 6;
   if (this->repo_revision().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->repo_revision());
   }
 
   // string build_version = 7;
   if (this->build_version().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->build_version());
   }
 
   // string build_status = 8;
   if (this->build_status().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->build_status());
   }
 
   // string manifest = 11;
   if (this->manifest().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->manifest());
   }
 
   // string manifest_with_defaults = 12;
   if (this->manifest_with_defaults().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->manifest_with_defaults());
   }
 
   // .google.protobuf.Timestamp inserted_at_time = 16;
   if (this->has_inserted_at_time()) {
     total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *inserted_at_time_);
   }
 
   // .google.protobuf.Timestamp updated_at_time = 17;
   if (this->has_updated_at_time()) {
     total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *updated_at_time_);
   }
 
   // .google.protobuf.Duration duration = 18;
   if (this->has_duration()) {
     total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *duration_);
   }
 
   // .google.protobuf.Timestamp last_updated_at_time = 19;
   if (this->has_last_updated_at_time()) {
     total_size += 2 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *last_updated_at_time_);
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Pipeline::MergeFrom(const ::google::protobuf::Message& from) {
+void Pipeline::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:estafette.ci.contracts.v1.Pipeline)
   GOOGLE_DCHECK_NE(&from, this);
   const Pipeline* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Pipeline>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Pipeline>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:estafette.ci.contracts.v1.Pipeline)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:estafette.ci.contracts.v1.Pipeline)
     MergeFrom(*source);
@@ -1300,7 +1446,7 @@ void Pipeline::MergeFrom(const Pipeline& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:estafette.ci.contracts.v1.Pipeline)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   labels_.MergeFrom(from.labels_);
@@ -1310,59 +1456,59 @@ void Pipeline::MergeFrom(const Pipeline& from) {
   events_.MergeFrom(from.events_);
   if (from.id().size() > 0) {
 
-    id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
+    id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
   }
   if (from.repo_source().size() > 0) {
 
-    repo_source_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_source_);
+    repo_source_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_source_);
   }
   if (from.repo_owner().size() > 0) {
 
-    repo_owner_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_owner_);
+    repo_owner_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_owner_);
   }
   if (from.repo_name().size() > 0) {
 
-    repo_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_name_);
+    repo_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_name_);
   }
   if (from.repo_branch().size() > 0) {
 
-    repo_branch_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_branch_);
+    repo_branch_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_branch_);
   }
   if (from.repo_revision().size() > 0) {
 
-    repo_revision_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_revision_);
+    repo_revision_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.repo_revision_);
   }
   if (from.build_version().size() > 0) {
 
-    build_version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.build_version_);
+    build_version_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.build_version_);
   }
   if (from.build_status().size() > 0) {
 
-    build_status_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.build_status_);
+    build_status_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.build_status_);
   }
   if (from.manifest().size() > 0) {
 
-    manifest_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.manifest_);
+    manifest_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.manifest_);
   }
   if (from.manifest_with_defaults().size() > 0) {
 
-    manifest_with_defaults_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.manifest_with_defaults_);
+    manifest_with_defaults_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.manifest_with_defaults_);
   }
   if (from.has_inserted_at_time()) {
-    mutable_inserted_at_time()->::google::protobuf::Timestamp::MergeFrom(from.inserted_at_time());
+    mutable_inserted_at_time()->PROTOBUF_NAMESPACE_ID::Timestamp::MergeFrom(from.inserted_at_time());
   }
   if (from.has_updated_at_time()) {
-    mutable_updated_at_time()->::google::protobuf::Timestamp::MergeFrom(from.updated_at_time());
+    mutable_updated_at_time()->PROTOBUF_NAMESPACE_ID::Timestamp::MergeFrom(from.updated_at_time());
   }
   if (from.has_duration()) {
-    mutable_duration()->::google::protobuf::Duration::MergeFrom(from.duration());
+    mutable_duration()->PROTOBUF_NAMESPACE_ID::Duration::MergeFrom(from.duration());
   }
   if (from.has_last_updated_at_time()) {
-    mutable_last_updated_at_time()->::google::protobuf::Timestamp::MergeFrom(from.last_updated_at_time());
+    mutable_last_updated_at_time()->PROTOBUF_NAMESPACE_ID::Timestamp::MergeFrom(from.last_updated_at_time());
   }
 }
 
-void Pipeline::CopyFrom(const ::google::protobuf::Message& from) {
+void Pipeline::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:estafette.ci.contracts.v1.Pipeline)
   if (&from == this) return;
   Clear();
@@ -1386,41 +1532,40 @@ void Pipeline::Swap(Pipeline* other) {
 }
 void Pipeline::InternalSwap(Pipeline* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   CastToBase(&labels_)->InternalSwap(CastToBase(&other->labels_));
   CastToBase(&release_targets_)->InternalSwap(CastToBase(&other->release_targets_));
   CastToBase(&commits_)->InternalSwap(CastToBase(&other->commits_));
   CastToBase(&triggers_)->InternalSwap(CastToBase(&other->triggers_));
   CastToBase(&events_)->InternalSwap(CastToBase(&other->events_));
-  id_.Swap(&other->id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  id_.Swap(&other->id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  repo_source_.Swap(&other->repo_source_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  repo_source_.Swap(&other->repo_source_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  repo_owner_.Swap(&other->repo_owner_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  repo_owner_.Swap(&other->repo_owner_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  repo_name_.Swap(&other->repo_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  repo_name_.Swap(&other->repo_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  repo_branch_.Swap(&other->repo_branch_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  repo_branch_.Swap(&other->repo_branch_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  repo_revision_.Swap(&other->repo_revision_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  repo_revision_.Swap(&other->repo_revision_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  build_version_.Swap(&other->build_version_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  build_version_.Swap(&other->build_version_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  build_status_.Swap(&other->build_status_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  build_status_.Swap(&other->build_status_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  manifest_.Swap(&other->manifest_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  manifest_.Swap(&other->manifest_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  manifest_with_defaults_.Swap(&other->manifest_with_defaults_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  manifest_with_defaults_.Swap(&other->manifest_with_defaults_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(inserted_at_time_, other->inserted_at_time_);
   swap(updated_at_time_, other->updated_at_time_);
   swap(duration_, other->duration_);
   swap(last_updated_at_time_, other->last_updated_at_time_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata Pipeline::GetMetadata() const {
-  protobuf_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fcontracts_2fv1_2fpipeline_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Pipeline::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -1429,12 +1574,11 @@ void Pipeline::InternalSwap(Pipeline* other) {
 }  // namespace contracts
 }  // namespace ci
 }  // namespace estafette
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::estafette::ci::contracts::v1::Pipeline* Arena::CreateMaybeMessage< ::estafette::ci::contracts::v1::Pipeline >(Arena* arena) {
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::estafette::ci::contracts::v1::Pipeline* Arena::CreateMaybeMessage< ::estafette::ci::contracts::v1::Pipeline >(Arena* arena) {
   return Arena::CreateInternal< ::estafette::ci::contracts::v1::Pipeline >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

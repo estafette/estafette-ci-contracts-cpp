@@ -6,64 +6,55 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
-
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteStage_EnvVarsEntry_DoNotUse;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto
-namespace protobuf_google_2fprotobuf_2fany_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fany_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Any;
-}  // namespace protobuf_google_2fprotobuf_2fany_2eproto
+#include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteStage_EnvVarsEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_google_2fprotobuf_2fany_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Any_google_2fprotobuf_2fany_2eproto;
 namespace estafette {
 namespace ci {
 namespace manifest {
 namespace v1 {
 class EstafetteStage_EnvVarsEntry_DoNotUseDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EstafetteStage_EnvVarsEntry_DoNotUse>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EstafetteStage_EnvVarsEntry_DoNotUse> _instance;
 } _EstafetteStage_EnvVarsEntry_DoNotUse_default_instance_;
 class EstafetteStage_CustomPropertiesEntry_DoNotUseDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EstafetteStage_CustomPropertiesEntry_DoNotUse>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EstafetteStage_CustomPropertiesEntry_DoNotUse> _instance;
 } _EstafetteStage_CustomPropertiesEntry_DoNotUse_default_instance_;
 class EstafetteStageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EstafetteStage>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EstafetteStage> _instance;
 } _EstafetteStage_default_instance_;
 }  // namespace v1
 }  // namespace manifest
 }  // namespace ci
 }  // namespace estafette
-namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto {
-static void InitDefaultsEstafetteStage_EnvVarsEntry_DoNotUse() {
+static void InitDefaultsscc_info_EstafetteStage_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::estafette::ci::manifest::v1::_EstafetteStage_EnvVarsEntry_DoNotUse_default_instance_;
-    new (ptr) ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse();
+    void* ptr = &::estafette::ci::manifest::v1::_EstafetteStage_default_instance_;
+    new (ptr) ::estafette::ci::manifest::v1::EstafetteStage();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse::InitAsDefaultInstance();
+  ::estafette::ci::manifest::v1::EstafetteStage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EstafetteStage_EnvVarsEntry_DoNotUse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEstafetteStage_EnvVarsEntry_DoNotUse}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_EstafetteStage_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_EstafetteStage_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto}, {
+      &scc_info_EstafetteStage_EnvVarsEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto.base,
+      &scc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto.base,}};
 
-static void InitDefaultsEstafetteStage_CustomPropertiesEntry_DoNotUse() {
+static void InitDefaultsscc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -73,139 +64,113 @@ static void InitDefaultsEstafetteStage_CustomPropertiesEntry_DoNotUse() {
   ::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEstafetteStage_CustomPropertiesEntry_DoNotUse}, {
-      &protobuf_google_2fprotobuf_2fany_2eproto::scc_info_Any.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto}, {
+      &scc_info_Any_google_2fprotobuf_2fany_2eproto.base,}};
 
-static void InitDefaultsEstafetteStage() {
+static void InitDefaultsscc_info_EstafetteStage_EnvVarsEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::estafette::ci::manifest::v1::_EstafetteStage_default_instance_;
-    new (ptr) ::estafette::ci::manifest::v1::EstafetteStage();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    void* ptr = &::estafette::ci::manifest::v1::_EstafetteStage_EnvVarsEntry_DoNotUse_default_instance_;
+    new (ptr) ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse();
   }
-  ::estafette::ci::manifest::v1::EstafetteStage::InitAsDefaultInstance();
+  ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_EstafetteStage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsEstafetteStage}, {
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::scc_info_EstafetteStage_EnvVarsEntry_DoNotUse.base,
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::scc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EstafetteStage_EnvVarsEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_EstafetteStage_EnvVarsEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_EstafetteStage_EnvVarsEntry_DoNotUse.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EstafetteStage.base);
-}
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto[3];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto = nullptr;
 
-::google::protobuf::Metadata file_level_metadata[3];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse, _internal_metadata_),
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse, key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse, value_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse, key_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse, value_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse, key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse, value_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse, key_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse, value_),
   0,
   1,
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, container_image_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, shell_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, working_directory_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, commands_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, when_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, env_vars_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, auto_injected_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, retries_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, custom_properties_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, name_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, container_image_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, shell_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, working_directory_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, commands_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, when_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, env_vars_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, auto_injected_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, retries_),
+  PROTOBUF_FIELD_OFFSET(::estafette::ci::manifest::v1::EstafetteStage, custom_properties_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse)},
   { 9, 16, sizeof(::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse)},
   { 18, -1, sizeof(::estafette::ci::manifest::v1::EstafetteStage)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::estafette::ci::manifest::v1::_EstafetteStage_EnvVarsEntry_DoNotUse_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::estafette::ci::manifest::v1::_EstafetteStage_CustomPropertiesEntry_DoNotUse_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::estafette::ci::manifest::v1::_EstafetteStage_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::estafette::ci::manifest::v1::_EstafetteStage_EnvVarsEntry_DoNotUse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::estafette::ci::manifest::v1::_EstafetteStage_CustomPropertiesEntry_DoNotUse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::estafette::ci::manifest::v1::_EstafetteStage_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "estafette/ci/manifest/v1/estafette_stage.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+const char descriptor_table_protodef_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto[] =
+  "\n.estafette/ci/manifest/v1/estafette_sta"
+  "ge.proto\022\030estafette.ci.manifest.v1\032\031goog"
+  "le/protobuf/any.proto\"\314\003\n\016EstafetteStage"
+  "\022\014\n\004name\030\001 \001(\t\022\027\n\017container_image\030\002 \001(\t\022"
+  "\r\n\005shell\030\003 \001(\t\022\031\n\021working_directory\030\004 \001("
+  "\t\022\020\n\010commands\030\005 \003(\t\022\014\n\004when\030\006 \001(\t\022G\n\010env"
+  "_vars\030\007 \003(\01325.estafette.ci.manifest.v1.E"
+  "stafetteStage.EnvVarsEntry\022\025\n\rauto_injec"
+  "ted\030\010 \001(\010\022\017\n\007retries\030\t \001(\003\022Y\n\021custom_pro"
+  "perties\030\n \003(\0132>.estafette.ci.manifest.v1"
+  ".EstafetteStage.CustomPropertiesEntry\032.\n"
+  "\014EnvVarsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001("
+  "\t:\0028\001\032M\n\025CustomPropertiesEntry\022\013\n\003key\030\001 "
+  "\001(\t\022#\n\005value\030\002 \001(\0132\024.google.protobuf.Any"
+  ":\0028\001Bx\n\034com.estafette.ci.manifest.v1P\001Z;"
+  "github.com/estafette/estafette-ci-protos"
+  "-golang/manifest_v1\252\002\030Estafette.Ci.Manif"
+  "est.V1b\006proto3"
+  ;
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto_deps[1] = {
+  &::descriptor_table_google_2fprotobuf_2fany_2eproto,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto_sccs[3] = {
+  &scc_info_EstafetteStage_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto.base,
+  &scc_info_EstafetteStage_CustomPropertiesEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto.base,
+  &scc_info_EstafetteStage_EnvVarsEntry_DoNotUse_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto_once;
+static bool descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto = {
+  &descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto_initialized, descriptor_table_protodef_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto, "estafette/ci/manifest/v1/estafette_stage.proto", 694,
+  &descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto_once, descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto_sccs, descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto_deps, 3, 1,
+  schemas, file_default_instances, TableStruct_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::offsets,
+  file_level_metadata_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto, 3, file_level_enum_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto, file_level_service_descriptors_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 3);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n.estafette/ci/manifest/v1/estafette_sta"
-      "ge.proto\022\030estafette.ci.manifest.v1\032\031goog"
-      "le/protobuf/any.proto\"\314\003\n\016EstafetteStage"
-      "\022\014\n\004name\030\001 \001(\t\022\027\n\017container_image\030\002 \001(\t\022"
-      "\r\n\005shell\030\003 \001(\t\022\031\n\021working_directory\030\004 \001("
-      "\t\022\020\n\010commands\030\005 \003(\t\022\014\n\004when\030\006 \001(\t\022G\n\010env"
-      "_vars\030\007 \003(\01325.estafette.ci.manifest.v1.E"
-      "stafetteStage.EnvVarsEntry\022\025\n\rauto_injec"
-      "ted\030\010 \001(\010\022\017\n\007retries\030\t \001(\003\022Y\n\021custom_pro"
-      "perties\030\n \003(\0132>.estafette.ci.manifest.v1"
-      ".EstafetteStage.CustomPropertiesEntry\032.\n"
-      "\014EnvVarsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001("
-      "\t:\0028\001\032M\n\025CustomPropertiesEntry\022\013\n\003key\030\001 "
-      "\001(\t\022#\n\005value\030\002 \001(\0132\024.google.protobuf.Any"
-      ":\0028\001Bx\n\034com.estafette.ci.manifest.v1P\001Z;"
-      "github.com/estafette/estafette-ci-protos"
-      "-golang/manifest_v1\252\002\030Estafette.Ci.Manif"
-      "est.V1b\006proto3"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 694);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "estafette/ci/manifest/v1/estafette_stage.proto", &protobuf_RegisterTypes);
-  ::protobuf_google_2fprotobuf_2fany_2eproto::AddDescriptors();
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto), true);
 namespace estafette {
 namespace ci {
 namespace manifest {
@@ -214,34 +179,34 @@ namespace v1 {
 // ===================================================================
 
 EstafetteStage_EnvVarsEntry_DoNotUse::EstafetteStage_EnvVarsEntry_DoNotUse() {}
-EstafetteStage_EnvVarsEntry_DoNotUse::EstafetteStage_EnvVarsEntry_DoNotUse(::google::protobuf::Arena* arena) : SuperType(arena) {}
+EstafetteStage_EnvVarsEntry_DoNotUse::EstafetteStage_EnvVarsEntry_DoNotUse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+    : SuperType(arena) {}
 void EstafetteStage_EnvVarsEntry_DoNotUse::MergeFrom(const EstafetteStage_EnvVarsEntry_DoNotUse& other) {
   MergeFromInternal(other);
 }
-::google::protobuf::Metadata EstafetteStage_EnvVarsEntry_DoNotUse::GetMetadata() const {
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::file_level_metadata[0];
+::PROTOBUF_NAMESPACE_ID::Metadata EstafetteStage_EnvVarsEntry_DoNotUse::GetMetadata() const {
+  return GetMetadataStatic();
 }
 void EstafetteStage_EnvVarsEntry_DoNotUse::MergeFrom(
-    const ::google::protobuf::Message& other) {
-  ::google::protobuf::Message::MergeFrom(other);
+    const ::PROTOBUF_NAMESPACE_ID::Message& other) {
+  ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom(other);
 }
 
 
 // ===================================================================
 
 EstafetteStage_CustomPropertiesEntry_DoNotUse::EstafetteStage_CustomPropertiesEntry_DoNotUse() {}
-EstafetteStage_CustomPropertiesEntry_DoNotUse::EstafetteStage_CustomPropertiesEntry_DoNotUse(::google::protobuf::Arena* arena) : SuperType(arena) {}
+EstafetteStage_CustomPropertiesEntry_DoNotUse::EstafetteStage_CustomPropertiesEntry_DoNotUse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+    : SuperType(arena) {}
 void EstafetteStage_CustomPropertiesEntry_DoNotUse::MergeFrom(const EstafetteStage_CustomPropertiesEntry_DoNotUse& other) {
   MergeFromInternal(other);
 }
-::google::protobuf::Metadata EstafetteStage_CustomPropertiesEntry_DoNotUse::GetMetadata() const {
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::file_level_metadata[1];
+::PROTOBUF_NAMESPACE_ID::Metadata EstafetteStage_CustomPropertiesEntry_DoNotUse::GetMetadata() const {
+  return GetMetadataStatic();
 }
 void EstafetteStage_CustomPropertiesEntry_DoNotUse::MergeFrom(
-    const ::google::protobuf::Message& other) {
-  ::google::protobuf::Message::MergeFrom(other);
+    const ::PROTOBUF_NAMESPACE_ID::Message& other) {
+  ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom(other);
 }
 
 
@@ -249,6 +214,10 @@ void EstafetteStage_CustomPropertiesEntry_DoNotUse::MergeFrom(
 
 void EstafetteStage::InitAsDefaultInstance() {
 }
+class EstafetteStage::HasBitSetters {
+ public:
+};
+
 void EstafetteStage::clear_custom_properties() {
   custom_properties_.Clear();
 }
@@ -266,38 +235,36 @@ const int EstafetteStage::kCustomPropertiesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EstafetteStage::EstafetteStage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::scc_info_EstafetteStage.base);
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:estafette.ci.manifest.v1.EstafetteStage)
 }
 EstafetteStage::EstafetteStage(const EstafetteStage& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       commands_(from.commands_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   env_vars_.MergeFrom(from.env_vars_);
   custom_properties_.MergeFrom(from.custom_properties_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
-  container_image_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  container_image_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.container_image().size() > 0) {
-    container_image_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.container_image_);
+    container_image_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.container_image_);
   }
-  shell_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  shell_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.shell().size() > 0) {
-    shell_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.shell_);
+    shell_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.shell_);
   }
-  working_directory_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  working_directory_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.working_directory().size() > 0) {
-    working_directory_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.working_directory_);
+    working_directory_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.working_directory_);
   }
-  when_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  when_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from.when().size() > 0) {
-    when_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.when_);
+    when_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.when_);
   }
   ::memcpy(&retries_, &from.retries_,
     static_cast<size_t>(reinterpret_cast<char*>(&auto_injected_) -
@@ -306,11 +273,12 @@ EstafetteStage::EstafetteStage(const EstafetteStage& from)
 }
 
 void EstafetteStage::SharedCtor() {
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  container_image_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  shell_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  working_directory_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  when_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_EstafetteStage_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto.base);
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  container_image_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  shell_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  working_directory_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  when_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&retries_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&auto_injected_) -
       reinterpret_cast<char*>(&retries_)) + sizeof(auto_injected_));
@@ -322,66 +290,173 @@ EstafetteStage::~EstafetteStage() {
 }
 
 void EstafetteStage::SharedDtor() {
-  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  container_image_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  shell_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  working_directory_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  when_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  container_image_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  shell_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  working_directory_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  when_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void EstafetteStage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EstafetteStage::descriptor() {
-  ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EstafetteStage& EstafetteStage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::scc_info_EstafetteStage.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_EstafetteStage_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void EstafetteStage::Clear() {
 // @@protoc_insertion_point(message_clear_start:estafette.ci.manifest.v1.EstafetteStage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   commands_.Clear();
   env_vars_.Clear();
   custom_properties_.Clear();
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  container_image_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  shell_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  working_directory_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  when_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  container_image_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  shell_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  working_directory_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  when_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&retries_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&auto_injected_) -
       reinterpret_cast<char*>(&retries_)) + sizeof(auto_injected_));
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EstafetteStage::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string name = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_name(), ptr, ctx, "estafette.ci.manifest.v1.EstafetteStage.name");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string container_image = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_container_image(), ptr, ctx, "estafette.ci.manifest.v1.EstafetteStage.container_image");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string shell = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_shell(), ptr, ctx, "estafette.ci.manifest.v1.EstafetteStage.shell");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string working_directory = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_working_directory(), ptr, ctx, "estafette.ci.manifest.v1.EstafetteStage.working_directory");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated string commands = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_commands(), ptr, ctx, "estafette.ci.manifest.v1.EstafetteStage.commands");
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 42);
+        } else goto handle_unusual;
+        continue;
+      // string when = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_when(), ptr, ctx, "estafette.ci.manifest.v1.EstafetteStage.when");
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // map<string, string> env_vars = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(&env_vars_, ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 58);
+        } else goto handle_unusual;
+        continue;
+      // bool auto_injected = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          auto_injected_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 retries = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          retries_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // map<string, .google.protobuf.Any> custom_properties = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(&custom_properties_, ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 82);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EstafetteStage::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
   // @@protoc_insertion_point(parse_start:estafette.ci.manifest.v1.EstafetteStage)
   for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // string name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->name().data(), static_cast<int>(this->name().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.name"));
         } else {
           goto handle_unusual;
@@ -391,13 +466,12 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // string container_image = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_container_image()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->container_image().data(), static_cast<int>(this->container_image().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.container_image"));
         } else {
           goto handle_unusual;
@@ -407,13 +481,12 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // string shell = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_shell()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->shell().data(), static_cast<int>(this->shell().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.shell"));
         } else {
           goto handle_unusual;
@@ -423,13 +496,12 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // string working_directory = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_working_directory()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->working_directory().data(), static_cast<int>(this->working_directory().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.working_directory"));
         } else {
           goto handle_unusual;
@@ -439,14 +511,13 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // repeated string commands = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->add_commands()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->commands(this->commands_size() - 1).data(),
             static_cast<int>(this->commands(this->commands_size() - 1).length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.commands"));
         } else {
           goto handle_unusual;
@@ -456,13 +527,12 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // string when = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
                 input, this->mutable_when()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             this->when().data(), static_cast<int>(this->when().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.when"));
         } else {
           goto handle_unusual;
@@ -472,24 +542,23 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // map<string, string> env_vars = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
-          EstafetteStage_EnvVarsEntry_DoNotUse::Parser< ::google::protobuf::internal::MapField<
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          EstafetteStage_EnvVarsEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
               EstafetteStage_EnvVarsEntry_DoNotUse,
-              ::std::string, ::std::string,
-              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+              std::string, std::string,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
               0 >,
-            ::google::protobuf::Map< ::std::string, ::std::string > > parser(&env_vars_);
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+            ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string > > parser(&env_vars_);
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
               input, &parser));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             parser.key().data(), static_cast<int>(parser.key().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.EnvVarsEntry.key"));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             parser.value().data(), static_cast<int>(parser.value().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.EnvVarsEntry.value"));
         } else {
           goto handle_unusual;
@@ -499,11 +568,10 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // bool auto_injected = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
 
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
                  input, &auto_injected_)));
         } else {
           goto handle_unusual;
@@ -513,11 +581,10 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // int64 retries = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
 
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
                  input, &retries_)));
         } else {
           goto handle_unusual;
@@ -527,20 +594,19 @@ bool EstafetteStage::MergePartialFromCodedStream(
 
       // map<string, .google.protobuf.Any> custom_properties = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
-          EstafetteStage_CustomPropertiesEntry_DoNotUse::Parser< ::google::protobuf::internal::MapField<
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (82 & 0xFF)) {
+          EstafetteStage_CustomPropertiesEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
               EstafetteStage_CustomPropertiesEntry_DoNotUse,
-              ::std::string, ::google::protobuf::Any,
-              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-              ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
+              std::string, PROTOBUF_NAMESPACE_ID::Any,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE,
               0 >,
-            ::google::protobuf::Map< ::std::string, ::google::protobuf::Any > > parser(&custom_properties_);
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+            ::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any > > parser(&custom_properties_);
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
               input, &parser));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
             parser.key().data(), static_cast<int>(parser.key().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
             "estafette.ci.manifest.v1.EstafetteStage.CustomPropertiesEntry.key"));
         } else {
           goto handle_unusual;
@@ -553,7 +619,7 @@ bool EstafetteStage::MergePartialFromCodedStream(
         if (tag == 0) {
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
               input, tag, _internal_metadata_.mutable_unknown_fields()));
         break;
       }
@@ -567,88 +633,89 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EstafetteStage::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:estafette.ci.manifest.v1.EstafetteStage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string name = 1;
   if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), static_cast<int>(this->name().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.name");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->name(), output);
   }
 
   // string container_image = 2;
   if (this->container_image().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->container_image().data(), static_cast<int>(this->container_image().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.container_image");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->container_image(), output);
   }
 
   // string shell = 3;
   if (this->shell().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->shell().data(), static_cast<int>(this->shell().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.shell");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->shell(), output);
   }
 
   // string working_directory = 4;
   if (this->working_directory().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->working_directory().data(), static_cast<int>(this->working_directory().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.working_directory");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       4, this->working_directory(), output);
   }
 
   // repeated string commands = 5;
   for (int i = 0, n = this->commands_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->commands(i).data(), static_cast<int>(this->commands(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.commands");
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
       5, this->commands(i), output);
   }
 
   // string when = 6;
   if (this->when().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->when().data(), static_cast<int>(this->when().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.when");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
       6, this->when(), output);
   }
 
   // map<string, string> env_vars = 7;
   if (!this->env_vars().empty()) {
-    typedef ::google::protobuf::Map< ::std::string, ::std::string >::const_pointer
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
-    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
           "estafette.ci.manifest.v1.EstafetteStage.EnvVarsEntry.key");
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->second.data(), static_cast<int>(p->second.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
           "estafette.ci.manifest.v1.EstafetteStage.EnvVarsEntry.value");
       }
     };
@@ -657,57 +724,51 @@ void EstafetteStage::SerializeWithCachedSizes(
         this->env_vars().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->env_vars().size()]);
-      typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::size_type size_type;
       size_type n = 0;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
           it = this->env_vars().begin();
           it != this->env_vars().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::std::unique_ptr<EstafetteStage_EnvVarsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
-        entry.reset(env_vars_.NewEntryWrapper(
-            items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
-        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-            7, *entry, output);
-        Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
+        EstafetteStage_EnvVarsEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(7, entry, output);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
-      ::std::unique_ptr<EstafetteStage_EnvVarsEntry_DoNotUse> entry;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
           it = this->env_vars().begin();
           it != this->env_vars().end(); ++it) {
-        entry.reset(env_vars_.NewEntryWrapper(
-            it->first, it->second));
-        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-            7, *entry, output);
-        Utf8Check::Check(&*it);
+        EstafetteStage_EnvVarsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(7, entry, output);
+        Utf8Check::Check(&(*it));
       }
     }
   }
 
   // bool auto_injected = 8;
   if (this->auto_injected() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(8, this->auto_injected(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(8, this->auto_injected(), output);
   }
 
   // int64 retries = 9;
   if (this->retries() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(9, this->retries(), output);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(9, this->retries(), output);
   }
 
   // map<string, .google.protobuf.Any> custom_properties = 10;
   if (!this->custom_properties().empty()) {
-    typedef ::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::const_pointer
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
-    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
           "estafette.ci.manifest.v1.EstafetteStage.CustomPropertiesEntry.key");
       }
     };
@@ -716,238 +777,211 @@ void EstafetteStage::SerializeWithCachedSizes(
         this->custom_properties().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->custom_properties().size()]);
-      typedef ::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::size_type size_type;
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::size_type size_type;
       size_type n = 0;
-      for (::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::const_iterator
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::const_iterator
           it = this->custom_properties().begin();
           it != this->custom_properties().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::std::unique_ptr<EstafetteStage_CustomPropertiesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
-        entry.reset(custom_properties_.NewEntryWrapper(
-            items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
-        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-            10, *entry, output);
-        Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
+        EstafetteStage_CustomPropertiesEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(10, entry, output);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
-      ::std::unique_ptr<EstafetteStage_CustomPropertiesEntry_DoNotUse> entry;
-      for (::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::const_iterator
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::const_iterator
           it = this->custom_properties().begin();
           it != this->custom_properties().end(); ++it) {
-        entry.reset(custom_properties_.NewEntryWrapper(
-            it->first, it->second));
-        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-            10, *entry, output);
-        Utf8Check::Check(&*it);
+        EstafetteStage_CustomPropertiesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(10, entry, output);
+        Utf8Check::Check(&(*it));
       }
     }
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:estafette.ci.manifest.v1.EstafetteStage)
 }
 
-::google::protobuf::uint8* EstafetteStage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* EstafetteStage::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:estafette.ci.manifest.v1.EstafetteStage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string name = 1;
   if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), static_cast<int>(this->name().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.name");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         1, this->name(), target);
   }
 
   // string container_image = 2;
   if (this->container_image().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->container_image().data(), static_cast<int>(this->container_image().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.container_image");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         2, this->container_image(), target);
   }
 
   // string shell = 3;
   if (this->shell().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->shell().data(), static_cast<int>(this->shell().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.shell");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         3, this->shell(), target);
   }
 
   // string working_directory = 4;
   if (this->working_directory().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->working_directory().data(), static_cast<int>(this->working_directory().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.working_directory");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         4, this->working_directory(), target);
   }
 
   // repeated string commands = 5;
   for (int i = 0, n = this->commands_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->commands(i).data(), static_cast<int>(this->commands(i).length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.commands");
-    target = ::google::protobuf::internal::WireFormatLite::
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       WriteStringToArray(5, this->commands(i), target);
   }
 
   // string when = 6;
   if (this->when().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->when().data(), static_cast<int>(this->when().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "estafette.ci.manifest.v1.EstafetteStage.when");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
         6, this->when(), target);
   }
 
   // map<string, string> env_vars = 7;
   if (!this->env_vars().empty()) {
-    typedef ::google::protobuf::Map< ::std::string, ::std::string >::const_pointer
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
-    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
           "estafette.ci.manifest.v1.EstafetteStage.EnvVarsEntry.key");
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->second.data(), static_cast<int>(p->second.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
           "estafette.ci.manifest.v1.EstafetteStage.EnvVarsEntry.value");
       }
     };
 
-    if (deterministic &&
+    if (false &&
         this->env_vars().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->env_vars().size()]);
-      typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::size_type size_type;
       size_type n = 0;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
           it = this->env_vars().begin();
           it != this->env_vars().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::std::unique_ptr<EstafetteStage_EnvVarsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
-        entry.reset(env_vars_.NewEntryWrapper(
-            items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
-        target = ::google::protobuf::internal::WireFormatLite::
-                   InternalWriteMessageNoVirtualToArray(
-                       7, *entry, deterministic, target);
-;
-        Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
+        EstafetteStage_EnvVarsEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(7, entry, target);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
-      ::std::unique_ptr<EstafetteStage_EnvVarsEntry_DoNotUse> entry;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
           it = this->env_vars().begin();
           it != this->env_vars().end(); ++it) {
-        entry.reset(env_vars_.NewEntryWrapper(
-            it->first, it->second));
-        target = ::google::protobuf::internal::WireFormatLite::
-                   InternalWriteMessageNoVirtualToArray(
-                       7, *entry, deterministic, target);
-;
-        Utf8Check::Check(&*it);
+        EstafetteStage_EnvVarsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(7, entry, target);
+        Utf8Check::Check(&(*it));
       }
     }
   }
 
   // bool auto_injected = 8;
   if (this->auto_injected() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(8, this->auto_injected(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->auto_injected(), target);
   }
 
   // int64 retries = 9;
   if (this->retries() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(9, this->retries(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->retries(), target);
   }
 
   // map<string, .google.protobuf.Any> custom_properties = 10;
   if (!this->custom_properties().empty()) {
-    typedef ::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::const_pointer
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
-    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
     struct Utf8Check {
       static void Check(ConstPtr p) {
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
           p->first.data(), static_cast<int>(p->first.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
           "estafette.ci.manifest.v1.EstafetteStage.CustomPropertiesEntry.key");
       }
     };
 
-    if (deterministic &&
+    if (false &&
         this->custom_properties().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->custom_properties().size()]);
-      typedef ::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::size_type size_type;
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::size_type size_type;
       size_type n = 0;
-      for (::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::const_iterator
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::const_iterator
           it = this->custom_properties().begin();
           it != this->custom_properties().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::std::unique_ptr<EstafetteStage_CustomPropertiesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
-        entry.reset(custom_properties_.NewEntryWrapper(
-            items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
-        target = ::google::protobuf::internal::WireFormatLite::
-                   InternalWriteMessageNoVirtualToArray(
-                       10, *entry, deterministic, target);
-;
-        Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
+        EstafetteStage_CustomPropertiesEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(10, entry, target);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
-      ::std::unique_ptr<EstafetteStage_CustomPropertiesEntry_DoNotUse> entry;
-      for (::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::const_iterator
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::const_iterator
           it = this->custom_properties().begin();
           it != this->custom_properties().end(); ++it) {
-        entry.reset(custom_properties_.NewEntryWrapper(
-            it->first, it->second));
-        target = ::google::protobuf::internal::WireFormatLite::
-                   InternalWriteMessageNoVirtualToArray(
-                       10, *entry, deterministic, target);
-;
-        Utf8Check::Check(&*it);
+        EstafetteStage_CustomPropertiesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(10, entry, target);
+        Utf8Check::Check(&(*it));
       }
     }
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:estafette.ci.manifest.v1.EstafetteStage)
   return target;
@@ -957,86 +991,84 @@ size_t EstafetteStage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:estafette.ci.manifest.v1.EstafetteStage)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
   }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated string commands = 5;
   total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->commands_size());
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->commands_size());
   for (int i = 0, n = this->commands_size(); i < n; i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
       this->commands(i));
   }
 
   // map<string, string> env_vars = 7;
   total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->env_vars_size());
-  {
-    ::std::unique_ptr<EstafetteStage_EnvVarsEntry_DoNotUse> entry;
-    for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-        it = this->env_vars().begin();
-        it != this->env_vars().end(); ++it) {
-      entry.reset(env_vars_.NewEntryWrapper(it->first, it->second));
-      total_size += ::google::protobuf::internal::WireFormatLite::
-          MessageSizeNoVirtual(*entry);
-    }
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->env_vars_size());
+  for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
+      it = this->env_vars().begin();
+      it != this->env_vars().end(); ++it) {
+    EstafetteStage_EnvVarsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        MessageSizeNoVirtual(entry);
   }
 
   // map<string, .google.protobuf.Any> custom_properties = 10;
   total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->custom_properties_size());
-  {
-    ::std::unique_ptr<EstafetteStage_CustomPropertiesEntry_DoNotUse> entry;
-    for (::google::protobuf::Map< ::std::string, ::google::protobuf::Any >::const_iterator
-        it = this->custom_properties().begin();
-        it != this->custom_properties().end(); ++it) {
-      entry.reset(custom_properties_.NewEntryWrapper(it->first, it->second));
-      total_size += ::google::protobuf::internal::WireFormatLite::
-          MessageSizeNoVirtual(*entry);
-    }
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->custom_properties_size());
+  for (::PROTOBUF_NAMESPACE_ID::Map< std::string, PROTOBUF_NAMESPACE_ID::Any >::const_iterator
+      it = this->custom_properties().begin();
+      it != this->custom_properties().end(); ++it) {
+    EstafetteStage_CustomPropertiesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        MessageSizeNoVirtual(entry);
   }
 
   // string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->name());
   }
 
   // string container_image = 2;
   if (this->container_image().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->container_image());
   }
 
   // string shell = 3;
   if (this->shell().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->shell());
   }
 
   // string working_directory = 4;
   if (this->working_directory().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->working_directory());
   }
 
   // string when = 6;
   if (this->when().size() > 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->when());
   }
 
   // int64 retries = 9;
   if (this->retries() != 0) {
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->retries());
   }
 
@@ -1045,20 +1077,20 @@ size_t EstafetteStage::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void EstafetteStage::MergeFrom(const ::google::protobuf::Message& from) {
+void EstafetteStage::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:estafette.ci.manifest.v1.EstafetteStage)
   GOOGLE_DCHECK_NE(&from, this);
   const EstafetteStage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EstafetteStage>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<EstafetteStage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:estafette.ci.manifest.v1.EstafetteStage)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:estafette.ci.manifest.v1.EstafetteStage)
     MergeFrom(*source);
@@ -1069,7 +1101,7 @@ void EstafetteStage::MergeFrom(const EstafetteStage& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:estafette.ci.manifest.v1.EstafetteStage)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   commands_.MergeFrom(from.commands_);
@@ -1077,23 +1109,23 @@ void EstafetteStage::MergeFrom(const EstafetteStage& from) {
   custom_properties_.MergeFrom(from.custom_properties_);
   if (from.name().size() > 0) {
 
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
   if (from.container_image().size() > 0) {
 
-    container_image_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.container_image_);
+    container_image_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.container_image_);
   }
   if (from.shell().size() > 0) {
 
-    shell_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.shell_);
+    shell_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.shell_);
   }
   if (from.working_directory().size() > 0) {
 
-    working_directory_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.working_directory_);
+    working_directory_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.working_directory_);
   }
   if (from.when().size() > 0) {
 
-    when_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.when_);
+    when_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.when_);
   }
   if (from.retries() != 0) {
     set_retries(from.retries());
@@ -1103,7 +1135,7 @@ void EstafetteStage::MergeFrom(const EstafetteStage& from) {
   }
 }
 
-void EstafetteStage::CopyFrom(const ::google::protobuf::Message& from) {
+void EstafetteStage::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:estafette.ci.manifest.v1.EstafetteStage)
   if (&from == this) return;
   Clear();
@@ -1127,27 +1159,26 @@ void EstafetteStage::Swap(EstafetteStage* other) {
 }
 void EstafetteStage::InternalSwap(EstafetteStage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   commands_.InternalSwap(CastToBase(&other->commands_));
   env_vars_.Swap(&other->env_vars_);
   custom_properties_.Swap(&other->custom_properties_);
-  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  container_image_.Swap(&other->container_image_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  container_image_.Swap(&other->container_image_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  shell_.Swap(&other->shell_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  shell_.Swap(&other->shell_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  working_directory_.Swap(&other->working_directory_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  working_directory_.Swap(&other->working_directory_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  when_.Swap(&other->when_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  when_.Swap(&other->when_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(retries_, other->retries_);
   swap(auto_injected_, other->auto_injected_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata EstafetteStage::GetMetadata() const {
-  protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_estafette_2fci_2fmanifest_2fv1_2festafette_5fstage_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata EstafetteStage::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -1156,18 +1187,17 @@ void EstafetteStage::InternalSwap(EstafetteStage* other) {
 }  // namespace manifest
 }  // namespace ci
 }  // namespace estafette
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse >(Arena* arena) {
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse >(Arena* arena) {
   return Arena::CreateInternal< ::estafette::ci::manifest::v1::EstafetteStage_EnvVarsEntry_DoNotUse >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse >(Arena* arena) {
   return Arena::CreateInternal< ::estafette::ci::manifest::v1::EstafetteStage_CustomPropertiesEntry_DoNotUse >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::estafette::ci::manifest::v1::EstafetteStage* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteStage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::estafette::ci::manifest::v1::EstafetteStage* Arena::CreateMaybeMessage< ::estafette::ci::manifest::v1::EstafetteStage >(Arena* arena) {
   return Arena::CreateInternal< ::estafette::ci::manifest::v1::EstafetteStage >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>
